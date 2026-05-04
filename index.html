@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KPTCL AEE Prep Portal</title>
     <style>
         :root {
-            --primary-color: #007bff;
-            --secondary-color: #f4f4f9;
-            --text-color: #333;
-            --card-bg: #ffffff;
+            --primary-color: #3b82f6;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --border: #334155;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--secondary-color);
+            background-color: var(--bg);
             color: var(--text-color);
-            margin: 0;
-            padding: 40px 20px;
+            padding: 20px;
+            padding-top: 80px;
+            /* Space for fixed button */
         }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--border);
+            color: #94a3b8;
+        }
+
+        .subject-card {
+            background: var(--card-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border);
+        }
+
+        .subject-card:hover {
+            background: #1e293b;
+            border-color: var(--primary-color);
+        }
+
+        .subject-card span {
+            color: #64748b;
+        }
+
+        /* Mobile Grid Adjustment */
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        
 
         header {
             text-align: center;
@@ -52,7 +91,7 @@
             background: var(--card-bg);
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             text-align: center;
             text-decoration: none;
             color: var(--text-color);
@@ -75,7 +114,7 @@
         .subject-card:hover {
             transform: translateY(-5px);
             border-color: var(--primary-color);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             color: var(--primary-color);
         }
 
@@ -85,32 +124,35 @@
             font-size: 0.9rem;
             color: #777;
         }
+
         .sticky-back-btn {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1000; /* Ensures it stays above other elements */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    font-weight: bold;
-}
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            /* Ensures it stays above other elements */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
 
-.sticky-back-btn:hover {
-    background-color: #0056b3;
-}
+        .sticky-back-btn:hover {
+            background-color: #0056b3;
+        }
 
-/* Optional: Add padding to the top of your container 
+        /* Optional: Add padding to the top of your container 
    so the button doesn't cover your title */
-body {
-    padding-top: 60px;
-}
+        body {
+            padding-top: 60px;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -119,7 +161,7 @@ body {
     </header>
 
     <div class="container">
-        
+
         <h2 class="section-title">DC Machines & Transformers</h2>
         <div class="grid" id="transformer-list">
             <!-- Transformer topics will load here -->
@@ -139,7 +181,7 @@ body {
         // Specific topics for Transformers[cite: 3, 4]
         const transformerTopics = [
             { name: "Ideal Transformers", file: "ideal_transformers.json" },
-            {name: "Equivalent circuit and referred values", file:"equivalent_circuit.json"},
+            { name: "Equivalent circuit and referred values", file: "equivalent_circuit.json" },
             { name: "Single Phase Transformer Construction", file: "single_phase_construction.json" },
             { name: "Single Phase Transformer Voltage Regulation", file: "1phase_Voltage_regulation.json" },
             { name: "Single Phase Transformer Parallel operation", file: "parallel_operation.json" },
@@ -183,4 +225,5 @@ body {
         });
     </script>
 </body>
+
 </html>

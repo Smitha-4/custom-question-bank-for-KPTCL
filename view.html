@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AE/ESE Exam Study Portal</title>
+    <title>AE/ESE Exam Study Portal - Dark Mode</title>
     
     <!-- MathJax Configuration for LaTeX Rendering -->
     <script>
@@ -22,157 +22,163 @@
     
     <style>
         :root {
-            --primary: #007bff;
-            --primary-dark: #0056b3;
-            --bg: #f4f4f9;
-            --text: #333;
-            --success: #28a745;
-            --error: #dc3545;
-            --summary-bg: #eef6ff;
-            --card-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            --primary: #3b82f6; 
+            --primary-dark: #2563eb;
+            --bg: #0f172a; 
+            --card-bg: #1e293b; 
+            --text: #f8fafc; 
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+            --summary-bg: #1e293b;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            --border: #334155;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             background: var(--bg);
             margin: 0;
-            padding: 80px 20px 20px 20px;
+            padding: 80px 15px 20px 15px; 
             color: var(--text);
             line-height: 1.6;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
-        /* Sticky Back Button */
+        /* Responsive Sticky Back Button */
         .sticky-back-btn {
             position: fixed;
-            top: 20px;
-            left: 20px;
+            top: 15px;
+            left: 15px;
             z-index: 9999;
-            padding: 10px 18px;
-            background-color: rgba(0, 123, 255, 0.95);
+            padding: 8px 16px;
+            background-color: var(--primary);
             color: white;
             font-weight: bold;
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            backdrop-filter: blur(4px);
-            transition: transform 0.2s ease, background-color 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
             text-decoration: none;
             display: flex;
             align-items: center;
+            font-size: 0.9rem;
+            transition: background 0.2s;
         }
 
         .sticky-back-btn:hover {
             background-color: var(--primary-dark);
-            transform: translateY(-2px);
         }
 
-        /* Stats Bar */
+        /* Stats Bar - Mobile Optimized */
         .stats-bar {
             position: sticky;
-            top: 10px;
-            background: white;
-            padding: 12px 25px;
-            border-radius: 50px;
+            top: 15px;
+            background: var(--card-bg);
+            padding: 10px 20px;
+            border-radius: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: var(--card-shadow);
             margin-bottom: 25px;
             font-weight: bold;
             z-index: 100;
+            border: 1px solid var(--border);
+            font-size: 0.85rem;
         }
 
         /* Topic Summary Card */
         .topic-card {
             background: var(--summary-bg);
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
-            border-left: 6px solid var(--primary);
+            border-left: 4px solid var(--primary);
             margin-bottom: 30px;
             box-shadow: var(--card-shadow);
+            border: 1px solid var(--border);
         }
-
-        .topic-card h2 { margin-top: 0; color: var(--primary-dark); }
 
         /* Question Cards */
         .question-card {
-            background: white;
-            padding: 30px;
+            background: var(--card-bg);
+            padding: 20px;
             margin-bottom: 25px;
             border-radius: 12px;
             box-shadow: var(--card-shadow);
+            border: 1px solid var(--border);
         }
 
         /* Circuit Image Styling */
         .circuit-box {
             text-align: center;
-            margin: 20px 0;
-            padding: 15px;
-            background: #ffffff;
-            border: 1px dashed #ccc;
+            margin: 15px 0;
+            padding: 10px;
+            background: #ffffff; /* Contrast for diagrams */
             border-radius: 8px;
+            overflow: hidden;
         }
 
         .circuit-box img {
             max-width: 100%;
             height: auto;
             border-radius: 4px;
-            cursor: zoom-in;
         }
 
-        .circuit-box img:active {
-            transform: scale(1.5);
-            transition: transform 0.2s ease;
-            z-index: 1000;
-            position: relative;
-        }
-
+        /* Options Grid - Responsive */
         .options-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            grid-template-columns: 1fr; /* Stacked on mobile */
+            gap: 10px;
             margin: 20px 0;
         }
 
-        @media (max-width: 600px) {
-            .options-grid { grid-template-columns: 1fr; }
+        @media (min-width: 640px) {
+            .options-grid { grid-template-columns: 1fr 1fr; } /* Side-by-side on desktop */
+            body { padding-top: 100px; }
+            .stats-bar { font-size: 1rem; }
         }
 
         .option-btn {
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: #fff;
+            padding: 14px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: #2d3748;
+            color: var(--text);
             cursor: pointer;
             text-align: left;
             transition: all 0.2s ease;
+            font-size: 0.95rem;
         }
 
-        .option-btn:hover { background-color: #f8f9fa; border-color: var(--primary); }
+        .option-btn:hover:not(.answered .option-btn) { 
+            background-color: #3e4c5e; 
+            border-color: var(--primary); 
+        }
 
         .correct { background-color: var(--success) !important; color: white !important; border-color: var(--success) !important; }
         .incorrect { background-color: var(--error) !important; color: white !important; border-color: var(--error) !important; }
         .answered .option-btn { cursor: default; }
 
+        /* Explanation Section */
         .explanation {
             display: none;
-            margin-top: 20px;
-            padding: 20px;
-            background: #f0fff4;
+            margin-top: 15px;
+            padding: 15px;
+            background: #064e3b; 
             border-left: 4px solid var(--success);
-            border-radius: 4px;
+            border-radius: 8px;
+            font-size: 0.9rem;
         }
 
         .error-msg {
-            background: #fff;
+            background: var(--card-bg);
             border: 2px solid var(--error);
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
             text-align: center;
         }
@@ -191,7 +197,7 @@
         </div>
 
         <div class="topic-card" id="summary-card" style="display: none;">
-            <h2 id="summary-title">Quick Review Summary</h2>
+            <h2 style="font-size: 1.2rem; margin-top: 0; color: var(--primary);">Quick Review Summary</h2>
             <div id="summary-content"></div>
         </div>
 
@@ -212,7 +218,7 @@
 
         async function loadQuiz() {
             if (!jsonPath) {
-                showError("No file path provided. Please return to the home page.");
+                showError("No file path provided.");
                 return;
             }
 
@@ -221,7 +227,6 @@
                 if (!response.ok) throw new Error(`File not found: ${jsonPath}`);
                 
                 const data = await response.json();
-                
                 document.getElementById('topic-name').innerText = data.topic_name || "Quiz";
                 
                 if (data.summary_points && data.summary_points.length > 0) {
@@ -238,7 +243,7 @@
         function showError(msg) {
             document.getElementById('questions-container').innerHTML = `
                 <div class="error-msg">
-                    <h3 style="color:var(--error)">Initialization Error</h3>
+                    <h3 style="color:var(--error)">Error</h3>
                     <p>${msg}</p>
                 </div>`;
         }
@@ -258,11 +263,10 @@
                 const card = document.createElement('div');
                 card.className = 'question-card';
                 
-                // Logic to check for image_url
+                // Renders image if image_url exists in JSON[cite: 1]
                 let imageHtml = q.image_url ? `
                     <div class="circuit-box">
                         <img src="${q.image_url}" alt="Circuit Diagram for Q${index + 1}" loading="lazy">
-                        <div style="font-size:0.8rem; color:#666; margin-top:5px;">(Tap and hold to zoom)</div>
                     </div>` : '';
 
                 card.innerHTML = `
@@ -275,7 +279,7 @@
                         <button class="option-btn" onclick="checkAnswer(${index}, 'd', this)">D: ${q.options.d}</button>
                     </div>
                     <div class="explanation" id="exp-${index}">
-                        <strong>Result: <span id="status-${index}"></span></strong><hr>
+                        <strong>Result: <span id="status-${index}"></span></strong><hr style="border:0; border-top:1px solid #ffffff33; margin:10px 0;">
                         <strong>Correct Answer: ${q.answer.toUpperCase()}</strong>
                         <p>${q.explanation || q.logic || ""}</p>
                     </div>
@@ -302,12 +306,10 @@
             if (choice === correctAns) {
                 btn.classList.add('correct');
                 statusLabel.innerText = "Correct!";
-                statusLabel.style.color = "var(--success)";
                 score++;
             } else {
                 btn.classList.add('incorrect');
                 statusLabel.innerText = "Incorrect.";
-                statusLabel.style.color = "var(--error)";
                 
                 const buttons = grid.querySelectorAll('.option-btn');
                 buttons.forEach(b => {
