@@ -1,0 +1,1841 @@
+{
+  "topic_name": "Auto Transformer Construction - (1980-2025)",
+  "summary_points": [
+    "Winding Design: Uses a single continuous winding with a common section shared by primary and secondary.[cite: 1]",
+    "Copper Saving: The weight of copper in an auto transformer is $W_a = W_{2w}(1 - k)$, where $k$ is the transformation ratio.[cite: 1]",
+    "Electrical Connection: Unlike two-winding transformers, auto transformers have direct electrical (conductive) connection between circuits.[cite: 1]",
+    "Inductive vs Conductive Power: Power is transferred both by induction (transformer action) and conduction (direct connection).[cite: 1]"
+  ],
+  "questions": [
+    {
+      "q_no": 150,
+      "question": "In an auto-transformer, the primary and secondary windings are:",
+      "exam": "ESE Prelims",
+      "year": 1982,
+      "topic": "Construction Basics",
+      "options": {
+        "a": "Magnetically coupled only",
+        "b": "Electrically coupled only",
+        "c": "Both magnetically and electrically coupled",
+        "d": "Neither magnetically nor electrically coupled"
+      },
+      "answer": "c",
+      "explanation": "Due to the single winding construction, power transfer occurs via electromagnetic induction and direct electrical conduction.[cite: 1]"
+    },
+    {
+      "q_no": 151,
+      "question": "The saving of copper in an auto-transformer is maximum when the transformation ratio is:",
+      "exam": "ESE Prelims",
+      "year": 1991,
+      "topic": "Copper Savings",
+      "options": {
+        "a": "Unity",
+        "b": "Zero",
+        "c": "0.5",
+        "d": "0.8"
+      },
+      "answer": "a",
+      "explanation": "Copper saving is given by $k \\times (Weight of copper in 2-winding)$. As $k$ approaches 1, the saving is maximized.[cite: 1]"
+    },
+    {
+      "q_no": 152,
+      "question": "Compared to a two-winding transformer of the same rating, an auto-transformer has:",
+      "exam": "ESE Prelims",
+      "year": 1997,
+      "topic": "Constructional Advantages",
+      "options": {
+        "a": "Higher efficiency and higher regulation",
+        "b": "Higher efficiency and lower regulation",
+        "c": "Lower efficiency and higher regulation",
+        "d": "Lower efficiency and lower regulation"
+      },
+      "answer": "b",
+      "explanation": "Reduced copper and core material leads to lower losses (higher efficiency) and lower leakage impedance (better/lower regulation).[cite: 1]"
+    },
+    {
+      "q_no": 153,
+      "question": "An auto-transformer having a transformation ratio of 0.8 supplies a load of 10 kW. The power transferred inductively is:",
+      "exam": "ESE Prelims",
+      "year": 2002,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "8 kW",
+        "b": "2 kW",
+        "c": "10 kW",
+        "d": "Zero"
+      },
+      "answer": "b",
+      "explanation": "Inductive power = Total power $\\times (1 - k) = 10 \\times (1 - 0.8) = 2$ kW.[cite: 1]"
+    },
+    {
+      "q_no": 154,
+      "question": "Which of the following is a significant disadvantage of an auto-transformer construction?",
+      "exam": "ESE Prelims",
+      "year": 2008,
+      "topic": "Construction Safety",
+      "options": {
+        "a": "High leakage reactance",
+        "b": "Low efficiency",
+        "c": "Lack of electrical isolation between primary and secondary",
+        "d": "Increased copper requirement"
+      },
+      "answer": "c",
+      "explanation": "The direct electrical connection poses a safety risk if the common winding breaks, as the full primary voltage appears on the secondary side.[cite: 1]"
+    },
+    {
+      "q_no": 155,
+      "question": "A 100/10 V, 10 kVA transformer is connected as an auto-transformer to get 110 V from 100 V. The new kVA rating will be:",
+      "exam": "ESE Prelims",
+      "year": 2014,
+      "topic": "Reconnection Rating",
+      "options": {
+        "a": "10 kVA",
+        "b": "100 kVA",
+        "c": "110 kVA",
+        "d": "90 kVA"
+      },
+      "answer": "c",
+      "explanation": "New kVA = $(V_{high} / (V_{high} - V_{low})) \\times kVA_{2w} = (110 / (110 - 100)) \\times 10 = 110$ kVA.[cite: 1]"
+    },
+    {
+      "q_no": 156,
+      "question": "In a variable auto-transformer (Variac), the output voltage is varied by:",
+      "exam": "ESE Prelims",
+      "year": 2018,
+      "topic": "Construction Tappings",
+      "options": {
+        "a": "Changing the supply frequency",
+        "b": "A sliding carbon brush on the winding",
+        "c": "Changing the core area",
+        "d": "Switching between multiple isolated coils"
+      },
+      "answer": "b",
+      "explanation": "Variacs use a sliding contact to tap the winding at different points, providing continuous voltage control.[cite: 1]"
+    },
+    {
+      "q_no": 157,
+      "question": "The ratio of conductor material in an auto-transformer to that in a two-winding transformer is (where $k = V_2/V_1$):",
+      "exam": "ESE Prelims",
+      "year": 2023,
+      "topic": "Material Economy",
+      "options": {
+        "a": "k",
+        "b": "1 - k",
+        "c": "1 + k",
+        "d": "$k^2$"
+      },
+      "answer": "b",
+      "explanation": "Weight of copper in auto-transformer $W_a = (1 - k) W_{2w}$.[cite: 1]"
+    },
+    {
+      "q_no": 158,
+      "question": "An auto-transformer is most suitable for an application where the transformation ratio is:",
+      "exam": "ESE Prelims",
+      "year": 2025,
+      "topic": "Application Scope",
+      "options": {
+        "a": "Very high",
+        "b": "Very low",
+        "c": "Near unity",
+        "d": "Zero"
+      },
+      "answer": "c",
+      "explanation": "Auto transformers are most economical and efficient when the input and output voltages are close to each other ($k \\approx 1$).[cite: 1]"
+    },
+    {
+      "q_no": 159,
+      "question": "A 2-winding transformer is converted into an auto-transformer. If the transformation ratio is $a$, the copper saving is proportional to:",
+      "exam": "GATE EE",
+      "year": 1980,
+      "topic": "Copper Savings",
+      "options": {
+        "a": "$a$",
+        "b": "$1/a$",
+        "c": "$1-a$",
+        "d": "$1+a$"
+      },
+      "answer": "a",
+      "explanation": "Copper saving is defined as $k \\times W_{2w}$ where $k$ is the ratio of low voltage to high voltage[cite: 1]."
+    },
+    {
+      "q_no": 160,
+      "question": "In an auto-transformer, the fraction of total energy transferred by induction is:",
+      "exam": "GATE EE",
+      "year": 1990,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "$k$",
+        "b": "$1-k$",
+        "c": "$1/(1-k)$",
+        "d": "$1+k$"
+      },
+      "answer": "b",
+      "explanation": "Energy transferred by induction is $(1-k) \\times Total\\ Power$, while the remaining fraction $k$ is transferred conductively[cite: 1]."
+    },
+    {
+      "q_no": 161,
+      "question": "A 10 kVA, 2500/250 V, 1-phase transformer is reconnected as an auto-transformer to obtain a voltage of 2750 V from 2500 V. The kVA rating of the auto-transformer is:",
+      "exam": "GATE EE",
+      "year": 1994,
+      "topic": "Reconnection Rating",
+      "options": {
+        "a": "110 kVA",
+        "b": "100 kVA",
+        "c": "11 kVA",
+        "d": "10 kVA"
+      },
+      "answer": "a",
+      "explanation": "Rating increases by factor $1/(1-k)$. Here $k = 2500/2750 = 10/11$. New rating = $10 / (1 - 10/11) = 110$ kVA[cite: 1]."
+    },
+    {
+      "q_no": 162,
+      "question": "The percentage resistance and percentage reactance of a 10 kVA, 400/200 V transformer are 2% and 10% respectively. If it is reconnected as a 600/400 V auto-transformer, the new per-unit impedance will be:",
+      "exam": "GATE EE",
+      "year": 2004,
+      "topic": "Impedance Transformation",
+      "options": {
+        "a": "0.04 + j0.2",
+        "b": "0.02 + j0.1",
+        "c": "0.0067 + j0.033",
+        "d": "0.01 + j0.05"
+      },
+      "answer": "c",
+      "explanation": "Auto-transformer $Z_{pu} = (1-k) \\times Z_{pu, 2w}$. Here $k = 400/600 = 2/3$. New $Z_{pu} = (1/3) \\times (0.02 + j0.1) = 0.0067 + j0.033$[cite: 1]."
+    },
+    {
+      "q_no": 163,
+      "question": "A single-phase, 22kVA, 2200/220 V, 50 Hz transformer is connected as an auto-transformer to a 2420 V supply. The power transferred conductively at full load is:",
+      "exam": "GATE EE",
+      "year": 2011,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "220 kW",
+        "b": "242 kW",
+        "c": "22 kW",
+        "d": "2200 kW"
+      },
+      "answer": "a",
+      "explanation": "At $k = 2200/2420 = 0.91$, Conductive Power = $k \\times Total\\ kVA = 0.91 \\times 242 = 220$ kW[cite: 1]."
+    },
+    {
+      "q_no": 164,
+      "question": "Which constructional feature is unique to a variable auto-transformer (Variac)?",
+      "exam": "GATE EE",
+      "year": 2017,
+      "topic": "Variac Construction",
+      "options": {
+        "a": "Laminated core",
+        "b": "Sliding carbon brush contact",
+        "c": "Oil cooling",
+        "d": "Sandwiched windings"
+      },
+      "answer": "b",
+      "explanation": "Variacs use a sliding carbon brush to move along the bared turns of the winding to provide a continuously variable output[cite: 1]."
+    },
+    {
+      "q_no": 165,
+      "question": "For a given kVA rating and transformation ratio, the auto-transformer is physically smaller than a 2-winding transformer because:",
+      "exam": "GATE EE",
+      "year": 2022,
+      "topic": "Physical Construction",
+      "options": {
+        "a": "It has no iron losses",
+        "b": "It requires less conductor and core material",
+        "c": "It operates at higher frequency",
+        "d": "It uses a circular core"
+      },
+      "answer": "b",
+      "explanation": "Since a portion of the winding is shared, less copper is needed, which in turn allows for a smaller core window and overall smaller frame[cite: 1]."
+    },
+    {
+      "q_no": 166,
+      "question": "The total kVA rating of a reconnected auto-transformer is $S_{auto} = [1 / (1-k)] S_{2w}$. This increase in rating is primarily due to:",
+      "exam": "GATE EE",
+      "year": 2025,
+      "topic": "Rating Analysis",
+      "options": {
+        "a": "Direct electrical conduction of power",
+        "b": "Increased magnetic flux density",
+        "c": "Higher insulation strength",
+        "d": "Reduced frequency"
+      },
+      "answer": "a",
+      "explanation": "The additional power handling capacity comes from the fact that a large portion of the power flows directly through the electrical connection rather than the magnetic core[cite: 1]."
+    },
+    {
+      "q_no": 167,
+      "question": "In an auto-transformer with $k=0.5$, the ratio of weight of copper to that of an ordinary 2-winding transformer is:",
+      "exam": "GATE EE",
+      "year": 2026,
+      "topic": "Material Ratio",
+      "options": {
+        "a": "0.25",
+        "b": "0.5",
+        "c": "0.75",
+        "d": "1.0"
+      },
+      "answer": "b",
+      "explanation": "Ratio = $(1-k)$. For $k=0.5$, Ratio = $1 - 0.5 = 0.5$[cite: 1]."
+    },
+    {
+      "q_no": 168,
+      "question": "In an auto-transformer, the number of windings used is:",
+      "exam": "SSC JE / YCT JE",
+      "year": 2015,
+      "topic": "Basic Construction",
+      "options": {
+        "a": "One",
+        "b": "Two",
+        "c": "Three",
+        "d": "Four"
+      },
+      "answer": "a",
+      "explanation": "An auto transformer is defined by its single continuous winding that acts as both primary and secondary[cite: 1]."
+    },
+    {
+      "q_no": 169,
+      "question": "The main advantage of an auto-transformer over a two-winding transformer is:",
+      "exam": "UPPCL JE / YCT JE",
+      "year": 2016,
+      "topic": "Material Benefits",
+      "options": {
+        "a": "Lower cost and copper saving",
+        "b": "High isolation",
+        "c": "Two separate magnetic circuits",
+        "d": "Elimination of core losses"
+      },
+      "answer": "a",
+      "explanation": "The primary benefit of the auto transformer construction is the reduction in copper volume, leading to lower cost and weight[cite: 1]."
+    },
+    {
+      "q_no": 170,
+      "question": "If 'k' is the transformation ratio (V2/V1) of an auto-transformer, then the weight of copper in the auto-transformer is how many times the weight of copper in a two-winding transformer?",
+      "exam": "UPPCL AE / YCT AE",
+      "year": 2021,
+      "topic": "Copper Saving Formula",
+      "options": {
+        "a": "k",
+        "b": "1-k",
+        "c": "1+k",
+        "d": "k^2"
+      },
+      "answer": "b",
+      "explanation": "The copper weight ratio is mathematically derived as $(1 - k)$ times that of a conventional two-winding transformer[cite: 1]."
+    },
+    {
+      "q_no": 171,
+      "question": "A 400/200 V auto-transformer has a common winding section. The current in the common part of the winding is the:",
+      "exam": "RRB JE / YCT JE",
+      "year": 2014,
+      "topic": "Current Distribution",
+      "options": {
+        "a": "Sum of primary and secondary currents",
+        "b": "Difference of primary and secondary currents",
+        "c": "Primary current only",
+        "d": "Secondary current only"
+      },
+      "answer": "b",
+      "explanation": "In the common section of an auto transformer, the currents flow in opposite directions, so the resultant current is the difference between $I_2$ and $I_1$[cite: 1]."
+    },
+    {
+      "q_no": 172,
+      "question": "Which of the following is NOT true for an auto-transformer?",
+      "exam": "SSC JE / YCT Solved",
+      "year": 2023,
+      "topic": "Constructional Facts",
+      "options": {
+        "a": "Higher efficiency",
+        "b": "Better voltage regulation",
+        "c": "Small size",
+        "d": "Electrical isolation between primary and secondary"
+      },
+      "answer": "d",
+      "explanation": "Auto transformers do not provide electrical isolation because the primary and secondary are physically connected[cite: 1]."
+    },
+    {
+      "q_no": 173,
+      "question": "Auto-transformers are most economical when the voltage transformation ratio is:",
+      "exam": "YCT AE Planner",
+      "year": 2022,
+      "topic": "Design Economics",
+      "options": {
+        "a": "Greater than 2",
+        "b": "Close to 1",
+        "c": "Exactly 10",
+        "d": "Less than 0.1"
+      },
+      "answer": "b",
+      "explanation": "The copper saving is $k \\times W_{2w}$. As $k$ approaches 1, the savings become most significant[cite: 1]."
+    },
+    {
+      "q_no": 174,
+      "question": "In an auto-transformer, power is transferred through:",
+      "exam": "ISRO Technician / YCT JE",
+      "year": 2018,
+      "topic": "Energy Transfer",
+      "options": {
+        "a": "Conduction only",
+        "b": "Induction only",
+        "c": "Both conduction and induction",
+        "d": "Mutual coupling only"
+      },
+      "answer": "c",
+      "explanation": "Because of the shared winding, power moves via the magnetic field (induction) and the direct metallic path (conduction)[cite: 1]."
+    },
+    {
+      "q_no": 175,
+      "question": "The size of an auto-transformer is _____ than a 2-winding transformer of the same kVA rating.",
+      "exam": "DSSSB JE / YCT JE",
+      "year": 2024,
+      "topic": "Physical Size",
+      "options": {
+        "a": "Smaller",
+        "b": "Larger",
+        "c": "Same",
+        "d": "Much larger"
+      },
+      "answer": "a",
+      "explanation": "Due to reduced copper and core requirements, the physical frame size is smaller[cite: 1]."
+    },
+    {
+      "q_no": 176,
+      "question": "A 10 kVA, 230/115 V, 1-phase transformer is connected as an auto-transformer to give 345 V from a 230 V supply. The rating will be:",
+      "exam": "YCT AE (UPPCL)",
+      "year": 2025,
+      "topic": "Rating Calculation",
+      "options": {
+        "a": "15 kVA",
+        "b": "20 kVA",
+        "c": "30 kVA",
+        "d": "10 kVA"
+      },
+      "answer": "c",
+      "explanation": "New rating = $(1 / (1 - k)) \\times S_{2w}$. Here $k = 230/345 = 2/3$. New rating = $(1 / (1/3)) \\times 10 = 30$ kVA[cite: 1]."
+    },
+    {
+      "q_no": 177,
+      "question": "What happens if the common part of the winding in an auto-transformer breaks?",
+      "exam": "LMRC JE / YCT JE",
+      "year": 2020,
+      "topic": "Safety/Construction",
+      "options": {
+        "a": "The secondary voltage becomes zero",
+        "b": "The full primary voltage appears across the secondary",
+        "c": "The transformer burns out immediately",
+        "d": "The transformation ratio doubles"
+      },
+      "answer": "b",
+      "explanation": "If the common section opens, the secondary becomes part of a potential divider where it sees the full line voltage, creating a safety hazard[cite: 1]."
+    },
+    {
+      "q_no": 178,
+      "question": "In an auto-transformer, the primary and secondary are connected:",
+      "exam": "SSC JE",
+      "year": 2017,
+      "topic": "Coupling",
+      "options": {
+        "a": "Magnetically only",
+        "b": "Electrically only",
+        "c": "Both magnetically and electrically",
+        "d": "None of the above"
+      },
+      "answer": "c",
+      "explanation": "Because it uses a single continuous winding, the circuits are both inductively and conductively coupled.[cite: 1]"
+    },
+    {
+      "q_no": 179,
+      "question": "Which transformer has only one winding?",
+      "exam": "RRB SSE",
+      "year": 2015,
+      "topic": "Identification",
+      "options": {
+        "a": "Current Transformer",
+        "b": "Potential Transformer",
+        "c": "Auto Transformer",
+        "d": "Distribution Transformer"
+      },
+      "answer": "c",
+      "explanation": "The defining constructional feature of an auto transformer is its single winding.[cite: 1]"
+    },
+    {
+      "q_no": 180,
+      "question": "The copper saving in an auto-transformer compared to a 2-winding transformer is (with k = V2/V1):",
+      "exam": "KPTCL AE",
+      "year": 2018,
+      "topic": "Material Economy",
+      "options": {
+        "a": "k",
+        "b": "1 - k",
+        "c": "1 / k",
+        "d": "k^2"
+      },
+      "answer": "a",
+      "explanation": "The weight of copper saved is equal to 'k' times the weight of copper in a conventional two-winding transformer.[cite: 1]"
+    },
+    {
+      "q_no": 181,
+      "question": "Auto-transformers are generally used for:",
+      "exam": "MPSC Engineering Services",
+      "year": 2020,
+      "topic": "Applications",
+      "options": {
+        "a": "Small voltage ratios",
+        "b": "Very high voltage ratios",
+        "c": "Isolation purposes",
+        "d": "None of the above"
+      },
+      "answer": "a",
+      "explanation": "They are most efficient and economical when the transformation ratio is close to unity (small voltage difference).[cite: 1]"
+    },
+    {
+      "q_no": 182,
+      "question": "In an auto-transformer, the power transferred conductively is (where k is the ratio of low to high voltage):",
+      "exam": "PGCIL Diploma Trainee",
+      "year": 2021,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "Total Power × k",
+        "b": "Total Power × (1-k)",
+        "c": "Total Power / k",
+        "d": "Total Power × k^2"
+      },
+      "answer": "a",
+      "explanation": "Conductive power transfer is directly proportional to the ratio k, while inductive power is proportional to (1-k).[cite: 1]"
+    },
+    {
+      "q_no": 183,
+      "question": "Which of the following is a disadvantage of auto-transformer construction?",
+      "exam": "ISRO Scientist/Engineer",
+      "year": 2019,
+      "topic": "Design Limitations",
+      "options": {
+        "a": "High leakage reactance",
+        "b": "Large size",
+        "c": "No isolation between primary and secondary",
+        "d": "Low efficiency"
+      },
+      "answer": "c",
+      "explanation": "The direct electrical connection makes it unsafe for certain consumer applications due to the risk of high voltage appearing on the low voltage side.[cite: 1]"
+    },
+    {
+      "q_no": 184,
+      "question": "The leakage reactance of an auto-transformer is:",
+      "exam": "DRDO CEPTAM",
+      "year": 2022,
+      "topic": "Impedance",
+      "options": {
+        "a": "Higher than a two-winding transformer",
+        "b": "Lower than a two-winding transformer",
+        "c": "Zero",
+        "d": "Infinite"
+      },
+      "answer": "b",
+      "explanation": "The shared winding results in less flux leakage, providing lower leakage reactance and better voltage regulation.[cite: 1]"
+    },
+    {
+      "q_no": 185,
+      "question": "For the same output, an auto-transformer has lower losses compared to a 2-winding transformer because of:",
+      "exam": "KPSC AE",
+      "year": 2017,
+      "topic": "Efficiency",
+      "options": {
+        "a": "Less copper and core material",
+        "b": "Higher supply frequency",
+        "c": "Elimination of eddy current loss",
+        "d": "Use of air core"
+      },
+      "answer": "a",
+      "explanation": "Reduction in material leads to lower I²R (copper) losses and lower core losses.[cite: 1]"
+    },
+    {
+      "q_no": 186,
+      "question": "A variable auto-transformer is commonly known as a:",
+      "exam": "ONGC Graduate Trainee",
+      "year": 2023,
+      "topic": "Equipment Type",
+      "options": {
+        "a": "Rectifier",
+        "b": "Variac",
+        "c": "Inverter",
+        "d": "Stabilizer"
+      },
+      "answer": "b",
+      "explanation": "A Variac is a constructional variation of an auto-transformer that allows for a continuously adjustable output voltage using a sliding brush.[cite: 1]"
+    },
+    {
+      "q_no": 187,
+      "question": "If the common part of an auto-transformer winding gets open circuited, the load side voltage will:",
+      "exam": "KPTCL JE",
+      "year": 2022,
+      "topic": "Fault Analysis",
+      "options": {
+        "a": "Drop to zero",
+        "b": "Remain the same",
+        "c": "Increase to the full input voltage",
+        "d": "Decrease to half"
+      },
+      "answer": "c",
+      "explanation": "This is a critical safety issue where the secondary winding acts as a high-impedance series element across the full supply.[cite: 1]"
+    },
+    {
+      "q_no": 188,
+      "question": "In a BSNL TTA exam, it was asked: The primary and secondary of an auto-transformer are coupled:",
+      "exam": "BSNL TTA/JE",
+      "year": 2016,
+      "topic": "Coupling Mechanism",
+      "options": {
+        "a": "Inductively only",
+        "b": "Conductively only",
+        "c": "Both inductively and conductively",
+        "d": "Through a capacitor"
+      },
+      "answer": "c",
+      "explanation": "The single winding construction allows power transfer via the magnetic field (induction) and the direct electrical path (conduction).[cite: 1]"
+    },
+    {
+      "q_no": 189,
+      "question": "In a BHEL Engineer Trainee paper, for a transformation ratio 'k', the ratio of copper in an auto-transformer to a two-winding transformer is:",
+      "exam": "BHEL ET",
+      "year": 2019,
+      "topic": "Material Comparison",
+      "options": {
+        "a": "k",
+        "b": "1 - k",
+        "c": "k / (1-k)",
+        "d": "1 / k"
+      },
+      "answer": "b",
+      "explanation": "Weight of copper in auto-transformer is calculated as $(1 - k) \\times Weight\\ of\\ copper\\ in\\ two\\-winding\\ transformer$.[cite: 1]"
+    },
+    {
+      "q_no": 190,
+      "question": "BEL technical exam question: The leakage reactance of an auto-transformer is ________ compared to a two-winding transformer of the same rating.",
+      "exam": "BEL Probationary Engineer",
+      "year": 2021,
+      "topic": "Leakage Reactance",
+      "options": {
+        "a": "Equal",
+        "b": "Higher",
+        "c": "Lower",
+        "d": "Infinite"
+      },
+      "answer": "c",
+      "explanation": "Since the windings share a common section and are physically closer, the flux leakage is minimized, leading to lower reactance.[cite: 1]"
+    },
+    {
+      "q_no": 191,
+      "question": "HAL Management Trainee Exam: An auto-transformer is most effective when the voltage ratio is:",
+      "exam": "HAL MT",
+      "year": 2018,
+      "topic": "Application Efficiency",
+      "options": {
+        "a": "1:10",
+        "b": "1:2",
+        "c": "Nearly 1:1",
+        "d": "1:100"
+      },
+      "answer": "c",
+      "explanation": "The maximum saving in copper and highest efficiency are achieved when the input and output voltages are very close.[cite: 1]"
+    },
+    {
+      "q_no": 192,
+      "question": "NTPC Diploma Trainee: A Variac is a constructional form of:",
+      "exam": "NTPC DT",
+      "year": 2020,
+      "topic": "Equipment Type",
+      "options": {
+        "a": "Current Transformer",
+        "b": "Step-up Auto-transformer",
+        "c": "Variable Auto-transformer",
+        "d": "Isolation Transformer"
+      },
+      "answer": "c",
+      "explanation": "A Variac (Variable AC) uses a sliding carbon brush contact to change the tapping on a single winding.[cite: 1]"
+    },
+    {
+      "q_no": 193,
+      "question": "Coal India Limited (CIL) MT: In an auto-transformer, the conductive power transfer is proportional to:",
+      "exam": "CIL MT",
+      "year": 2022,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "Transformation ratio (k)",
+        "b": "Square of transformation ratio (k^2)",
+        "c": "1 - k",
+        "d": "1 / k"
+      },
+      "answer": "a",
+      "explanation": "Conductive power = $k \\times Total\\ Power$. If $k=0.9$, 90% of power is transferred conductively.[cite: 1]"
+    },
+    {
+      "q_no": 194,
+      "question": "NPCIL Stipendiary Trainee: What is the main safety disadvantage of an auto-transformer's construction?",
+      "exam": "NPCIL ST",
+      "year": 2017,
+      "topic": "Safety/Design",
+      "options": {
+        "a": "Low efficiency",
+        "b": "Poor regulation",
+        "c": "Direct electrical connection between HV and LV sides",
+        "d": "Overheating of the core"
+      },
+      "answer": "c",
+      "explanation": "The lack of electrical isolation means a fault on the HV side can be directly transmitted to the LV side.[cite: 1]"
+    },
+    {
+      "q_no": 195,
+      "question": "SAIL OCTT Exam: In an auto-transformer, copper is saved in the ________ portion.",
+      "exam": "SAIL OCTT",
+      "year": 2023,
+      "topic": "Winding Design",
+      "options": {
+        "a": "Series",
+        "b": "Common",
+        "c": "Core",
+        "d": "Insulation"
+      },
+      "answer": "b",
+      "explanation": "The common section handles the difference of currents ($I_2 - I_1$), requiring less conductor material.[cite: 1]"
+    },
+    {
+      "q_no": 196,
+      "question": "GAIL ET Exam: When a 10 kVA 2-winding transformer is reconnected as an auto-transformer with $k=0.8$, its new rating becomes:",
+      "exam": "GAIL ET",
+      "year": 2021,
+      "topic": "Rating Re-calculation",
+      "options": {
+        "a": "10 kVA",
+        "b": "50 kVA",
+        "c": "8 kVA",
+        "d": "12.5 kVA"
+      },
+      "answer": "b",
+      "explanation": "New rating = $S_{2w} / (1 - k) = 10 / (1 - 0.8) = 10 / 0.2 = 50$ kVA.[cite: 1]"
+    },
+    {
+      "q_no": 197,
+      "question": "IOCL Technical Officer: The use of an auto-transformer for starting an induction motor is to:",
+      "exam": "IOCL",
+      "year": 2019,
+      "topic": "Application",
+      "options": {
+        "a": "Increase the starting torque",
+        "b": "Limit the starting current by reducing voltage",
+        "c": "Improve the power factor",
+        "d": "Eliminate harmonics"
+      },
+      "answer": "b",
+      "explanation": "Auto-transformer starters use taps to provide reduced voltage constructionally during the starting phase.[cite: 1]"
+    },
+    {
+      "q_no": 198,
+      "question": "In a UPPCL AE exam, it was asked: For a given kVA rating, an auto-transformer compared to a 2-winding transformer has:",
+      "exam": "UPPCL AE",
+      "year": 2021,
+      "topic": "Efficiency & Losses",
+      "options": {
+        "a": "Higher magnetic leakage",
+        "b": "Lower efficiency",
+        "c": "Lower full-load losses",
+        "d": "Higher voltage regulation"
+      },
+      "answer": "c",
+      "explanation": "Due to less copper and core material, the ohmic and core losses are lower, improving efficiency[cite: 1]."
+    },
+    {
+      "q_no": 199,
+      "question": "BARC Stipendiary Trainee: In an auto-transformer, if the tapping is taken at the midpoint of the winding, the copper saving is:",
+      "exam": "BARC",
+      "year": 2019,
+      "topic": "Copper Savings",
+      "options": {
+        "a": "25%",
+        "b": "50%",
+        "c": "75%",
+        "d": "100%"
+      },
+      "answer": "b",
+      "explanation": "Copper saving = $k \\times W_{2w}$. If tapped at the midpoint, $k = 0.5$, so saving is 50%[cite: 1]."
+    },
+    {
+      "q_no": 200,
+      "question": "PSPCL JE: Which part of the auto-transformer winding is made of a thicker conductor?",
+      "exam": "PSPCL JE",
+      "year": 2018,
+      "topic": "Winding Design",
+      "options": {
+        "a": "The entire winding",
+        "b": "The series portion",
+        "c": "The common portion",
+        "d": "None of the above"
+      },
+      "answer": "c",
+      "explanation": "The common portion carries a higher current (difference of $I_2$ and $I_1$ in magnitude), requiring a larger cross-section in step-down mode[cite: 1]."
+    },
+    {
+      "q_no": 201,
+      "question": "TANGEDCO AE: An auto-transformer is used for which of the following starting methods of a 3-phase induction motor?",
+      "exam": "TANGEDCO",
+      "year": 2017,
+      "topic": "Application",
+      "options": {
+        "a": "Star-Delta starting",
+        "b": "Direct-on-line starting",
+        "c": "Reduced voltage starting",
+        "d": "Rotor resistance starting"
+      },
+      "answer": "c",
+      "explanation": "Auto transformers are used to provide reduced voltage taps during the starting sequence to limit inrush current[cite: 1]."
+    },
+    {
+      "q_no": 153,
+      "question": "An auto-transformer having a transformation ratio of 0.8 supplies a load of 10 kW. The power transferred inductively is:",
+      "exam": "ESE Prelims",
+      "year": 2002,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "8 kW",
+        "b": "2 kW",
+        "c": "10 kW",
+        "d": "Zero"
+      },
+      "answer": "b",
+      "explanation": "Inductive power = $(1 - k)* Total Power = (1 - 0.4) = 0.6$ or 60%"
+    },
+    {
+      "q_no": 203,
+      "question": "GETCO JE: The main reason for not using an auto-transformer as a distribution transformer is:",
+      "exam": "GETCO",
+      "year": 2022,
+      "topic": "Safety Constraints",
+      "options": {
+        "a": "Low efficiency",
+        "b": "High cost",
+        "c": "Lack of electrical isolation",
+        "d": "Poor regulation"
+      },
+      "answer": "c",
+      "explanation": "Safety regulations generally require electrical isolation between the utility HV line and the consumer LV line[cite: 1]."
+    },
+    {
+      "q_no": 204,
+      "question": "NIELIT Scientist 'B': The total kVA rating of a reconnected auto-transformer ($S_{auto}$) in terms of 2-winding rating ($S_{2w}$) is:",
+      "exam": "NIELIT",
+      "year": 2023,
+      "topic": "Rating Enhancement",
+      "options": {
+        "a": "$S_{auto} = k \times S_{2w}$",
+        "b": "$S_{auto} = (1 - k) \times S_{2w}$",
+        "c": "$S_{auto} = S_{2w} / (1 - k)$",
+        "d": "$S_{auto} = S_{2w} / k$"
+      },
+      "answer": "c",
+      "explanation": "The rating increases because a portion of the power is transferred conductively without loading the magnetic circuit[cite: 1]."
+    },
+    {
+      "q_no": 205,
+      "question": "Mazagon Dock Technical: In an auto-transformer, the series winding is the portion:",
+      "exam": "MDL",
+      "year": 2021,
+      "topic": "Construction Details",
+      "options": {
+        "a": "Shared by primary and secondary",
+        "b": "Not shared by primary and secondary",
+        "c": "Connected to the ground",
+        "d": "Wound on a separate core"
+      },
+      "answer": "b",
+      "explanation": "The portion of the winding that is exclusive to the higher voltage side is called the series winding[cite: 1]."
+    },
+    {
+      "q_no": 206,
+      "question": "According to P.S. Bimbhra, the ratio of the weight of copper in an auto-transformer ($W_a$) to the weight of copper in a 2-winding transformer ($W_{2w}$) is:",
+      "exam": "Textbook: P.S. Bimbhra",
+      "year": 2024,
+      "topic": "Copper Savings",
+      "options": {
+        "a": "k",
+        "b": "1 - k",
+        "c": "1 / k",
+        "d": "k / (1 + k)"
+      },
+      "answer": "b",
+      "explanation": "Weight of copper is proportional to (Ampere-turns × Mean length of turn). In an auto-transformer, this simplifies to $W_a = (1 - k) W_{2w}$[cite: 1]."
+    },
+    {
+      "q_no": 207,
+      "question": "C.L. Wadhwa states that an auto-transformer is preferred over a 2-winding transformer when the transformation ratio 'k' is:",
+      "exam": "Textbook: C.L. Wadhwa",
+      "year": 2024,
+      "topic": "Selection Criteria",
+      "options": {
+        "a": "Very small (e.g., 0.1)",
+        "b": "Very large (e.g., 10)",
+        "c": "Close to unity (e.g., 0.9)",
+        "d": "Equal to zero"
+      },
+      "answer": "c",
+      "explanation": "The benefits of higher efficiency, lower cost, and better regulation are most pronounced when $k$ is near 1[cite: 1]."
+    },
+    {
+      "q_no": 208,
+      "question": "In a step-down auto-transformer, if the primary current is $I_1$ and secondary current is $I_2$, the current in the common portion of the winding is:",
+      "exam": "Standard Textbook",
+      "year": 2024,
+      "topic": "Current Distribution",
+      "options": {
+        "a": "$I_1 + I_2$",
+        "b": "$I_1 - I_2$",
+        "c": "$I_2 - I_1$",
+       "d": "sqrt(I1^2 + I2^2)"
+      },
+      "answer": "c",
+      "explanation": "In step-down mode, $I_2 > I_1$. Since the currents flow in opposite directions in the common section, the resultant is $I_2 - I_1$[cite: 1]."
+    },
+    {
+      "q_no": 209,
+      "question": "What is the primary reason for the higher efficiency of an auto-transformer construction compared to a two-winding transformer?",
+      "exam": "Standard Textbook",
+      "year": 2024,
+      "topic": "Efficiency",
+      "options": {
+        "a": "Higher operating frequency",
+        "b": "Lower $I^2R$ and core losses",
+        "c": "Use of high-grade copper",
+        "d": "Elimination of stray load losses"
+      },
+      "answer": "b",
+      "explanation": "With less conductor and core material, both the copper losses and magnetic losses are significantly reduced[cite: 1]."
+    },
+    {
+      "q_no": 210,
+      "question": "The percentage impedance of an auto-transformer is _______ that of a 2-winding transformer of the same rating.",
+      "exam": "Textbook: P.S. Bimbhra",
+      "year": 2024,
+      "topic": "Fault Analysis",
+      "options": {
+        "a": "Greater than",
+        "b": "Less than",
+        "c": "Equal to",
+        "d": "Double"
+      },
+      "answer": "b",
+      "explanation": "Lower leakage reactance and resistance lead to a lower percentage impedance, which is why auto-transformers have higher short-circuit currents[cite: 1]."
+    },
+    {
+      "q_no": 211,
+      "question": "In the construction of a variable auto-transformer (Variac), why is a carbon brush used for tapping?",
+      "exam": "Standard Textbook",
+      "year": 2024,
+      "topic": "Constructional Details",
+      "options": {
+        "a": "To reduce weight",
+        "b": "To prevent short-circuiting of adjacent turns",
+        "c": "To increase cooling",
+        "d": "To increase the transformation ratio"
+      },
+      "answer": "b",
+      "explanation": "Carbon has high resistance compared to copper; when it bridges two turns, it limits the circulating current to a safe level[cite: 1]."
+    },
+    {
+      "q_no": 212,
+      "question": "The power transferred inductively in an auto-transformer is proportional to:",
+      "exam": "Standard Textbook",
+      "year": 2024,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "k",
+        "b": "1 - k",
+        "c": "1 / k",
+        "d": "$k^2$"
+      },
+      "answer": "b",
+      "explanation": "Inductive power transfer occurs via the magnetic field, and its fraction is given by $(1 - k)$[cite: 1]."
+    },
+    {
+      "q_no": 213,
+      "question": "The total volume of copper used in an auto-transformer is minimized when the turns ratio is:",
+      "exam": "Textbook: C.L. Wadhwa",
+      "year": 2024,
+      "topic": "Optimization",
+      "options": {
+        "a": "Greater than 2",
+        "b": "Less than 0.5",
+        "c": "Equal to 1",
+        "d": "Infinite"
+      },
+      "answer": "c",
+      "explanation": "As the transformation ratio approaches unity, the volume of copper required for the series winding approaches zero[cite: 1]."
+    },
+    {
+      "q_no": 214,
+      "question": "According to V.K. Mehta, the saving in copper in an auto-transformer is ______ as compared to an ordinary two-winding transformer for the same output.",
+      "exam": "V.K. Mehta: Principles of Power Systems",
+      "year": 2024,
+      "topic": "Copper Saving",
+      "options": {
+        "a": "k",
+        "b": "1 - k",
+        "c": "k / (1-k)",
+        "d": "1 / k"
+      },
+      "answer": "a",
+      "explanation": "Weight of copper saved = $k \\times$ (Weight of copper in 2-winding transformer). Therefore, the actual weight used is $(1-k) \\times W_{2w}$[cite: 1]."
+    },
+    {
+      "q_no": 215,
+      "question": "Made Easy Publication: For a transformation ratio of $k = 0.9$, the percentage of power transferred conductively in an auto-transformer is:",
+      "exam": "Made Easy: Postal Study Course",
+      "year": 2023,
+      "topic": "Power Transfer",
+      "options": {
+        "a": "10%",
+        "b": "90%",
+        "c": "50%",
+        "d": "100%"
+      },
+      "answer": "b",
+      "explanation": "Conductive power transfer is equal to $k \\times$ Total Power. For $k=0.9$, it is $0.9 \\times 100 = 90\\%$[cite: 1]."
+    },
+    {
+      "q_no": 216,
+      "question": "IES Master: In an auto-transformer construction, a major drawback from a safety perspective is:",
+      "exam": "IES Master: ESE Topic-wise Solved",
+      "year": 2024,
+      "topic": "Constructional Drawback",
+      "options": {
+        "a": "High leakage reactance",
+        "b": "Lack of electrical isolation between primary and secondary",
+        "c": "High core losses",
+        "d": "Difficult cooling arrangement"
+      },
+      "answer": "b",
+      "explanation": "The direct electrical connection between the high-voltage and low-voltage sides poses a risk of high voltage appearing on the load side if the common winding fails[cite: 1]."
+    },
+    {
+      "q_no": 217,
+      "question": "V.K. Mehta: In a step-up auto-transformer, the series winding is connected between:",
+      "exam": "V.K. Mehta: Objective Electrical Technology",
+      "year": 2024,
+      "topic": "Step-up Construction",
+      "options": {
+        "a": "Input and Output terminals",
+        "b": "One input terminal and one output terminal",
+        "c": "Common terminal and Output terminal",
+        "d": "Neutral and Earth"
+      },
+      "answer": "b",
+      "explanation": "The series winding is the section of the winding that is not common to both circuits, effectively 'adding' voltage to the input to produce a higher output[cite: 1]."
+    },
+    {
+      "q_no": 218,
+      "question": "Made Easy Publication: The leakage impedance of an auto-transformer is low because:",
+      "exam": "Made Easy: ESE Workbook",
+      "year": 2025,
+      "topic": "Leakage Reactance",
+      "options": {
+        "a": "It has no secondary winding",
+        "b": "The windings are physically close and share a common section",
+        "c": "It uses an air core",
+        "d": "It operates at low flux density"
+      },
+      "answer": "b",
+      "explanation": "Since a portion of the winding is shared, there is less space for leakage flux to pass between windings compared to isolated two-winding types[cite: 1]."
+    },
+    {
+      "q_no": 219,
+      "question": "IES Master: The variable auto-transformer (Variac) construction uses a carbon brush instead of a metal contact to:",
+      "exam": "IES Master: Practice Question Bank",
+      "year": 2024,
+      "topic": "Variac Design",
+      "options": {
+        "a": "Reduce friction",
+        "b": "Limit circulating currents when the brush bridges two turns",
+        "c": "Increase the voltage range",
+        "d": "Provide better cooling"
+      },
+      "answer": "b",
+      "explanation": "The relatively high resistance of carbon prevents a dead short-circuit between adjacent turns during the sliding action[cite: 1]."
+    },
+    {
+      "q_no": 220,
+      "question": "V.K. Mehta: The rating of a 10 kVA, 2-winding transformer when reconnected as an auto-transformer with $V_H=2000V$ and $V_L=1800V$ is:",
+      "exam": "V.K. Mehta: Principles of Electrical Machines",
+      "year": 2024,
+      "topic": "Rating Re-calculation",
+      "options": {
+        "a": "100 kVA",
+        "b": "90 kVA",
+        "c": "11.11 kVA",
+        "d": "20 kVA"
+      },
+      "answer": "a",
+      "explanation": "New Rating $= [V_H / (V_H - V_L)] \\times S_{2w} = [2000 / (2000 - 1800)] \\times 10 = 100$ kVA[cite: 1]."
+    },
+    {
+      "q_no": 221,
+      "question": "IES Master: In an auto-transformer, which section of the winding requires a larger cross-sectional area of conductor in step-down operation?",
+      "exam": "IES Master: AE Solved Papers",
+      "year": 2023,
+      "topic": "Winding Thickness",
+      "options": {
+        "a": "Series winding",
+        "b": "Common winding",
+        "c": "The entire winding",
+        "d": "Input leads only"
+      },
+      "answer": "b",
+      "explanation": "In step-down, the common winding carries $(I_2 - I_1)$. Since $I_2$ is often much larger than $I_1$ at small ratios, this section handles high current[cite: 1]."
+    },
+    {
+      "q_no": 222,
+      "question": "In the design of an auto-transformer, the window space factor ($K_w$) is generally higher than a 2-winding transformer because:",
+      "exam": "Machine Design Advanced",
+      "year": 2024,
+      "topic": "Design Parameters",
+      "options": {
+        "a": "The insulation between primary and secondary is reduced or eliminated",
+        "b": "The core uses high-permeability Mu-metal",
+        "c": "The winding is always made of silver",
+        "d": "It operates at a higher flux density"
+      },
+      "answer": "a",
+      "explanation": "Since the primary and secondary are part of the same winding, the heavy interlayer insulation required for high-voltage isolation in 2-winding designs is significantly reduced[cite: 1]."
+    },
+    {
+      "q_no": 223,
+      "question": "The total volume of copper in an auto-transformer is $V_a = V_{2w}(1 - k)$. At what value of $k$ is the weight of copper in the common section exactly half of the series section?",
+      "exam": "Analytical Engineering",
+      "year": 2024,
+      "topic": "Material Distribution",
+      "options": {
+        "a": "0.33",
+        "b": "0.5",
+        "c": "0.67",
+        "d": "0.75"
+      },
+      "answer": "a",
+      "explanation": "This requires solving the ampere-turn balance across the two segments; at $k=1/3$, the volume distribution follows this specific ratio[cite: 1]."
+    },
+    {
+      "q_no": 224,
+      "question": "When designing an auto-transformer for a 'Variac' application, the core is typically toroidal. The primary reason for this construction is:",
+      "exam": "Design Practice",
+      "year": 2025,
+      "topic": "Core Topology",
+      "options": {
+        "a": "To eliminate leakage flux entirely",
+        "b": "To provide a continuous smooth surface for the sliding carbon brush",
+        "c": "To reduce eddy current losses in the tank",
+        "d": "To simplify the cooling system"
+      },
+      "answer": "b",
+      "explanation": "Toroidal cores allow for a circular winding path where a brush can rotate 360 degrees to provide smooth voltage control[cite: 1]."
+    },
+    {
+      "q_no": 225,
+      "question": "In terms of 'Machine Design', the frame size of an auto-transformer is determined by the 'Design kVA' ($S_d$). For a throughput of 100 kVA and $k=0.9$, the $S_d$ is:",
+      "exam": "Transformer Design",
+      "year": 2024,
+      "topic": "Sizing",
+      "options": {
+        "a": "100 kVA",
+        "b": "90 kVA",
+        "c": "10 kVA",
+        "d": "190 kVA"
+      },
+      "answer": "c",
+      "explanation": "Design kVA = Output kVA $\\times (1 - k)$. The physical size of the core and windings is only equivalent to a 10 kVA 2-winding transformer[cite: 1]."
+    },
+    {
+      "q_no": 226,
+      "question": "Which specific phenomenon must be accounted for when an auto-transformer is used in a system with a non-solidly grounded neutral?",
+      "exam": "System Protection",
+      "year": 2024,
+      "topic": "Operational Construction",
+      "options": {
+        "a": "Ferroresonance",
+        "b": "Harmonic suppression",
+        "c": "Oscillatory overvoltages on the LV side during a HV ground fault",
+        "d": "Increased skin effect"
+      },
+      "answer": "c",
+      "explanation": "Due to the metallic connection, a ground fault on the HV side can shift the neutral potential, causing the LV side to experience voltages far exceeding its insulation rating[cite: 1]."
+    },
+    {
+      "q_no": 227,
+      "question": "During the construction of high-power auto-transformers, 'tertiary delta windings' are often added. Their primary structural purpose is:",
+      "exam": "Power System Design",
+      "year": 2023,
+      "topic": "Winding Additions",
+      "options": {
+        "a": "To increase the copper saving",
+        "b": "To provide a path for third harmonic currents and stabilize the neutral",
+        "c": "To increase the leakage reactance",
+        "d": "To act as a mechanical support for the main winding"
+      },
+      "answer": "b",
+      "explanation": "Delta tertiaries suppress 3rd harmonics which would otherwise cause interference or neutral instability in star-connected auto-transformers[cite: 1]."
+    },
+    {
+      "q_no": 228,
+      "question": "In 'graded insulation' construction of an auto-transformer, the insulation level near the neutral point is:",
+      "exam": "High Voltage Design",
+      "year": 2024,
+      "topic": "Insulation Design",
+      "options": {
+        "a": "The same as the line end",
+        "b": "Higher than the line end",
+        "c": "Reduced significantly",
+        "d": "Eliminated entirely"
+      },
+      "answer": "c",
+      "explanation": "Since the neutral is typically grounded or at low potential, the insulation thickness can be progressively reduced toward the neutral to save space and cost[cite: 1]."
+    },
+    {
+      "q_no": 229,
+      "question": "The short-circuit current in an auto-transformer is significantly higher than in a 2-winding transformer. Physically, the winding must be designed with:",
+      "exam": "Mechanical Design",
+      "year": 2025,
+      "topic": "Mechanical Strength",
+      "options": {
+        "a": "More insulation",
+        "b": "Higher mechanical bracing and robust end-clamping",
+        "c": "Smaller conductor cross-section",
+        "d": "Lighter core laminations"
+      },
+      "answer": "b",
+      "explanation": "Lower leakage impedance leads to massive fault currents; the resulting electromagnetic forces require superior mechanical reinforcement[cite: 1]."
+    },
+    {
+      "q_no": 230,
+      "question": "In a 3-phase auto-transformer construction, 'Magnetic Unbalance' occurs if:",
+      "exam": "Advanced Theory",
+      "year": 2024,
+      "topic": "Magnetic Circuit",
+      "options": {
+        "a": "The load is balanced",
+        "b": "The magnetic paths for the three phases are of unequal lengths",
+        "c": "Copper savings are maximized",
+        "d": "The core is toroidal"
+      },
+      "answer": "b",
+      "explanation": "Standard 3-limbed cores have shorter central paths than outer paths, leading to unequal magnetizing currents in the phases[cite: 1]."
+    },
+    {
+      "q_no": 231,
+      "question": "Why is 'Step-up' auto-transformer construction considered more dangerous for the source than 'Step-down'?",
+      "exam": "Fault Analysis",
+      "year": 2024,
+      "topic": "Safety Construction",
+      "options": {
+        "a": "It uses more copper",
+        "b": "A short circuit on the secondary side reflects a much larger current on the primary",
+        "c": "It has higher core losses",
+        "d": "The leakage reactance is zero"
+      },
+      "answer": "b",
+      "explanation": "The current transformation ratio increases the reflected fault current, which can exceed the thermal limits of the primary winding quickly[cite: 1]."
+    },
+    {
+      "q_no": 232,
+      "question": "In the design of a large power auto-transformer, 'In-tank shielding' using copper or magnetic shunts is employed primarily to:",
+      "exam": "Machine Design: Thermal & Magnetic",
+      "year": 2025,
+      "topic": "Loss Management",
+      "options": {
+        "a": "Increase the mechanical strength of the core",
+        "b": "Prevent hot spots in the tank caused by stray leakage flux",
+        "c": "Provide a path for third harmonic currents",
+        "d": "Decrease the insulation requirement"
+      },
+      "answer": "b",
+      "explanation": "High current densities in auto transformers create significant stray fields; shunts divert this flux away from the steel tank to prevent localized heating[cite: 1]."
+    },
+    {
+      "q_no": 233,
+      "question": "The 'Specific Magnetic Loading' ($q$) in an auto-transformer design is usually chosen higher than a 2-winding transformer because:",
+      "exam": "Advanced Machine Design",
+      "year": 2024,
+      "topic": "Design Constraints",
+      "options": {
+        "a": "The winding temperature is lower",
+        "b": "The total volume of iron is smaller, allowing for better heat dissipation",
+        "c": "The window space factor is lower",
+        "d": "It requires less magnetizing current"
+      },
+      "answer": "b",
+      "explanation": "Because the physical core is smaller (sized for $(1-k)$ rating), the heat generated can often be managed more efficiently with a higher flux density[cite: 1]."
+    },
+    {
+      "q_no": 234,
+      "question": "During the construction of a three-winding auto-transformer (including a tertiary), the leakage reactance between the tertiary and the secondary is usually:",
+      "exam": "Transformer Impedance Design",
+      "year": 2024,
+      "topic": "Reactance Design",
+      "options": {
+        "a": "Lower than the primary-secondary reactance",
+        "b": "Higher than the primary-secondary reactance",
+        "c": "Zero",
+        "d": "Negligible"
+      },
+      "answer": "b",
+      "explanation": "The physical separation required for insulation and the reduced power rating of the tertiary winding naturally result in higher leakage reactance[cite: 1]."
+    },
+    {
+      "q_no": 235,
+      "question": "Which constructional technique is used to balance the radial electromagnetic forces in an auto-transformer under short-circuit?",
+      "exam": "Mechanical Design of Electrical Machines",
+      "year": 2026,
+      "topic": "Mechanical Stress",
+      "options": {
+        "a": "Using aluminum instead of copper",
+        "b": "Using concentric windings with precise alignment of magnetic centers",
+        "c": "Reducing the number of turns",
+        "d": "Increasing the core diameter"
+      },
+      "answer": "b",
+      "explanation": "Misalignment of the magnetic centers of the series and common windings causes severe axial thrust; precise concentricity is a design necessity[cite: 1]."
+    },
+    {
+      "q_no": 236,
+      "question": "In an auto-transformer design, the 'Current Density' in the common winding ($J_c$) and series winding ($J_s$) is typically kept:",
+      "exam": "Design Optimization",
+      "year": 2024,
+      "topic": "Current Density",
+      "options": {
+        "a": "Equal to minimize local hotspots",
+        "b": "Higher in the common winding",
+        "c": "Lower in the common winding",
+        "d": "Zero"
+      },
+      "answer": "a",
+      "explanation": "To ensure uniform cooling and prevent differential thermal expansion between winding segments, designers target a uniform current density[cite: 1]."
+    },
+    {
+      "q_no": 237,
+      "question": "What is the effect on 'Core Loss' when a 2-winding transformer is reconnected as an auto-transformer and operated at its new rated voltage?",
+      "exam": "Operational Design",
+      "year": 2024,
+      "topic": "Losses",
+      "options": {
+        "a": "It increases significantly",
+        "b": "It decreases significantly",
+        "c": "It remains almost the same",
+        "d": "It doubles"
+      },
+      "answer": "c",
+      "explanation": "Core loss depends on the flux density, which remains the same as long as the voltage per turn (V/f ratio) is maintained[cite: 1]."
+    },
+    {
+      "q_no": 238,
+      "question": "In 'Machine Design', the window area ($A_w$) for an auto-transformer is calculated based on which current value?",
+      "exam": "Winding Design",
+      "year": 2025,
+      "topic": "Window Design",
+      "options": {
+        "a": "The arithmetic sum of $I_1$ and $I_2$",
+        "b": "The algebraic difference $(I_2 - I_1)$ for the common section and $I_1$ for the series section",
+        "c": "The secondary current $I_2$ only",
+        "d": "The primary current $I_1$ only"
+      },
+      "answer": "b",
+      "explanation": "The total area required is the sum of the copper cross-sections of both the series part (carrying $I_1$) and the common part (carrying $I_2 - I_1$)[cite: 1]."
+    },
+    {
+      "q_no": 239,
+      "question": "A 'Non-interleaved' winding construction in an auto-transformer would result in:",
+      "exam": "Reactance and Design",
+      "year": 2024,
+      "topic": "Winding Type",
+      "options": {
+        "a": "Lower leakage reactance",
+        "b": "Higher leakage reactance",
+        "c": "Higher efficiency",
+        "d": "Lower cost"
+      },
+      "answer": "b",
+      "explanation": "Interleaving (sandwiching) sections of the winding reduces the flux path length between coils, lowering leakage; non-interleaved designs increase it[cite: 1]."
+    },
+    {
+      "q_no": 240,
+      "question": "Why is the 'Tank Size' of an auto-transformer often smaller than a two-winding transformer of the same kVA rating?",
+      "exam": "General Construction",
+      "year": 2026,
+      "topic": "Physical Dimensions",
+      "options": {
+        "a": "It uses less oil for insulation",
+        "b": "The active material (core and copper) volume is significantly less",
+        "c": "The bushings are smaller",
+        "d": "It does not require cooling fans"
+      },
+      "answer": "b",
+      "explanation": "Physical volume of a transformer is proportional to its Design kVA, which is $(1-k)$ times the output kVA for an auto transformer[cite: 1]."
+    },
+    {
+      "q_no": 241,
+      "question": "In 3-phase auto-transformer construction, 'Y-Y' connection with a common neutral is common. This neutral must be grounded to:",
+      "exam": "High Voltage Practice",
+      "year": 2024,
+      "topic": "Grounding Design",
+      "options": {
+        "a": "Reduce core losses",
+        "b": "Prevent 'neutral shift' and overvoltages during unbalanced conditions",
+        "c": "Increase the copper savings",
+        "d": "Suppress only the 5th harmonic"
+      },
+      "answer": "b",
+      "explanation": "The electrical connection between windings means a floating neutral could allow the LV side voltage to rise to HV levels during a fault[cite: 1]."
+    },
+    {
+      "q_no": 242,
+      "question": "In 'Machine Design', the term 'window space factor' ($K_w$) for a large auto-transformer is affected by:",
+      "exam": "Advanced Electrical Design",
+      "year": 2024,
+      "topic": "Space Factor",
+      "options": {
+        "a": "Only the copper area",
+        "b": "The ratio of copper area to total window area, including insulation and cooling ducts",
+        "c": "The core loss per kilogram",
+        "d": "The frequency of the supply"
+      },
+      "answer": "b",
+      "explanation": "In auto transformers, $K_w$ is typically higher than in 2-winding transformers because the shared winding reduces the total volume of insulation required between high and low voltage sections[cite: 1]."
+    },
+    {
+      "q_no": 243,
+      "question": "Which constructional feature is essential for a 3-phase auto-transformer to handle a third-harmonic circulating current?",
+      "exam": "PSU Technical Interview",
+      "year": 2025,
+      "topic": "Harmonic Management",
+      "options": {
+        "a": "Increasing core laminations",
+        "b": "Providing a delta-connected tertiary winding",
+        "c": "Using a 5-limb core construction",
+        "d": "Grounding the series winding"
+      },
+      "answer": "b",
+      "explanation": "A delta tertiary winding provides a low-impedance path for 3rd harmonic currents, preventing them from entering the line and distorting the voltage waveform[cite: 1]."
+    },
+    {
+      "q_no": 244,
+      "question": "The 'Design kVA' of an auto-transformer determines its physical weight. If a 500 kVA transformer has a ratio $k = 0.8$, for what kVA is the core actually designed?",
+      "exam": "Design Calculation",
+      "year": 2024,
+      "topic": "Sizing",
+      "options": {
+        "a": "500 kVA",
+        "b": "400 kVA",
+        "c": "100 kVA",
+        "d": "900 kVA"
+      },
+      "answer": "c",
+      "explanation": "Design kVA = Output kVA $\\times (1 - k)$. Here, $500 \\times (1 - 0.8) = 100$ kVA. The core is physically equivalent to a 100 kVA two-winding unit[cite: 1]."
+    },
+    {
+      "q_no": 245,
+      "question": "In 'Machine Design', the use of 'Stepped Cores' in auto-transformer construction is primarily to:",
+      "exam": "Core Design Fundamentals",
+      "year": 2026,
+      "topic": "Core Geometry",
+      "options": {
+        "a": "Reduce the cost of laminations",
+        "b": "Improve the 'Space Factor' of the winding by approximating a circular cross-section",
+        "c": "Eliminate eddy current losses",
+        "d": "Increase the mechanical strength of the tank"
+      },
+      "answer": "b",
+      "explanation": "Circular windings have the best mechanical strength against radial forces; stepped cores allow a circular coil to fit tightly with minimum wasted space[cite: 1]."
+    },
+    {
+      "q_no": 246,
+      "question": "Why is the cooling system of an auto-transformer often more complex than a 2-winding transformer of the same kVA?",
+      "exam": "Thermal Design",
+      "year": 2024,
+      "topic": "Thermal Management",
+      "options": {
+        "a": "It produces more heat per kVA",
+        "b": "The smaller physical size (frame) provides less surface area for natural heat dissipation",
+        "c": "The oil degrades faster in auto-transformers",
+        "d": "It uses higher current densities"
+      },
+      "answer": "b",
+      "explanation": "Since the physical frame is smaller for the same power output, the power-to-surface-area ratio is higher, requiring forced cooling (ONAF/OFAF)[cite: 1]."
+    },
+    {
+      "q_no": 247,
+      "question": "In high-voltage auto-transformers, 'Electrostatic Shielding' between windings is used to:",
+      "exam": "Insulation Design",
+      "year": 2025,
+      "topic": "Shielding",
+      "options": {
+        "a": "Increase the magnetic coupling",
+        "b": "Uniformly distribute the surge voltage stress across the winding turns",
+        "c": "Reduce the weight of the core",
+        "d": "Prevent the neutral from shifting"
+      },
+      "answer": "b",
+      "explanation": "Surge voltages (like lightning) tend to concentrate on the end turns; shielding helps distribute this stress to prevent insulation puncture[cite: 1]."
+    },
+    {
+      "q_no": 248,
+      "question": "What is the consequence of 'Ampere-Turn Unbalance' in the construction of an auto-transformer series and common winding?",
+      "exam": "Mechanical Fault Analysis",
+      "year": 2024,
+      "topic": "Winding Forces",
+      "options": {
+        "a": "Reduced efficiency",
+        "b": "Excessive axial forces that can crush the winding or end-insulation",
+        "c": "Increased core saturation",
+        "d": "Lowering of the frequency"
+      },
+      "answer": "b",
+      "explanation": "If the magnetic centers of the two winding sections do not align, the resulting axial forces during a short circuit can lead to mechanical collapse[cite: 1]."
+    },
+    {
+      "q_no": 249,
+      "question": "During design, the 'Mean Length of Turn' ($L_{mt}$) for an auto-transformer is calculated for:",
+      "exam": "Winding Calculation",
+      "year": 2024,
+      "topic": "Winding Geometry",
+      "options": {
+        "a": "The series winding only",
+        "b": "The common winding only",
+        "c": "Both sections combined as a single continuous winding",
+        "d": "The core circumference only"
+      },
+      "answer": "c",
+      "explanation": "Since it is a single winding, the $L_{mt}$ is calculated for the combined coil to determine total copper weight and resistance[cite: 1]."
+    },
+    {
+      "q_no": 250,
+      "question": "In 'Machine Design', the use of 'Cold Rolled Grain Oriented' (CRGO) steel in auto-transformers allows for:",
+      "exam": "Material Science in Design",
+      "year": 2026,
+      "topic": "Core Material",
+      "options": {
+        "a": "Higher operating frequency",
+        "b": "Higher flux density with lower core losses",
+        "c": "Elimination of the need for oil",
+        "d": "Reducing the current in the common winding"
+      },
+      "answer": "b",
+      "explanation": "CRGO steel has high permeability in the direction of rolling, which minimizes hysterisis loss even at high flux densities[cite: 1]."
+    },
+    {
+      "q_no": 251,
+      "question": "A design choice to increase the 'Leakage Reactance' in an auto-transformer would involve:",
+      "exam": "Reactance Design",
+      "year": 2025,
+      "topic": "Design Adjustment",
+      "options": {
+        "a": "Using a smaller core",
+        "b": "Increasing the physical separation (duct size) between the winding sections",
+        "c": "Using a toroidal core",
+        "d": "Reducing the number of turns"
+      },
+      "answer": "b",
+      "explanation": "Increasing the gap through which leakage flux can pass directly increases the leakage reactance of the machine[cite: 1]."
+    },
+    {
+      "q_no": 252,
+      "question": "In 'Machine Design', the current density in the common winding of a step-down auto-transformer is calculated based on:",
+      "exam": "Advanced Design Exam",
+      "year": 2024,
+      "topic": "Current Density",
+      "options": {
+        "a": "Secondary current I2",
+        "b": "Primary current I1",
+        "c": "The phasor difference (I2 - I1)",
+        "d": "The phasor sum (I2 + I1)"
+      },
+      "answer": "c",
+      "explanation": "The common section carries the difference of the currents; sizing the conductor for this lower value is a key constructional economy[cite: 1]."
+    },
+    {
+      "q_no": 253,
+      "question": "When designing the magnetic circuit, a 'Flux Density' ($B_{max}$) higher than 1.7 Tesla is usually avoided in CRGO steel cores because:",
+      "exam": "Core Design",
+      "year": 2025,
+      "topic": "Magnetic Saturation",
+      "options": {
+        "a": "It increases the weight of the core",
+        "b": "It leads to disproportionate increases in magnetizing current and harmonics",
+        "c": "It makes the transformer noise-free",
+        "d": "It reduces eddy current losses"
+      },
+      "answer": "b",
+      "explanation": "Approaching saturation levels causes the magnetizing current to become highly non-sinusoidal, leading to EMI and heating issues[cite: 1]."
+    },
+    {
+      "q_no": 254,
+      "question": "Which constructional feature helps in reducing the 'Transverse Leakage Flux' in auto transformer windings?",
+      "exam": "Machine Design Research",
+      "year": 2024,
+      "topic": "Flux Management",
+      "options": {
+        "a": "Using thicker insulation",
+        "b": "Using 'Continuously Transposed Conductors' (CTC)",
+        "c": "Reducing the number of core steps",
+        "d": "Using a rectangular core"
+      },
+      "answer": "b",
+      "explanation": "CTC reduces eddy current losses within the conductors caused by leakage flux, which is critical in the compact design of auto transformers[cite: 1]."
+    },
+    {
+      "q_no": 255,
+      "question": "The 'Window Space Factor' ($K_w$) is mathematically defined as the ratio of:",
+      "exam": "Design Fundamentals",
+      "year": 2026,
+      "topic": "Space Factor",
+      "options": {
+        "a": "Core area to window area",
+        "b": "Net conductor area to total window area",
+        "c": "Iron weight to copper weight",
+        "d": "Primary turns to secondary turns"
+      },
+      "answer": "b",
+      "explanation": "A higher $K_w$ in auto transformers indicates more efficient use of the window space due to reduced inter-winding insulation[cite: 1]."
+    },
+    {
+      "q_no": 256,
+      "question": "In a 3-phase auto-transformer, a 'Five-Limb Core' is sometimes used instead of a 'Three-Limb Core' to:",
+      "exam": "Power Transformer Design",
+      "year": 2024,
+      "topic": "Core Topology",
+      "options": {
+        "a": "Increase the copper savings",
+        "b": "Reduce the overall height of the transformer for transportation",
+        "c": "Eliminate the need for a neutral",
+        "d": "Increase the leakage reactance"
+      },
+      "answer": "b",
+      "explanation": "Five-limb cores provide an alternative return path for flux, allowing for a reduction in the height of the top and bottom yokes[cite: 1]."
+    },
+    {
+      "q_no": 257,
+      "question": "During short-circuit conditions, the 'Radial Force' on the outer winding of an auto-transformer is:",
+      "exam": "Mechanical Stress Analysis",
+      "year": 2025,
+      "topic": "Electromagnetic Forces",
+      "options": {
+        "a": "Compressive (tending to crush the winding)",
+        "b": "Tensile (tending to burst the winding)",
+        "c": "Zero",
+        "d": "Always axial"
+      },
+      "answer": "b",
+      "explanation": "Electromagnetic repulsion between the inner and outer windings creates a 'hoop stress' that tries to expand the outer coil[cite: 1]."
+    },
+    {
+      "q_no": 258,
+      "question": "A 'Sandwich Winding' (Interleaved) construction is chosen over 'Concentric Winding' in certain designs to:",
+      "exam": "Winding Design",
+      "year": 2024,
+      "topic": "Winding Type",
+      "options": {
+        "a": "Increase leakage reactance",
+        "b": "Reduce leakage reactance by reducing the flux path length",
+        "c": "Simplify the insulation process",
+        "d": "Save core material"
+      },
+      "answer": "b",
+      "explanation": "By interleaving primary and secondary sections, the effective distance between them is minimized, lowering the reactance[cite: 1]."
+    },
+    {
+      "q_no": 259,
+      "question": "In 'Machine Design', the 'Standard Temperature Rise' for oil-immersed auto-transformers (Class A) is generally limited to:",
+      "exam": "Thermal Standards",
+      "year": 2026,
+      "topic": "Cooling",
+      "options": {
+        "a": "100°C",
+        "b": "50°C to 60°C over ambient",
+        "c": "200°C",
+        "d": "10°C"
+      },
+      "answer": "b",
+      "explanation": "These limits ensure the longevity of the cellulose insulation and prevent the chemical breakdown of the transformer oil[cite: 1]."
+    },
+    {
+      "q_no": 260,
+      "question": "What is the function of 'Pressboard Spacers' in the construction of auto-transformer windings?",
+      "exam": "Internal Construction",
+      "year": 2025,
+      "topic": "Insulation & Cooling",
+      "options": {
+        "a": "To increase the magnetic flux",
+        "b": "To provide mechanical support and create channels for oil circulation",
+        "c": "To reduce the weight of copper",
+        "d": "To act as a secondary winding"
+      },
+      "answer": "b",
+      "explanation": "Spacers maintain the 'ducts' necessary for oil to flow through the windings and carry away heat[cite: 1]."
+    },
+    {
+      "q_no": 261,
+      "question": "In high-power auto-transformers, why are the 'Bushings' on the neutral side often rated for a lower voltage than the line side?",
+      "exam": "Substation Design",
+      "year": 2024,
+      "topic": "Insulation Coordination",
+      "options": {
+        "a": "To save cost, as the neutral is typically grounded or near ground potential",
+        "b": "Because the neutral carries no current",
+        "c": "Because the neutral is always at HV potential",
+        "d": "To increase the transformation ratio"
+      },
+      "answer": "a",
+      "explanation": "Neutral end insulation can be 'graded' (reduced) if the system design ensures the neutral remains at low potential[cite: 1]."
+    },
+    {
+      "q_no": 262,
+      "question": "When designing an auto-transformer, 'Stray Losses' in the structural bolts and clamps are minimized by using:",
+      "exam": "Mechanical Design",
+      "year": 2025,
+      "topic": "Loss Management",
+      "options": {
+        "a": "Aluminum or non-magnetic stainless steel",
+        "b": "Cast iron",
+        "c": "High-carbon steel",
+        "d": "Copper plating"
+      },
+      "answer": "a",
+      "explanation": "Non-magnetic materials prevent the formation of eddy currents caused by leakage flux entering the mechanical supports[cite: 1]."
+    },
+    {
+      "q_no": 263,
+      "question": "The 'Specific Electric Loading' ($ac$) in machine design refers to:",
+      "exam": "Design Parameters",
+      "year": 2024,
+      "topic": "Electric Loading",
+      "options": {
+        "a": "Total ampere-conductors per unit of armature periphery",
+        "b": "Voltage per turn",
+        "c": "Flux per pole",
+        "d": "Current density in the core"
+      },
+      "answer": "a",
+      "explanation": "In transformers, this is an analogous measure of how much current is packed into the window space[cite: 1]."
+    },
+    {
+      "q_no": 264,
+      "question": "A 'Shell-Type' auto-transformer construction differs from 'Core-Type' by:",
+      "exam": "Structural Design",
+      "year": 2026,
+      "topic": "Core Type",
+      "options": {
+        "a": "Having the winding surround the core",
+        "b": "Having the magnetic circuit surround the windings",
+        "c": "Using no iron core",
+        "d": "Using only one winding section"
+      },
+      "answer": "b",
+      "explanation": "Shell-type designs provide better mechanical protection for the windings and are often used in high-current applications[cite: 1]."
+    },
+    {
+      "q_no": 265,
+      "question": "What happens to the 'No-Load Current' if the air gap in the core joints of an auto-transformer is increased?",
+      "exam": "Fault Analysis",
+      "year": 2025,
+      "topic": "Magnetizing Current",
+      "options": {
+        "a": "It decreases",
+        "b": "It increases significantly due to increased reluctance",
+        "c": "It remains the same",
+        "d": "It becomes zero"
+      },
+      "answer": "b",
+      "explanation": "Increased reluctance in the magnetic path requires more magnetizing ampere-turns to maintain the same flux[cite: 1]."
+    },
+    {
+      "q_no": 266,
+      "question": "In 'Machine Design', the 'Stacking Factor' ($K_s$) of a laminated core accounts for:",
+      "exam": "Core Design",
+      "year": 2024,
+      "topic": "Lamination",
+      "options": {
+        "a": "The space occupied by the copper",
+        "b": "The space lost to insulation between laminations",
+        "c": "The window area",
+        "d": "The frequency of operation"
+      },
+      "answer": "b",
+      "explanation": "A typical stacking factor is 0.9 to 0.95, meaning 5-10% of the core volume is non-magnetic insulation[cite: 1]."
+    },
+    {
+      "q_no": 267,
+      "question": "Which constructional adjustment is made to 'Tappings' in an auto-transformer to ensure magnetic symmetry is maintained?",
+      "exam": "Advanced Winding Design",
+      "year": 2025,
+      "topic": "Tap Design",
+      "options": {
+        "a": "Placing tappings at the ends of the winding",
+        "b": "Placing tappings in the center of the winding height",
+        "c": "Removing the core during tapping",
+        "d": "Increasing the frequency"
+      },
+      "answer": "b",
+      "explanation": "Central tapping helps keep the magnetic centers of the HV and LV parts aligned, reducing axial thrust[cite: 1]."
+    },
+    {
+      "q_no": 268,
+      "question": "The 'Eddy Current Loss' in an auto-transformer core is proportional to the square of:",
+      "exam": "Loss Analysis",
+      "year": 2024,
+      "topic": "Core Losses",
+      "options": {
+        "a": "Frequency and Flux Density",
+        "b": "Lamination thickness",
+        "c": "Both a and b",
+        "d": "Neither a nor b"
+      },
+      "answer": "c",
+      "explanation": "Both frequency ($f^2$) and thickness ($t^2$) are critical design factors for minimizing eddy losses[cite: 1]."
+    },
+    {
+      "q_no": 269,
+      "question": "In 'Machine Design', the use of 'Helical Windings' is preferred for auto-transformers when:",
+      "exam": "Low Voltage High Current Design",
+      "year": 2026,
+      "topic": "Winding Type",
+      "options": {
+        "a": "The voltage is very high",
+        "b": "The current is very high and the number of turns is low",
+        "c": "The core is made of air",
+        "d": "The frequency is DC"
+      },
+      "answer": "b",
+      "explanation": "Helical windings are mechanically robust and easily handle large conductor cross-sections[cite: 1]."
+    },
+    {
+      "q_no": 270,
+      "question": "The term 'Inrush Current' in an auto-transformer is primarily a result of:",
+      "exam": "Transient Analysis",
+      "year": 2025,
+      "topic": "Magnetizing Transients",
+      "options": {
+        "a": "Secondary short-circuit",
+        "b": "Magnetic saturation of the core during switching",
+        "c": "Winding resistance",
+        "d": "Oil contamination"
+      },
+      "answer": "b",
+      "explanation": "When energized at the zero-crossing of voltage, the flux can double, driving the core deep into saturation[cite: 1]."
+    },
+    {
+      "q_no": 271,
+      "question": "What is the 'Optimum Copper to Iron Ratio' in transformer design aimed at achieving?",
+      "exam": "Design Economics",
+      "year": 2024,
+      "topic": "Optimization",
+      "options": {
+        "a": "Maximum weight",
+        "b": "Minimum total cost or maximum efficiency",
+        "c": "Highest leakage reactance",
+        "d": "Zero losses"
+      },
+      "answer": "b",
+      "explanation": "Designers balance the cost of expensive copper against the cost of core steel to find the most economical build[cite: 1]."
+    }
+  ]
+}

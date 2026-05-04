@@ -1,0 +1,351 @@
+{
+  "topic_name": "Auto Transformer Load Sharing - (1980-2025)",
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Two auto-transformers are operating in parallel. The load sharing between them is determined by their:",
+      "exam": "ESE Prelims",
+      "year": 1985,
+      "topic": "Parallel Operation",
+      "options": {
+        "a": "Equivalent impedances",
+        "b": "Efficiency",
+        "c": "Ratings",
+        "d": "Core losses"
+      },
+      "answer": "a",
+      "explanation": "Transformers in parallel share load inversely proportional to their equivalent leakage impedances[cite: 1]."
+    },
+    {
+      "q_no": 2,
+      "question": "For ideal load sharing between two parallel auto-transformers, their per-unit impedances on a common base should be:",
+      "exam": "ESE Prelims",
+      "year": 1994,
+      "topic": "Impedance Matching",
+      "options": {
+        "a": "Zero",
+        "b": "Equal",
+        "c": "Inversely proportional to their kVA ratings",
+        "d": "Directly proportional to their kVA ratings"
+      },
+      "answer": "b",
+      "explanation": "When per-unit impedances are equal on a common base, transformers share the load exactly in proportion to their ratings[cite: 1]."
+    },
+    {
+      "q_no": 3,
+      "question": "If two parallel auto-transformers have different voltage ratios, it results in:",
+      "exam": "ESE Prelims",
+      "year": 2005,
+      "topic": "Voltage Ratios",
+      "options": {
+        "a": "Improved efficiency",
+        "b": "Higher power factor",
+        "c": "Circulating currents at no-load",
+        "d": "Automatic load balancing"
+      },
+      "answer": "c",
+      "explanation": "A difference in voltage ratios creates a resultant EMF that drives a circulating current through the local circuit of the windings[cite: 1]."
+    },
+    {
+      "q_no": 4,
+      "question": "Two auto-transformers A and B with equal ratings are in parallel. If $Z_A = 0.02 + j0.05$ pu and $Z_B = 0.04 + j0.10$ pu, which transformer will take more load?",
+      "exam": "GATE EE",
+      "year": 2012,
+      "topic": "Numerical Load Sharing",
+      "options": {
+        "a": "Transformer A",
+        "b": "Transformer B",
+        "c": "Both share equal load",
+        "d": "Depends on the load power factor"
+      },
+      "answer": "a",
+      "explanation": "The transformer with the lower impedance magnitude ($Z_A < Z_B$) will carry a larger share of the total load[cite: 1]."
+    },
+    {
+      "q_no": 5,
+      "question": "The condition that must be strictly satisfied for parallel operation of 3-phase auto-transformers is:",
+      "exam": "ESE Prelims",
+      "year": 2021,
+      "topic": "3-Phase Constraints",
+      "options": {
+        "a": "Same cooling method",
+        "b": "Same kVA rating",
+        "c": "Same phase sequence and phase shift",
+        "d": "Same manufacturer"
+      },
+      "answer": "c",
+      "explanation": "Incorrect phase sequence or phase shift can cause massive short-circuit currents between the units[cite: 1]."
+    },
+    {
+      "q_no": 6,
+      "question": "Two auto-transformers A and B with equal ratings are in parallel. If $Z_A = 0.02 + j0.05$ pu and $Z_B = 0.04 + j0.10$ pu, which transformer will take more load?",
+      "exam": "GATE EE",
+      "year": 2012,
+      "topic": "Numerical Load Sharing",
+      "options": {
+        "a": "Transformer A",
+        "b": "Transformer B",
+        "c": "Both share equal load",
+        "d": "Depends on the load power factor"
+      },
+      "answer": "a",
+      "explanation": "The transformer with the lower impedance magnitude ($Z_A < Z_B$) will carry a larger share of the total load[cite: 1]."
+    },
+    {
+      "q_no": 7,
+      "question": "For two parallel auto-transformers to share load in proportion to their kVA ratings, which of the following must be identical?",
+      "exam": "GATE EE",
+      "year": 1995,
+      "topic": "Per-Unit Impedance",
+      "options": {
+        "a": "Ohmic impedance",
+        "b": "Per-unit impedance on their own ratings",
+        "c": "Leakage reactance only",
+        "d": "Core loss resistance"
+      },
+      "answer": "b",
+      "explanation": "Load sharing is proportional to ratings if their per-unit impedances on their respective ratings are equal[cite: 1]."
+    },
+    {
+      "q_no": 8,
+      "question": "In parallel operation of auto-transformers, if the $X/R$ ratios are different, then:",
+      "exam": "GATE EE",
+      "year": 2003,
+      "topic": "Phasor Relationship",
+      "options": {
+        "a": "The transformers operate at the same power factor",
+        "b": "The transformers operate at different power factors",
+        "c": "The total load is shared equally regardless of impedance",
+        "d": "Circulating current is zero"
+      },
+      "answer": "b",
+      "explanation": "If $X/R$ ratios differ, the current phasors of the two transformers are displaced, leading to different operating power factors[cite: 1]."
+    },
+    {
+      "q_no": 9,
+      "question": "Two auto-transformers are connected in parallel to supply a common load. The load shared by each transformer is inversely proportional to its:",
+      "exam": "GATE EE",
+      "year": 1988,
+      "topic": "Impedance Principle",
+      "options": {
+        "a": "Equivalent leakage impedance",
+        "b": "Magnetizing reactance",
+        "c": "Transformation ratio",
+        "d": "Voltage rating"
+      },
+      "answer": "a",
+      "explanation": "Load distribution is governed by the current division rule in parallel circuits, making it inversely proportional to the leakage impedance[cite: 1]."
+    },
+    {
+      "q_no": 10,
+      "question": "A circulating current in parallel auto-transformers is primarily caused by a mismatch in:",
+      "exam": "GATE EE",
+      "year": 2017,
+      "topic": "Circulating Currents",
+      "options": {
+        "a": "kVA ratings",
+        "b": "Cooling systems",
+        "c": "Voltage ratios",
+        "d": "Load power factor"
+      },
+      "answer": "c",
+      "explanation": "Unequal voltage ratios create a potential difference that drives a circulating current even at no-load[cite: 1]."
+    },
+    {
+      "q_no": 171,
+      "question": "Which of the following conditions is absolutely necessary for the parallel operation of two auto-transformers?",
+      "exam": "UPRVUNL JE",
+      "year": 2016,
+      "topic": "Parallel Conditions",
+      "options": {
+        "a": "Same voltage ratio",
+        "b": "Same phase displacement",
+        "c": "Same phase sequence",
+        "d": "All of the above"
+      },
+      "answer": "d",
+      "explanation": "To avoid heavy circulating currents and ensure stable operation, voltage ratio, phase displacement, and phase sequence must be identical."
+    },
+    {
+      "q_no": 172,
+      "question": "If two parallel auto-transformers have unequal per-unit leakage impedances on a common base, the result will be:",
+      "exam": "YCT Practice",
+      "year": 2024,
+      "topic": "Load Proportionality",
+      "options": {
+        "a": "Equal load sharing",
+        "b": "Load sharing not proportional to kVA ratings",
+        "c": "Increased core losses",
+        "d": "Reduction in frequency"
+      },
+      "answer": "b",
+      "explanation": "Transformers share load based on their impedance. If Z_pu is unequal, the kVA shared by each unit will not match its rated capacity."
+    },
+    {
+      "q_no": 173,
+      "question": "In a transformer on load, the total primary current is approximately given by:",
+      "exam": "UPRVUNL JE",
+      "year": 2016,
+      "topic": "Current Components",
+      "options": {
+        "a": "Load component of secondary current only",
+        "b": "Vector sum of no-load current and load component of secondary current",
+        "c": "Magnetizing current only",
+        "d": "Secondary current multiplied by efficiency"
+      },
+      "answer": "b",
+      "explanation": "The primary current must provide both the core flux (no-load component) and balance the secondary MMF (load component)."
+    },
+    {
+      "q_no": 174,
+      "question": "Parallel operation of two auto-transformers is likely to be unsuccessful if they have:",
+      "exam": "YCT AE Vol-II",
+      "year": 2025,
+      "topic": "Operational Failure",
+      "options": {
+        "a": "Slightly different efficiencies",
+        "b": "Different cooling types",
+        "c": "Different phase sequences",
+        "d": "Different manufacturers"
+      },
+      "answer": "c",
+      "explanation": "A mismatched phase sequence results in a massive potential difference across the paralleling points, causing a short circuit."
+    },
+    {
+  
+      "q_no": 175,
+      "question": "Two auto-transformers are to be operated in parallel. Which of the following is the most essential condition to be satisfied?",
+      "exam": "ISRO Scientist/Engineer",
+      "year": 2015,
+      "topic": "Polarity and Phase",
+      "options": {
+        "a": "Same kVA rating",
+        "b": "Same polarity",
+        "c": "Same cooling system",
+        "d": "Same efficiency"
+      },
+      "answer": "b",
+      "explanation": "If polarity is incorrect, it results in a dead short circuit across the secondary windings[cite: 1]."
+    },
+    {
+      "q_no": 176,
+      "question": "In parallel operation of auto-transformers, a mismatch in voltage ratios leads to:",
+      "exam": "BSNL TTA/JE",
+      "year": 2016,
+      "topic": "Voltage Mismatch",
+      "options": {
+        "a": "Overheating of the core",
+        "b": "Circulating current at no-load",
+        "c": "Increase in frequency",
+        "d": "Improvement in power factor"
+      },
+      "answer": "b",
+      "explanation": "A difference in voltage ratios creates a resultant EMF that drives a circulating current through the low-impedance path of the windings[cite: 1]."
+    },
+    {
+      "q_no": 177,
+      "question": "To achieve proportional load sharing according to their ratings, two parallel auto-transformers must have:",
+      "exam": "KPTCL AE",
+      "year": 2018,
+      "topic": "Impedance Matching",
+      "options": {
+        "a": "Equal ohmic resistance",
+        "b": "Equal per-unit leakage impedance",
+        "c": "Different X/R ratios",
+        "d": "Equal magnetizing reactance"
+      },
+      "answer": "b",
+      "explanation": "When per-unit impedances are equal on a common base, the load shared by each transformer is exactly proportional to its kVA rating[cite: 1]."
+    },
+    {
+      "q_no": 178,
+      "question": "For 3-phase auto-transformers in parallel, the phase displacement between primary and secondary voltages must be:",
+      "exam": "TNPSC AE",
+      "year": 2019,
+      "topic": "Phase Shift",
+      "options": {
+        "a": "0 degrees",
+        "b": "180 degrees",
+        "c": "Identical for both units",
+        "d": "90 degrees"
+      },
+      "answer": "c",
+      "explanation": "Units must belong to the same vector group (e.g., Yna0) to ensure zero phase difference between their secondaries[cite: 1]."
+    },
+    {
+      "q_no": 179,
+      "question": "Which parameter determines the current division between two auto-transformers operating in parallel?",
+      "exam": "TRANSGENCO AE",
+      "year": 2021,
+      "topic": "Current Division",
+      "options": {
+        "a": "Core loss",
+        "b": "Leakage impedance",
+        "c": "Winding temperature",
+        "d": "Oil level"
+      },
+      "answer": "b",
+      "explanation": "The current shared is inversely proportional to the leakage impedance of the units[cite: 1]."
+    },
+    {
+      "q_no": 180,
+      "question": "If the X/R ratios of two parallel auto-transformers are different, then the units will:",
+      "exam": "MPSC AE",
+      "year": 2023,
+      "topic": "Power Factor",
+      "options": {
+        "a": "Share load equally",
+        "b": "Operate at different power factors",
+        "c": "Have zero circulating current",
+        "d": "Tripping due to over-frequency"
+      },
+      "answer": "b",
+      "explanation": "Mismatched X/R ratios cause a phase shift between the currents of the two transformers, leading to different operating power factors[cite: 1]."
+    },
+    {
+      "q_no": 181,
+      "question": "What happens if two auto-transformers with different phase sequences are connected in parallel?",
+      "exam": "APSC AE",
+      "year": 2024,
+      "topic": "Phase Sequence",
+      "options": {
+        "a": "The load is shared based on impedance",
+        "b": "One transformer acts as a motor",
+        "c": "A heavy short-circuit occurs",
+        "d": "The efficiency increases"
+      },
+      "answer": "c",
+      "explanation": "Mismatched phase sequences result in massive potential differences at the busbars, causing an immediate short circuit[cite: 1]."
+    },
+    {
+      "q_no": 182,
+      "question": "In parallel operation, if one auto-transformer has a higher per-unit impedance than the other, it will:",
+      "exam": "Rajasthan PSC AE",
+      "year": 2025,
+      "topic": "Relative Loading",
+      "options": {
+        "a": "Take more load",
+        "b": "Take less load",
+        "c": "Share equal load",
+        "d": "Not share any load"
+      },
+      "answer": "b",
+      "explanation": "The unit with higher impedance restricts current flow more, thereby taking a smaller share of the total load[cite: 1]."
+    },
+    {
+      "q_no": 183,
+      "question": "The total kVA capacity of two parallel auto-transformers is limited by the unit that reaches its:",
+      "exam": "HAL/BEL Management Trainee",
+      "year": 2026,
+      "topic": "Capacity Limit",
+      "options": {
+        "a": "Maximum efficiency point",
+        "b": "Minimum leakage reactance",
+        "c": "Rated capacity first",
+        "d": "Highest voltage ratio"
+      },
+      "answer": "c",
+      "explanation": "In mismatched units, the transformer with the lower relative impedance reaches its full-load rating before the other, limiting the total system load[cite: 1]."
+    }
+  ]
+}

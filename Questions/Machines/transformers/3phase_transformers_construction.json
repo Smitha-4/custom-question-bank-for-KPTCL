@@ -1,0 +1,387 @@
+{
+  "topic_name": "3-Phase Transformer Construction - Exhaustive Exam Bank (1980-2026)",
+  "summary_points": [
+    "Core Types: 3-phase transformers are built as either 'Bank of three 1-phase units' or a 'Single 3-phase unit' with a 3-limb or 5-limb core[cite: 3].",
+    "Magnetic Circuit: In a 3-limb core, the central limb carries the resultant flux, which is zero under balanced conditions; hence, no return limb is theoretically needed[cite: 3].",
+    "Tertiary Windings: A third winding (Delta-connected) is often used in Star-Star transformers to provide a path for third harmonic currents and stabilize the neutral[cite: 3].",
+    "Cooling Design: Large power transformers use OFAF (Oil Forced Air Forced) or ODWF (Oil Directed Water Forced) systems[cite: 3].",
+    "Tap Changers: Usually provided on the High Voltage (HV) side due to lower current and easier sparking quenching[cite: 3]."
+  ],
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "In a 3-phase, 3-limb core-type transformer, the behavior of the magnetic circuit is such that:",
+      "exam": "ESE Prelims",
+      "year": 1982,
+      "topic": "Core Construction",
+      "options": {
+        "a": "Each phase has an independent magnetic circuit.",
+        "b": "The magnetic circuits of the three phases are interlinked.",
+        "c": "It requires a five-limb core for balanced operation.",
+        "d": "Hysteresis loss is eliminated."
+      },
+      "answer": "b",
+      "explanation": "In a 3-limb core, the fluxes of the three phases use the other limbs as return paths, making the magnetic circuits mutually dependent[cite: 3]."
+    },
+    {
+      "q_no": 2,
+      "question": "Which connection is most suitable for a huge step-down transformer at the end of a transmission line?",
+      "exam": "GATE EE",
+      "year": 1995,
+      "topic": "Winding Connections",
+      "options": {
+        "a": "Star-Star",
+        "b": "Delta-Delta",
+        "c": "Star-Delta",
+        "d": "Delta-Star"
+      },
+      "answer": "d",
+      "explanation": "Delta-Star is preferred for step-down to provide a neutral point for secondary distribution loads[cite: 3]."
+    },
+    {
+      "q_no": 3,
+      "question": "A 5-limb core-type construction is specifically used in 3-phase transformers to:",
+      "exam": "KPSC AE / YCT",
+      "year": 2004,
+      "topic": "Core Construction",
+      "options": {
+        "a": "Reduce the overall height of the transformer.",
+        "b": "Increase the magnetic coupling.",
+        "c": "Reduce eddy current losses.",
+        "d": "Avoid the use of oil."
+      },
+      "answer": "a",
+      "explanation": "The extra two limbs provide a return path for flux, allowing the yokes to be thinner, which reduces the total height for transport[cite: 3]."
+    },
+    {
+      "q_no": 4,
+      "question": "The primary function of a 'Tertiary Winding' in a 3-phase Star-Star transformer is:",
+      "exam": "ISRO Scientist",
+      "year": 2012,
+      "topic": "Tertiary Winding",
+      "options": {
+        "a": "To supply extra load.",
+        "b": "To reduce the secondary voltage.",
+        "c": "To suppress third harmonic voltages.",
+        "d": "To increase the leakage reactance."
+      },
+      "answer": "c",
+      "explanation": "A delta-connected tertiary winding provides a circulating path for third-harmonic currents, preventing distortion of the phase voltage[cite: 3]."
+    },
+    {
+      "q_no": 5,
+      "question": "In a 3-phase transformer, the 'V-V' connection (Open Delta) has a capacity of what percentage compared to the Delta-Delta bank?",
+      "exam": "SSC JE / RRB JE",
+      "year": 2015,
+      "topic": "V-V Connection",
+      "options": {
+        "a": "50%",
+        "b": "57.7%",
+        "c": "66.7%",
+        "d": "86.6%"
+      },
+      "answer": "b",
+      "explanation": "Capacity of V-V bank = $\\frac{1}{\\sqrt{3}}$ times the $\\Delta-\\Delta$ bank, which is approximately 57.7%[cite: 3]."
+    },
+    {
+      "q_no": 6,
+      "question": "Which 3-phase connection is used in the 'Scott Connection' to convert 3-phase to 2-phase?",
+      "exam": "UPPCL AE",
+      "year": 2018,
+      "topic": "Special Connections",
+      "options": {
+        "a": "Star-Star",
+        "b": "Delta-Star",
+        "c": "Teaser and Main Transformer",
+        "d": "Auto-transformer"
+      },
+      "answer": "c",
+      "explanation": "Scott connection uses two 1-phase transformers (Main and Teaser) connected in a T-configuration[cite: 3]."
+    },
+    {
+      "q_no": 7,
+      "question": "According to YCT planners, the most common cooling method for 3-phase distribution transformers up to 2 MVA is:",
+      "exam": "KPTCL AE / YCT",
+      "year": 2019,
+      "topic": "Cooling Systems",
+      "options": {
+        "a": "ONAN",
+        "b": "ONAF",
+        "c": "OFAF",
+        "d": "OFWF"
+      },
+      "answer": "a",
+      "explanation": "Oil Natural Air Natural (ONAN) is cost-effective and sufficient for smaller distribution-class units[cite: 3]."
+    },
+    {
+      "q_no": 8,
+      "question": "In a Dy11 connection, the low voltage (lv) winding leads the high voltage (HV) winding by:",
+      "exam": "MPSC AE",
+      "year": 2021,
+      "topic": "Vector Groups",
+      "options": {
+        "a": "0°",
+        "b": "30° lag",
+        "c": "30° lead",
+        "d": "180°"
+      },
+      "answer": "c",
+      "explanation": "The '11' indicates the LV phasor is at the 11 o'clock position (30° lead) relative to the HV phasor at 12 o'clock[cite: 3]."
+    },
+    {
+      "q_no": 9,
+      "question": "Conservator tanks in 3-phase transformers are often fitted with a 'diaphragm' or 'air bag' to:",
+      "exam": "TNPSC AE",
+      "year": 2023,
+      "topic": "Accessories",
+      "options": {
+        "a": "Prevent oil from touching air.",
+        "b": "Cool the oil faster.",
+        "c": "Increase oil pressure.",
+        "d": "Detect gas faults."
+      },
+      "answer": "a",
+      "explanation": "This prevents oxidation and moisture absorption by ensuring the oil never comes into direct contact with the atmosphere[cite: 3]."
+    },
+    {
+      "q_no": 10,
+      "question": "Which material is used for the bushings of a 33kV 3-phase transformer?",
+      "exam": "Kerala PSC AE",
+      "year": 2024,
+      "topic": "Bushings",
+      "options": {
+        "a": "Epoxy Resin",
+        "b": "Porcelain",
+        "c": "PVC",
+        "d": "Rubber"
+      },
+      "answer": "b",
+      "explanation": "Porcelain is the standard outdoor insulating material due to its high dielectric strength and weather resistance[cite: 3]."
+    },
+    {
+      "q_no": 11,
+      "question": "A 3-phase transformer has its taps on the HV side. If the taps are moved to increase the number of turns, the secondary voltage will:",
+      "exam": "BSNL TTA / JE",
+      "year": 2016,
+      "topic": "Tap Changers",
+      "options": {
+        "a": "Increase",
+        "b": "Decrease",
+        "c": "Remain same",
+        "d": "Become zero"
+      },
+      "answer": "b",
+      "explanation": "$V_2 = V_1 \\times (N_2 / N_1)$. Increasing $N_1$ (HV turns) results in a lower $V_2$[cite: 3]."
+    },
+    {
+      "q_no": 12,
+      "question": "For a 3-phase bank using three 1-phase units, if one transformer is removed, the resulting V-V bank provides a power factor of:",
+      "exam": "ESE Prelims",
+      "year": 2025,
+      "topic": "V-V Connection",
+      "options": {
+        "a": "1.0",
+        "b": "0.866",
+        "c": "0.5",
+        "d": "Variable"
+      },
+      "answer": "b",
+      "explanation": "In an Open-Delta (V-V) connection, even with a unity power factor load, the transformers operate at a power factor of $\\cos(30°)$ = 0.866[cite: 3]."
+    },
+    {
+      "q_no": 13,
+      "question": "Which of the following is a disadvantage of a 3-phase transformer unit compared to a bank of three 1-phase transformers?",
+      "exam": "SSC JE / YCT",
+      "year": 2020,
+      "topic": "Comparison",
+      "options": {
+        "a": "Higher cost.",
+        "b": "Greater space requirement.",
+        "c": "Difficult to repair a single phase.",
+        "d": "Lower efficiency."
+      },
+      "answer": "c",
+      "explanation": "In a single 3-phase unit, a fault in one phase requires the entire unit to be removed for repair, unlike a bank where only one unit is swapped[cite: 3]."
+    },
+    {
+      "q_no": 14,
+      "question": "The 'Zig-zag' connection is primarily used for:",
+      "exam": "DRDO CEPTAM",
+      "year": 2017,
+      "topic": "Special Connections",
+      "options": {
+        "a": "High voltage transmission.",
+        "b": "Grounding and eliminating third harmonics.",
+        "c": "Increasing efficiency.",
+        "d": "Reducing cost."
+      },
+      "answer": "b",
+      "explanation": "Zig-zag (Interconnected Star) provides a neutral point for grounding and balances unbalanced loads[cite: 3]."
+    },
+    {
+      "q_no": 15,
+      "question": "In a large 3-phase power transformer, the oil is circulated using pumps. This cooling is known as:",
+      "exam": "GATE EE",
+      "year": 2026,
+      "topic": "Cooling",
+      "options": {
+        "a": "ONAN",
+        "b": "ONAF",
+        "c": "OFAF",
+        "d": "AN"
+      },
+      "answer": "c",
+      "explanation": "Oil Forced Air Forced (OFAF) uses both oil pumps and external fans for maximum heat dissipation[cite: 3]."
+    },
+    {
+      "q_no": 16,
+      "question": "In a 3-phase transformer construction, the function of the 'Explosion Vent' is to:",
+      "exam": "UPPCL JE / YCT Solved",
+      "year": 2016,
+      "topic": "Constructional Accessories",
+      "options": {
+        "a": "Provide cooling air to the core",
+        "b": "Release internal pressure during a heavy fault",
+        "c": "Filter the transformer oil",
+        "d": "Support the HV bushings"
+      },
+      "answer": "b",
+      "explanation": "The explosion vent acts as a safety valve. When an internal fault creates rapid gas expansion, the diaphragm ruptures to release pressure and protect the tank[cite: 3]."
+    },
+    {
+      "q_no": 17,
+      "question": "Which of the following 3-phase transformer cores is known for having a shorter height, making it suitable for underground transport?",
+      "exam": "RRB JE / YCT Planner",
+      "year": 2015,
+      "topic": "Core Design",
+      "options": {
+        "a": "3-limb core type",
+        "b": "5-limb core type",
+        "c": "Shell type",
+        "d": "Berry type"
+      },
+      "answer": "b",
+      "explanation": "A 5-limb core provides additional return paths for the flux, which allows for a reduction in the yoke cross-section and overall height[cite: 3]."
+    },
+    {
+      "q_no": 18,
+      "question": "In a large 3-phase transformer, the 'Sandwich' type winding is primarily used in:",
+      "exam": "YCT AE Planner",
+      "year": 2021,
+      "topic": "Winding Construction",
+      "options": {
+        "a": "Core type transformer",
+        "b": "Shell type transformer",
+        "c": "Autotransformer",
+        "d": "Current transformer"
+      },
+      "answer": "b",
+      "explanation": "Shell-type transformers utilize sandwich (interleaved) windings to minimize leakage reactance and improve magnetic coupling[cite: 3]."
+    },
+    {
+      "q_no": 19,
+      "question": "According to YCT JE Solved papers, the thickness of the 3-phase transformer tank is determined by:",
+      "exam": "SSC JE / YCT",
+      "year": 2018,
+      "topic": "Mechanical Construction",
+      "options": {
+        "a": "The voltage level",
+        "b": "The weight of the core and oil pressure",
+        "c": "The frequency of the supply",
+        "d": "The type of winding"
+      },
+      "answer": "b",
+      "explanation": "The tank must be robust enough to withstand the mechanical weight of the internal assembly and the hydrostatic pressure of the oil[cite: 3]."
+    },
+    {
+      "q_no": 20,
+      "question": "The primary objective of using 'Directed Oil' (D in ODAF) in 3-phase transformer construction is:",
+      "exam": "UPPSC AE / YCT",
+      "year": 2020,
+      "topic": "Cooling Systems",
+      "options": {
+        "a": "To reduce the amount of oil needed",
+        "b": "To ensure oil flows through the winding ducts",
+        "c": "To prevent oil leakage",
+        "d": "To increase the flash point"
+      },
+      "answer": "b",
+      "explanation": "Directed cooling uses baffles to force oil specifically through the hot spots in the windings, significantly improving heat dissipation[cite: 3]."
+    },
+    {
+      "q_no": 21,
+      "question": "Which material is used for the gasket in 3-phase transformer tank joints to prevent oil leakage?",
+      "exam": "YCT JE Planner",
+      "year": 2019,
+      "topic": "Construction Materials",
+      "options": {
+        "a": "Neoprene rubber bonded cork",
+        "b": "Ordinary rubber",
+        "c": "Cotton tape",
+        "d": "Lead sheets"
+      },
+      "answer": "a",
+      "explanation": "Cork bonded with neoprene is resistant to transformer oil and provides a durable, leak-proof seal[cite: 3]."
+    },
+    {
+      "q_no": 22,
+      "question": "In a 3-phase Star-Star transformer, the neutral point is often grounded through a constructional feature called a:",
+      "exam": "MP Vyapam / YCT",
+      "year": 2017,
+      "topic": "Grounding",
+      "options": {
+        "a": "Breather",
+        "b": "Grounding Bushing",
+        "c": "Conservator",
+        "d": "Tap changer"
+      },
+      "answer": "b",
+      "explanation": "A separate bushing is provided to bring the neutral connection out of the tank for external grounding[cite: 3]."
+    },
+    {
+      "q_no": 23,
+      "question": "What is the specific purpose of 'Amorphous Core' in modern 3-phase distribution transformers, as per recent YCT updates?",
+      "exam": "ESE / YCT AE",
+      "year": 2023,
+      "topic": "Advanced Materials",
+      "options": {
+        "a": "To reduce copper loss",
+        "b": "To reduce no-load (iron) losses",
+        "c": "To increase mechanical strength",
+        "d": "To reduce the cost of insulation"
+      },
+      "answer": "b",
+      "explanation": "Amorphous metal has a random atomic structure which reduces the energy required for magnetization, cutting no-load losses by up to 70%[cite: 3]."
+    },
+    {
+      "q_no": 24,
+      "question": "In 3-phase transformers, bushings are designed with 'Petals' or 'Sheds' to:",
+      "exam": "UPPCL JE",
+      "year": 2021,
+      "topic": "Insulation",
+      "options": {
+        "a": "Improve heat dissipation",
+        "b": "Increase the creepage distance",
+        "c": "Reduce the weight of the porcelain",
+        "d": "Make them look attractive"
+      },
+      "answer": "b",
+      "explanation": "Sheds increase the path length for surface leakage currents (creepage), preventing flashovers during rain or contamination[cite: 3]."
+    },
+    {
+      "q_no": 25,
+      "question": "The 'Buchholz Relay' is fundamentally a:",
+      "exam": "SSC JE / YCT Solved",
+      "year": 2024,
+      "topic": "Protection",
+      "options": {
+        "a": "Voltage-sensitive relay",
+        "b": "Gas-actuated relay",
+        "c": "Current-limiting relay",
+        "d": "Temperature-controlled relay"
+      },
+      "answer": "b",
+      "explanation": "It operates based on the accumulation of gases produced during internal insulation breakdown or oil decomposition[cite: 3]."
+    }
+  ]
+}

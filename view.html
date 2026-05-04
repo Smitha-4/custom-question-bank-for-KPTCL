@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE/ESE Exam Study Portal</title>
+    
+    <!-- MathJax Configuration for LaTeX Rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
+                processEscapes: true
+            },
+            options: {
+                enableMenu: false
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        :root {
+            --primary: #007bff;
+            --primary-dark: #0056b3;
+            --bg: #f4f4f9;
+            --text: #333;
+            --success: #28a745;
+            --error: #dc3545;
+            --summary-bg: #eef6ff;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            margin: 0;
+            padding: 80px 20px 20px 20px;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Sticky Back Button */
+        .sticky-back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+            padding: 10px 18px;
+            background-color: rgba(0, 123, 255, 0.95);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(4px);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .sticky-back-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            position: sticky;
+            top: 10px;
+            background: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            font-weight: bold;
+            z-index: 100;
+        }
+
+        /* Topic Summary Card */
+        .topic-card {
+            background: var(--summary-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid var(--primary);
+            margin-bottom: 30px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .topic-card h2 { margin-top: 0; color: var(--primary-dark); }
+
+        /* Question Cards */
+        .question-card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+        }
+
+        /* Circuit Image Styling */
+        .circuit-box {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #ffffff;
+            border: 1px dashed #ccc;
+            border-radius: 8px;
+        }
+
+        .circuit-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+
+        .circuit-box img:active {
+            transform: scale(1.5);
+            transition: transform 0.2s ease;
+            z-index: 1000;
+            position: relative;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            .options-grid { grid-template-columns: 1fr; }
+        }
+
+        .option-btn {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease;
+        }
+
+        .option-btn:hover { background-color: #f8f9fa; border-color: var(--primary); }
+
+        .correct { background-color: var(--success) !important; color: white !important; border-color: var(--success) !important; }
+        .incorrect { background-color: var(--error) !important; color: white !important; border-color: var(--error) !important; }
+        .answered .option-btn { cursor: default; }
+
+        .explanation {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #f0fff4;
+            border-left: 4px solid var(--success);
+            border-radius: 4px;
+        }
+
+        .error-msg {
+            background: #fff;
+            border: 2px solid var(--error);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="history.back()" class="sticky-back-btn" aria-label="Go back">
+        &larr; Back
+    </button>
+
+    <div class="container">
+        <div class="stats-bar">
+            <span id="topic-name">Loading Topic...</span>
+            <span>Score: <span id="score">0</span> / <span id="attempted">0</span></span>
+        </div>
+
+        <div class="topic-card" id="summary-card" style="display: none;">
+            <h2 id="summary-title">Quick Review Summary</h2>
+            <div id="summary-content"></div>
+        </div>
+
+        <div id="questions-container">
+            <div style="text-align: center; padding: 50px;">
+                <p>Loading questions...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const jsonPath = urlParams.get('path');
+
+        let quizData = [];
+        let score = 0;
+        let attempted = 0;
+
+        async function loadQuiz() {
+            if (!jsonPath) {
+                showError("No file path provided. Please return to the home page.");
+                return;
+            }
+
+            try {
+                const response = await fetch(jsonPath);
+                if (!response.ok) throw new Error(`File not found: ${jsonPath}`);
+                
+                const data = await response.json();
+                
+                document.getElementById('topic-name').innerText = data.topic_name || "Quiz";
+                
+                if (data.summary_points && data.summary_points.length > 0) {
+                    renderSummary(data.summary_points);
+                }
+
+                quizData = data.questions || [];
+                renderQuestions(quizData);
+            } catch (error) {
+                showError(error.message);
+            }
+        }
+
+        function showError(msg) {
+            document.getElementById('questions-container').innerHTML = `
+                <div class="error-msg">
+                    <h3 style="color:var(--error)">Initialization Error</h3>
+                    <p>${msg}</p>
+                </div>`;
+        }
+
+        function renderSummary(points) {
+            const summaryCard = document.getElementById('summary-card');
+            const summaryContent = document.getElementById('summary-content');
+            summaryContent.innerHTML = `<ul style="padding-left:20px">${points.map(p => `<li>${p}</li>`).join('')}</ul>`;
+            summaryCard.style.display = 'block';
+        }
+
+        function renderQuestions(questions) {
+            const container = document.getElementById('questions-container');
+            container.innerHTML = '';
+            
+            questions.forEach((q, index) => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                
+                // Logic to check for image_url
+                let imageHtml = q.image_url ? `
+                    <div class="circuit-box">
+                        <img src="${q.image_url}" alt="Circuit Diagram for Q${index + 1}" loading="lazy">
+                        <div style="font-size:0.8rem; color:#666; margin-top:5px;">(Tap and hold to zoom)</div>
+                    </div>` : '';
+
+                card.innerHTML = `
+                    <div class="question-text"><strong>Q${index + 1}.</strong> ${q.question}</div>
+                    ${imageHtml}
+                    <div class="options-grid" id="grid-${index}">
+                        <button class="option-btn" onclick="checkAnswer(${index}, 'a', this)">A: ${q.options.a}</button>
+                        <button class="option-btn" onclick="checkAnswer(${index}, 'b', this)">B: ${q.options.b}</button>
+                        <button class="option-btn" onclick="checkAnswer(${index}, 'c', this)">C: ${q.options.c}</button>
+                        <button class="option-btn" onclick="checkAnswer(${index}, 'd', this)">D: ${q.options.d}</button>
+                    </div>
+                    <div class="explanation" id="exp-${index}">
+                        <strong>Result: <span id="status-${index}"></span></strong><hr>
+                        <strong>Correct Answer: ${q.answer.toUpperCase()}</strong>
+                        <p>${q.explanation || q.logic || ""}</p>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            if (window.MathJax && window.MathJax.typesetPromise) {
+                MathJax.typesetPromise();
+            }
+        }
+
+        function checkAnswer(qIdx, choice, btn) {
+            const grid = document.getElementById(`grid-${qIdx}`);
+            if (grid.classList.contains('answered')) return;
+            
+            grid.classList.add('answered');
+            attempted++;
+            
+            const question = quizData[qIdx];
+            const correctAns = question.answer.toLowerCase();
+            const statusLabel = document.getElementById(`status-${qIdx}`);
+            
+            if (choice === correctAns) {
+                btn.classList.add('correct');
+                statusLabel.innerText = "Correct!";
+                statusLabel.style.color = "var(--success)";
+                score++;
+            } else {
+                btn.classList.add('incorrect');
+                statusLabel.innerText = "Incorrect.";
+                statusLabel.style.color = "var(--error)";
+                
+                const buttons = grid.querySelectorAll('.option-btn');
+                buttons.forEach(b => {
+                    const btnLabel = b.innerText.toLowerCase().substring(0, 2);
+                    if (btnLabel === correctAns + ":") b.classList.add('correct');
+                });
+            }
+            
+            document.getElementById('score').innerText = score;
+            document.getElementById('attempted').innerText = attempted;
+            document.getElementById(`exp-${qIdx}`).style.display = 'block';
+
+            if (window.MathJax && window.MathJax.typesetPromise) {
+                MathJax.typesetPromise();
+            }
+        }
+
+        loadQuiz();
+    </script>
+</body>
+</html>

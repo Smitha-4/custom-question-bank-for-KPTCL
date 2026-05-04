@@ -1,0 +1,940 @@
+{
+  "topic_name": "Ideal Transformers",
+  "summary_points": [
+    "Infinite Permeability: The core has no reluctance, requiring zero magnetizing current to establish flux[cite: 3].",
+    "Zero Losses: No winding resistance (copper loss) and no core losses (hysteresis/eddy current) exist, resulting in 100% efficiency[cite: 3].",
+    "Zero Leakage: All magnetic flux is perfectly confined to the core, meaning the coefficient of coupling is 1.0[cite: 3].",
+    "Voltage Regulation: Due to the absence of internal impedance, the voltage regulation is exactly 0%[cite: 3].",
+    "DC Operation: An ideal transformer cannot induce secondary voltage with a DC supply because flux change (dφ/dt) is zero[cite: 3].",
+    "Phase Relationship: The magnetizing current lags the primary applied voltage by exactly 90°[cite: 3].",
+    "Power Conservation: Input Volt-Amperes (VA) always equals output Volt-Amperes ($V_1I_1 = V_2I_2$)[cite: 3].",
+    "Impedance Matching: Secondary impedance is reflected to the primary side proportional to the square of the turns ratio ($a^2$)[cite: 3].",
+    "Flux-Frequency Relation: For a constant voltage, the peak core flux is inversely proportional to the operating frequency[cite: 3]."
+  ],
+
+  "questions": [
+    {
+      "q_no": 1,
+      "year": 2000,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Impedance Transformation",
+      "question": "A transformer has a primary to secondary turns ratio of 1:2. A 50-ohm resistor is connected across the secondary. The equivalent resistance as seen from the primary side is:",
+      "options": {
+        "a": "12.5 Ω",
+        "b": "25 Ω",
+        "c": "100 Ω",
+        "d": "200 Ω"
+      },
+      "answer": "a",
+      "explanation": "Reflected resistance $R_1 = R_2 / a^2$, where $a = N_2/N_1$. Here $N_1/N_2 = 1/2$, so $a = 2$. Alternatively, $R_1 = (N_1/N_2)^2 \\times R_2 = (1/2)^2 \\times 50 = 12.5 \\Omega$."
+    },
+    {
+      "q_no": 2,
+      "year": 2002,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Core Properties",
+      "question": "The core of an ideal transformer has a permeability of:",
+      "options": {
+        "a": "Zero",
+        "b": "Relative permeability of 1",
+        "c": "Finite and small",
+        "d": "Infinite"
+      },
+      "answer": "d",
+      "explanation": "An ideal transformer is assumed to have a core with infinite permeability ($\\mu = \\infty$), which means zero magnetizing current is required to establish the required flux."
+    },
+    {
+      "q_no": 3,
+      "year": 2004,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - General Properties",
+      "question": "Which of the following is NOT a property of an ideal transformer?",
+      "options": {
+        "a": "Winding resistances are zero",
+        "b": "Leakage flux is zero",
+        "c": "Core has finite permeability",
+        "d": "There are no hysteresis or eddy current losses"
+      },
+      "answer": "c",
+      "explanation": "An ideal transformer must have infinite permeability to ensure that no magnetizing current is drawn. Finite permeability is a characteristic of a practical transformer."
+    },
+    {
+      "q_no": 4,
+      "year": 2005,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Dot Convention",
+      "question": "In an ideal transformer, the dots are placed at the upper terminals of both primary and secondary windings. This implies that:",
+      "options": {
+        "a": "The voltages at these terminals are in phase",
+        "b": "The voltages at these terminals are 180 degrees out of phase",
+        "c": "The currents entering these terminals produce flux in opposite directions",
+        "d": "One terminal is always positive and the other is always negative"
+      },
+      "answer": "a",
+      "explanation": "According to the dot convention, terminals marked with a dot have the same instantaneous polarity. Therefore, the induced EMFs at these terminals are in phase."
+    },
+    {
+      "q_no": 5,
+      "year": 2007,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - EMF Equation",
+      "question": "An ideal transformer is connected to a 200 V, 50 Hz supply. If the number of turns in the primary is 100, the maximum value of flux in the core is:",
+      "options": {
+        "a": "9.0 mWb",
+        "b": "0.009 Wb",
+        "c": "9.0 Wb",
+        "d": "0.01 Wb"
+      },
+      "answer": "a",
+      "explanation": "Using EMF equation $E_1 = 4.44 f N_1 \\phi_{max}$. So, $200 = 4.44 \\times 50 \\times 100 \\times \\phi_{max}$. $\\phi_{max} = 200 / 22200 \\approx 0.009009$ Wb or 9.0 mWb."
+    },
+    {
+      "q_no": 6,
+      "year": 2009,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Power Conservation",
+      "question": "In an ideal transformer, the relation between primary power ($P_1$) and secondary power ($P_2$) is:",
+      "options": {
+        "a": "$P_1 > P_2$",
+        "b": "$P_1 < P_2$",
+        "c": "$P_1 = P_2$",
+        "d": "$P_1 = P_2 + \\text{losses}$"
+      },
+      "answer": "c",
+      "explanation": "An ideal transformer has 100% efficiency because it lacks winding resistance and core losses. Therefore, input power equals output power ($P_{in} = P_{out}$)."
+    },
+    {
+      "q_no": 7,
+      "year": 2010,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Turns Ratio",
+      "question": "A certain transformer has 400 turns in the primary and 2000 turns in the secondary. If 120 V AC is applied to the primary, the secondary voltage will be:",
+      "options": {
+        "a": "24 V",
+        "b": "600 V",
+        "c": "120 V",
+        "d": "2400 V"
+      },
+      "answer": "b",
+      "explanation": "For an ideal transformer, $V_2/V_1 = N_2/N_1$. Thus, $V_2 = 120 \\times (2000/400) = 600$ V."
+    },
+    {
+      "q_no": 8,
+      "year": 2012,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Volt-Ampere Rating",
+      "question": "An ideal transformer has a voltage ratio of 2300/230 V. If the secondary load is 23 kW at unity power factor, the primary current is:",
+      "options": {
+        "a": "1 A",
+        "b": "10 A",
+        "c": "100 A",
+        "d": "230 A"
+      },
+      "answer": "b",
+      "explanation": "In an ideal transformer, Input VA = Output VA. $2300 \\times I_1 = 23,000 \\Rightarrow I_1 = 10$ A."
+    },
+    {
+      "q_no": 9,
+      "year": 2015,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Impedance Matching",
+      "question": "To match a 16 Ω speaker to an amplifier with an output impedance of 10,000 Ω, an ideal transformer is used. The turns ratio $N_1/N_2$ should be:",
+      "options": {
+        "a": "625",
+        "b": "250",
+        "c": "25",
+        "d": "0.04"
+      },
+      "answer": "c",
+      "explanation": "$Z_1 = (N_1/N_2)^2 \\times Z_2$. $10,000 = (N_1/N_2)^2 \\times 16 \\Rightarrow (N_1/N_2)^2 = 625 \\Rightarrow N_1/N_2 = 25$."
+    },
+    {
+      "q_no": 10,
+      "year": 2017,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Phase Relationship",
+      "question": "In an ideal transformer, the phasor difference between the primary applied voltage and the secondary induced EMF is:",
+      "options": {
+        "a": "0°",
+        "b": "90°",
+        "c": "180°",
+        "d": "270°"
+      },
+      "answer": "a",
+      "explanation": "In an ideal transformer, the induced EMF $E_1$ opposes the applied voltage $V_1$, but the magnitudes are equal. $V_2$ is in phase with $E_2$, and $E_2$ is in phase with $E_1$. Thus, $V_1$ and $V_2$ are effectively in phase."
+    },
+    {
+      "q_no": 11,
+      "year": 2019,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Constraints",
+      "question": "An ideal transformer does not satisfy which of the following conditions?",
+      "options": {
+        "a": "Flux linkage is 100%",
+        "b": "Permeability of the core is very high",
+        "c": "Eddy current loss is present",
+        "d": "Winding resistance is zero"
+      },
+      "answer": "c",
+      "explanation": "An ideal transformer is defined by the absence of all losses, including eddy current and hysteresis losses."
+    },
+    {
+      "q_no": 12,
+      "year": 2021,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Flux and Voltage",
+      "question": "If the primary of an ideal transformer is connected to a DC supply, the secondary voltage will be:",
+      "options": {
+        "a": "$V_{primary}$",
+        "b": "$V_{primary} \\times (N_2/N_1)$",
+        "c": "Zero",
+        "d": "Infinite"
+      },
+      "answer": "c",
+      "explanation": "Transformers work on Faraday's Law ($e = -N \\cdot d\\phi/dt$). For a steady DC supply, $d\\phi/dt = 0$, so no EMF is induced."
+    },
+    {
+      "q_no": 13,
+      "year": 2023,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Current Transformation",
+      "question": "A 1:10 step-up ideal transformer has a primary current of 50 A. The secondary current is:",
+      "options": {
+        "a": "500 A",
+        "b": "5 A",
+        "c": "0.5 A",
+        "d": "50 A"
+      },
+      "answer": "b",
+      "explanation": "For an ideal transformer, $I_1/I_2 = N_2/N_1$. Given $N_2/N_1 = 10$, $50/I_2 = 10 \\Rightarrow I_2 = 5$ A."
+    },
+    {
+      "q_no": 14,
+      "year": 2025,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Frequency Variation",
+      "question": "An ideal transformer is designed for 50 Hz. If it is operated at 100 Hz with the same input voltage, the maximum core flux will:",
+      "options": {
+        "a": "Double",
+        "b": "Remain the same",
+        "c": "Be halved",
+        "d": "Be quadrupled"
+      },
+      "answer": "c",
+      "explanation": "$V \\approx 4.44 f N \\phi_{max}$. If $V$ is constant and $f$ doubles, $\\phi_{max}$ must be halved."
+    },
+    {
+      "q_no": 15,
+      "year": 1991,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Impedance Matching",
+      "question": "A source with internal resistance of 100 Ω is connected to a load of 4 Ω through an ideal transformer. For maximum power transfer to the load, the turns ratio (primary to secondary) should be:",
+      "options": {
+        "a": "25",
+        "b": "10",
+        "c": "5",
+        "d": "0.2"
+      },
+      "answer": "c",
+      "explanation": "$R_s = R_L' \\Rightarrow 100 = (N_1/N_2)^2 \\times 4 \\Rightarrow (N_1/N_2) = 5$."
+    },
+    {
+      "q_no": 16,
+      "year": 1998,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Voltage Induced",
+      "question": "An ideal transformer has a primary winding with 500 turns and a secondary winding with 40 turns. If the primary is connected to a 240 V, 50 Hz supply, the secondary voltage is:",
+      "options": {
+        "a": "19.2 V",
+        "b": "12 V",
+        "c": "48 V",
+        "d": "3000 V"
+      },
+      "answer": "a",
+      "explanation": "$V_2 = V_1 \\times (N_2/N_1) = 240 \\times (40/500) = 19.2$ V."
+    },
+    {
+      "q_no": 17,
+      "year": 2004,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Core Flux",
+      "question": "The primary of an ideal transformer is fed from a sinusoidal voltage source. If the supply frequency is doubled, the peak value of the core flux will:",
+      "options": {
+        "a": "Become double",
+        "b": "Become half",
+        "c": "Remain unchanged",
+        "d": "Become one-fourth"
+      },
+      "answer": "b",
+      "explanation": "Since $V$ is constant, $\\phi_{max} \\propto 1/f$. Doubling $f$ halves $\\phi_{max}$."
+    },
+    {
+      "q_no": 18,
+      "year": 2010,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Multiple Windings",
+      "question": "An ideal transformer has $N_1:N_2:N_3 = 1:2:3$. If a resistor $R$ is connected across $N_2$, the equivalent resistance seen from the primary side is:",
+      "options": {
+        "a": "R/4",
+        "b": "R/9",
+        "c": "R/13",
+        "d": "4R"
+      },
+      "answer": "a",
+      "explanation": "$R' = R / (N_2/N_1)^2 = R/2^2 = R/4$."
+    },
+    {
+      "q_no": 19,
+      "year": 2014,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Current Transformation",
+      "question": "A single-phase ideal transformer has a turns ratio of 1:2. The secondary side is connected to a load of $(10 + j10) \\Omega$. If the primary voltage is $100\\angle 0^\\circ$ V, the primary current is:",
+      "options": {
+        "a": "5 - j5 A",
+        "b": "10 - j10 A",
+        "c": "20 - j20 A",
+        "d": "40 - j40 A"
+      },
+      "answer": "c",
+      "explanation": "$Z_L' = (10+j10)/2^2 = 2.5+j2.5$. $I_1 = 100/(2.5+j2.5) = 20-j20$ A."
+    },
+    {
+      "q_no": 20,
+      "year": 2018,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Efficiency",
+      "question": "For an ideal transformer, which of the following statements is true?",
+      "options": {
+        "a": "Efficiency is 100% and Regulation is 100%",
+        "b": "Efficiency is 0% and Regulation is 0%",
+        "c": "Efficiency is 100% and Regulation is 0%",
+        "d": "Efficiency is 50% and Regulation is 50%"
+      },
+      "answer": "c",
+      "explanation": "Ideal transformers have no losses (100% Efficiency) and no impedance (0% Regulation)."
+    },
+    {
+      "q_no": 21,
+      "year": 2022,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Polarity",
+      "question": "Two ideal transformers are connected in parallel with identical turns ratios and polarities. The circulating current will be:",
+      "options": {
+        "a": "Infinite",
+        "b": "Zero",
+        "c": "Rated current",
+        "d": "Depends on the load"
+      },
+      "answer": "b",
+      "explanation": "Identical secondary voltages result in zero potential difference and zero circulating current."
+    },
+    {
+      "q_no": 22,
+      "year": 2012,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Core Properties",
+      "question": "The core of an ideal transformer has:",
+      "options": {
+        "a": "High resistance and high permeability",
+        "b": "Zero resistance and zero permeability",
+        "c": "Infinite permeability and zero core loss",
+        "d": "Low permeability and high core loss"
+      },
+      "answer": "c",
+      "explanation": "Standard definition: $\\mu = \\infty$ and zero losses."
+    },
+    {
+      "q_no": 23,
+      "year": 2014,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Efficiency",
+      "question": "What is the efficiency of an ideal transformer?",
+      "options": {
+        "a": "0.5",
+        "b": "0.75",
+        "c": "1",
+        "d": "Between 0.9 and 0.99"
+      },
+      "answer": "c",
+      "explanation": "Zero losses lead to 100% efficiency (1.0)."
+    },
+    {
+      "q_no": 24,
+      "year": 2015,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Voltage Regulation",
+      "question": "Voltage regulation of an ideal transformer is:",
+      "options": {
+        "a": "Maximum",
+        "b": "Zero",
+        "c": "50%",
+        "d": "Depends on the load"
+      },
+      "answer": "b",
+      "explanation": "No internal voltage drop means terminal voltage is constant."
+    },
+    {
+      "q_no": 25,
+      "year": 2017,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Basic Principle",
+      "question": "An ideal transformer is one which has:",
+      "options": {
+        "a": "No losses and magnetic leakage",
+        "b": "Interleaved windings",
+        "c": "Common core",
+        "d": "Copper core"
+      },
+      "answer": "a",
+      "explanation": "Defined by zero losses and zero leakage."
+    },
+    {
+      "q_no": 26,
+      "year": 2018,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Transformation Ratio",
+      "question": "If an ideal transformer is connected to a DC source, the secondary voltage will be:",
+      "options": {
+        "a": "55 V",
+        "b": "110 V",
+        "c": "Zero",
+        "d": "220 V"
+      },
+      "answer": "c",
+      "explanation": "DC flux is constant; hence no induction."
+    },
+    {
+      "q_no": 27,
+      "year": 2019,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Current Ratio",
+      "question": "In an ideal transformer with ratio $K = V_2/V_1$, the current ratio $I_1/I_2$ is:",
+      "options": {
+        "a": "$K$",
+        "b": "$1/K$",
+        "c": "$\\sqrt{K}$",
+        "d": "$K^2$"
+      },
+      "answer": "a",
+      "explanation": "$V_1 I_1 = V_2 I_2 \\Rightarrow I_1/I_2 = V_2/V_1 = K$."
+    },
+    {
+      "q_no": 28,
+      "year": 2021,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Leakage Reactance",
+      "question": "The leakage reactance of an ideal transformer is:",
+      "options": {
+        "a": "Infinite",
+        "b": "Very high",
+        "c": "Zero",
+        "d": "Equal to resistance"
+      },
+      "answer": "c",
+      "explanation": "Leakage flux is zero in an ideal case."
+    },
+    {
+      "q_no": 29,
+      "year": 2023,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Phase Angle",
+      "question": "In an ideal transformer, the magnetizing current lags the primary voltage by:",
+      "options": {
+        "a": "0°",
+        "b": "45°",
+        "c": "90°",
+        "d": "180°"
+      },
+      "answer": "c",
+      "explanation": "Ideal primary is purely inductive."
+    },
+    {
+      "q_no": 30,
+      "year": 2014,
+      "exam": "ISRO AC (Electrical)",
+      "topic": "Ideal Transformer - Flux-Current Relationship",
+      "question": "In an ideal transformer, the magnetizing current waveform for sinusoidal voltage is:",
+      "options": {
+        "a": "Sinusoidal and in phase",
+        "b": "Sinusoidal and lagging by 90°",
+        "c": "Non-sinusoidal",
+        "d": "Square wave"
+      },
+      "answer": "b",
+      "explanation": "Linear core with $\\mu = \\infty$ preserves sinusoidality at 90° lag."
+    },
+    {
+      "q_no": 31,
+      "year": 2016,
+      "exam": "UPPCL AE",
+      "topic": "Ideal Transformer - Energy Storage",
+      "question": "Energy stored in the magnetic field of an ideal transformer is:",
+      "options": {
+        "a": "Infinite",
+        "b": "Zero",
+        "c": "VA x time",
+        "d": "Proportional to leakage"
+      },
+      "answer": "b",
+      "explanation": "Reluctance is zero because $\\mu = \\infty$, so stored energy is zero."
+    },
+    {
+      "q_no": 32,
+      "year": 2018,
+      "exam": "BARC OCES (EE)",
+      "topic": "Ideal Transformer - Impedance in Multi-Winding",
+      "question": "In a multi-winding ideal transformer, the equivalent impedance seen from the primary is:",
+      "options": {
+        "a": "$(N_1/N_2)^2 Z_2 + (N_1/N_3)^2 Z_3$",
+        "b": "$[ (N_2/N_1)^2/Z_2 + (N_3/N_1)^2/Z_3 ]^{-1}$",
+        "c": "$[ (N_1/N_2)^2/Z_2 + (N_1/N_3)^2/Z_3 ]^{-1}$",
+        "d": "$\\sqrt{Z_2 Z_3}$"
+      },
+      "answer": "c",
+      "explanation": "Referred impedances from multiple secondaries appear in parallel across the primary."
+    },
+    {
+      "q_no": 33,
+      "year": 2019,
+      "exam": "Vizag Steel MT (EE)",
+      "topic": "Ideal Transformer - Coupled Circuits",
+      "question": "In an ideal transformer, the coefficient of coupling (k) is:",
+      "options": {
+        "a": "0",
+        "b": "0.5",
+        "c": "0.95",
+        "d": "1.0"
+      },
+      "answer": "d",
+      "explanation": "Zero leakage means $k = 1$."
+    },
+    {
+      "q_no": 34,
+      "year": 2020,
+      "exam": "BHEL ET (Electrical)",
+      "topic": "Ideal Transformer - Frequency Response",
+      "question": "If used to isolate a DC signal, the secondary output will be:",
+      "options": {
+        "a": "Attenuated DC",
+        "b": "Amplified DC",
+        "c": "Zero",
+        "d": "Spikes"
+      },
+      "answer": "c",
+      "explanation": "No $d\\phi/dt$ for DC."
+    },
+    {
+      "q_no": 35,
+      "year": 2022,
+      "exam": "NPCIL Stipendiary Trainee",
+      "topic": "Ideal Transformer - Power Factor",
+      "question": "If an ideal transformer supplies a capacitive load, the primary PF will be:",
+      "options": {
+        "a": "Unity",
+        "b": "Lagging",
+        "c": "Leading",
+        "d": "Zero"
+      },
+      "answer": "c",
+      "explanation": "The primary reflects the load phase angle exactly."
+    },
+    {
+      "q_no": 36,
+      "year": 2023,
+      "exam": "DMRC AM (Electrical)",
+      "topic": "Ideal Transformer - VA Rating",
+      "question": "If primary voltage is halved and current is doubled, the VA handling:",
+      "options": {
+        "a": "Reduces by 50%",
+        "b": "Doubles",
+        "c": "Remains constant",
+        "d": "Increases 4x"
+      },
+      "answer": "c",
+      "explanation": "$0.5V \\times 2I = VI$. Power remains constant."
+    },
+    {
+      "q_no": 37,
+      "year": "1994",
+      "exam": "ESE Prelims",
+      "question": "A 10 kVA, 200/400 V, 50 Hz single-phase transformer has leakage reactance of 0.12 pu. What is the value of this leakage reactance in ohms referred to the HV side?",
+      "options": {
+        "a": "0.48 Ω",
+        "b": "1.92 Ω",
+        "c": "19.2 Ω",
+        "d": "1.2 Ω"
+      },
+      "answer": "b",
+      "explanation": "Reactance in ohms $X_{HV} = X_{pu} \\times \\frac{V_{HV}^2}{S}$. Calculation: $0.12 \\times \\frac{400^2}{10000} = 0.12 \\times 16 = 1.92 \\Omega$."
+    },
+    {
+      "q_no": 38,
+      "year": "1997",
+      "exam": "ESE Prelims",
+      "question": "In a transformer, the core is laminated mainly to reduce which of the following?",
+      "options": {
+        "a": "Hysteresis loss",
+        "b": "Eddy current loss",
+        "c": "Copper loss",
+        "d": "Leakage reactance"
+      },
+      "answer": "b",
+      "explanation": "Laminations break the path of circulating eddy currents, thereby increasing the resistance to their flow and reducing the power loss."
+    },
+    {
+      "q_no": 39,
+      "year": "2023",
+      "exam": "UPPCL AE",
+      "question": "Determine the ratio of weights of copper in an auto transformer and a two-winding transformer if the transformation ratio ($K = V_2/V_1$) is 3.",
+      "options": {
+        "a": "1/4",
+        "b": "1/3",
+        "c": "1/6",
+        "d": "2/3"
+      },
+      "answer": "d",
+      "explanation": "For an autotransformer, the weight of copper is $(1 - 1/K)$ times the weight of copper in a two-winding transformer. Given $K = 3$, Ratio $= 1 - 1/3 = 2/3$."
+    },
+    {
+      "q_no": 40,
+      "year": "2021",
+      "exam": "KPCCL AE",
+      "question": "A transformer has a 120 V primary and 12 V secondary. If the primary has 800 turns, how many turns are required in the secondary?",
+      "options": {
+        "a": "80",
+        "b": "40",
+        "c": "12",
+        "d": "8000"
+      },
+      "answer": "a",
+      "explanation": "Using the turns ratio formula: $N_2 = N_1 \\times (V_2/V_1)$. Calculation: $800 \\times (12/120) = 80$ turns."
+    },
+    {
+      "q_no": 41,
+      "year": "2022",
+      "exam": "MPSC AE",
+      "question": "The no-load current in a transformer lags behind the applied voltage by an angle of approximately:",
+      "options": {
+        "a": "75°",
+        "b": "90°",
+        "c": "0°",
+        "d": "45°"
+      },
+      "answer": "a",
+      "explanation": "The no-load current $I_0$ consists of magnetizing and core-loss components. It typically lags the voltage by about 75° to 80°."
+    },
+    {
+      "q_no": 42,
+      "year": "2024",
+      "exam": "TANGEDCO AE",
+      "question": "In the equivalent circuit of a transformer, why is the magnetizing branch drawn in parallel with the supply voltage?",
+      "options": {
+        "a": "Because no-load current remains almost constant regardless of load",
+        "b": "To reduce iron losses",
+        "c": "To ensure 100% efficiency",
+        "d": "Because voltage regulation is 0%"
+      },
+      "answer": "a",
+      "explanation": "The magnetizing branch is connected in parallel because the no-load current (which creates the flux) depends on the applied voltage, which remains relatively constant."
+    },
+    {
+      "q_no": 43,
+      "year": 1987,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Basic Characteristics",
+      "question": "An ideal transformer does not have:",
+      "options": {
+        "a": "Infinite permeability",
+        "b": "Zero winding resistance",
+        "c": "Magnetic leakage",
+        "d": "100% coupling"
+      },
+      "answer": "c",
+      "explanation": "An ideal transformer is defined by zero leakage flux, zero winding resistance, and infinite permeability of the core[cite: 3]."
+    },
+    {
+      "q_no": 44,
+      "year": 1989,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Voltage Induction",
+      "question": "The secondary of an ideal transformer is open-circuited. If the primary is connected to a DC source of V volts, the secondary voltage will be:",
+      "options": {
+        "a": "V",
+        "b": "V * (N2/N1)",
+        "c": "Zero",
+        "d": "Infinite"
+      },
+      "answer": "c",
+      "explanation": "Since a DC source produces a constant flux, dφ/dt = 0. According to Faraday's Law, no voltage is induced in the secondary[cite: 3]."
+    },
+    {
+      "q_no": 45,
+      "year": 1991,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Impedance Matching",
+      "question": "A source with internal resistance of 100 Ω is connected to a load of 4 Ω through an ideal transformer. For maximum power transfer to the load, the turns ratio (primary to secondary) should be:",
+      "options": {
+        "a": "25",
+        "b": "10",
+        "c": "5",
+        "d": "0.2"
+      },
+      "answer": "c",
+      "explanation": "For max power transfer, Rs = RL'. $100 = (N1/N2)^2 \\times 4$. Therefore, $(N1/N2)^2 = 25$, so turns ratio is 5[cite: 3]."
+    },
+    {
+      "q_no": 46,
+      "year": 1994,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Current Transformation",
+      "question": "In an ideal transformer, if the number of turns in the secondary is doubled while the primary turns remain constant, the secondary current for a fixed load resistance will:",
+      "options": {
+        "a": "Double",
+        "b": "Halve",
+        "c": "Remain the same",
+        "d": "Increase four times"
+      },
+      "answer": "b",
+      "explanation": "In an ideal transformer, V2/V1 = N2/N1. If N2 doubles, V2 doubles. However, I2 = V2/RL. To maintain power balance (V1I1 = V2I2), the secondary current reflects the inverse ratio[cite: 3]."
+    },
+    {
+      "q_no": 47,
+      "year": 1998,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - VA Rating",
+      "question": "An ideal transformer has a primary winding with 500 turns and a secondary winding with 40 turns. If the primary is connected to a 240 V, 50 Hz supply, the secondary voltage is:",
+      "options": {
+        "a": "19.2 V",
+        "b": "12 V",
+        "c": "48 V",
+        "d": "3000 V"
+      },
+      "answer": "a",
+      "explanation": "V2 = V1 × (N2/N1) = 240 × (40/500) = 19.2 V[cite: 3]."
+    },
+    {
+      "q_no": 48,
+      "year": 2000,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Impedance Transformation",
+      "question": "A transformer has a primary to secondary turns ratio of 1:2. A 50-ohm resistor is connected across the secondary. The equivalent resistance as seen from the primary side is:",
+      "options": {
+        "a": "12.5 Ω",
+        "b": "25 Ω",
+        "c": "100 Ω",
+        "d": "200 Ω"
+      },
+      "answer": "a",
+      "explanation": "R1 = (N1/N2)^2 × R2 = (1/2)^2 × 50 = 12.5 Ω[cite: 3]."
+    },
+    {
+      "q_no": 49,
+      "year": 2002,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Core Properties",
+      "question": "The core of an ideal transformer has a permeability of:",
+      "options": {
+        "a": "Zero",
+        "b": "Relative permeability of 1",
+        "c": "Finite and small",
+        "d": "Infinite"
+      },
+      "answer": "d",
+      "explanation": "Infinite permeability ensures zero magnetizing current is required to establish flux[cite: 3]."
+    },
+    {
+      "q_no": 50,
+      "year": 2004,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Core Flux",
+      "question": "The primary of an ideal transformer is fed from a sinusoidal voltage source. If the supply frequency is doubled, the peak value of the core flux will:",
+      "options": {
+        "a": "Become double",
+        "b": "Become half",
+        "c": "Remain unchanged",
+        "d": "Become one-fourth"
+      },
+      "answer": "b",
+      "explanation": "From the EMF equation V = 4.44 f N φmax, φmax is inversely proportional to frequency when voltage is constant[cite: 3]."
+    },
+    {
+      "q_no": 51,
+      "year": 2005,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Dot Convention",
+      "question": "In an ideal transformer, the dots are placed at the upper terminals of both primary and secondary windings. This implies:",
+      "options": {
+        "a": "The voltages at these terminals are in phase",
+        "b": "The voltages at these terminals are 180 degrees out of phase",
+        "c": "The currents produce flux in opposite directions",
+        "d": "One terminal is always positive"
+      },
+      "answer": "a",
+      "explanation": "Dot convention indicates identical instantaneous polarity; thus, voltages are in phase[cite: 3]."
+    },
+    {
+      "q_no": 52,
+      "year": 2007,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - EMF Equation",
+      "question": "An ideal transformer is connected to a 200 V, 50 Hz supply. If the primary has 100 turns, the max flux in the core is:",
+      "options": {
+        "a": "9.0 mWb",
+        "b": "0.009 Wb",
+        "c": "9.0 Wb",
+        "d": "0.01 Wb"
+      },
+      "answer": "a",
+      "explanation": "φmax = V / (4.44 × f × N) = 200 / (4.44 × 50 × 100) ≈ 0.009 Wb or 9 mWb[cite: 3]."
+    },
+    {
+      "q_no": 53,
+      "year": 2010,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Multiple Windings",
+      "question": "An ideal transformer has N1:N2:N3 = 1:2:3. If a resistor R is connected across N2, the equivalent resistance seen from the primary is:",
+      "options": {
+        "a": "R/4",
+        "b": "R/9",
+        "c": "R/13",
+        "d": "4R"
+      },
+      "answer": "a",
+      "explanation": "R' = R / (N2/N1)^2 = R/2^2 = R/4[cite: 3]."
+    },
+    {
+      "q_no": 54,
+      "year": 2012,
+      "exam": "ESE Prelims EE",
+      "topic": "Ideal Transformer - Volt-Ampere Rating",
+      "question": "An ideal transformer has a ratio of 2300/230 V. If secondary load is 23 kW at unity PF, primary current is:",
+      "options": {
+        "a": "1 A",
+        "b": "10 A",
+        "c": "100 A",
+        "d": "230 A"
+      },
+      "answer": "b",
+      "explanation": "Input VA = Output VA. $2300 \\times I_1 = 23,000 \\Rightarrow I_1 = 10 A$"
+    },
+    {
+      "q_no": 55,
+      "year": 2014,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Phasor Analysis",
+      "question": "A single-phase ideal transformer has a turns ratio of 1:2. Secondary load is (10 + j10) Ω. If primary voltage is 100∠0° V, primary current is:",
+      "options": {
+        "a": "5 - j5 A",
+        "b": "10 - j10 A",
+        "c": "20 - j20 A",
+        "d": "40 - j40 A"
+      },
+      "answer": "c",
+      "explanation": "ZL' = (10+j10)/2^2 = 2.5+j2.5. I1 = 100/(2.5+j2.5) = 20-j20 A[cite: 3]."
+    },
+    {
+      "q_no": 56,
+      "year": 2015,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Efficiency",
+      "question": "For an ideal transformer, which statement is true?",
+      "options": {
+        "a": "Efficiency 100%, Regulation 100%",
+        "b": "Efficiency 0%, Regulation 0%",
+        "c": "Efficiency 100%, Regulation 0%",
+        "d": "Efficiency 50%, Regulation 50%"
+      },
+      "answer": "c",
+      "explanation": "Ideal transformers have no internal voltage drop (0% Regulation) and no power loss (100% Efficiency)[cite: 3]."
+    },
+    {
+      "q_no": 57,
+      "year": 2018,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Polarity",
+      "question": "Two ideal transformers are in parallel with identical turns ratios. The circulating current will be:",
+      "options": {
+        "a": "Infinite",
+        "b": "Zero",
+        "c": "Rated current",
+        "d": "Dependent on load"
+      },
+      "answer": "b",
+      "explanation": "With identical ratios, the secondary voltages are equal, resulting in no potential difference to drive circulating current[cite: 3]."
+    },
+    {
+      "q_no": 58,
+      "year": 2021,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Frequency Variation",
+      "question": "An ideal transformer designed for 50 Hz is operated at 100 Hz at the same voltage. The core flux will:",
+      "options": {
+        "a": "Double",
+        "b": "Remain the same",
+        "c": "Be halved",
+        "d": "Be quadrupled"
+      },
+      "answer": "c",
+      "explanation": "Since V = 4.44 f N φ, if f doubles, φ must halve to maintain V[cite: 3]."
+    },
+    {
+      "q_no": 59,
+      "year": 2023,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Power Balance",
+      "question": "A 1:10 step-up ideal transformer has a primary current of 50 A. The secondary current is:",
+      "options": {
+        "a": "500 A",
+        "b": "5 A",
+        "c": "0.5 A",
+        "d": "50 A"
+      },
+      "answer": "b",
+      "explanation": "I2 = I1 × (N1/N2) = 50 × (1/10) = 5 A[cite: 3]."
+    },
+    {
+      "q_no": 60,
+      "year": 2025,
+      "exam": "GATE EE",
+      "topic": "Ideal Transformer - Modern Constraints",
+      "question": "In an ideal transformer equivalent circuit, the core loss resistance (Rc) is:",
+      "options": {
+        "a": "Zero",
+        "b": "Finite and high",
+        "c": "Infinite",
+        "d": "Equal to leakage reactance"
+      },
+      "answer": "c",
+      "explanation": "Since an ideal transformer has zero core losses, the parallel resistance representing those losses must be infinite (open circuit)[cite: 3]."
+    },
+    {
+      "q_no": 61,
+      "year": 2012,
+      "exam": "SSC JE EE",
+      "topic": "Ideal Transformer - Core Properties",
+      "question": "The core of an ideal transformer has:",
+      "options": {
+        "a": "High resistance and high permeability",
+        "b": "Zero resistance and zero permeability",
+        "c": "Infinite permeability and zero core loss",
+        "d": "Low permeability and high core loss"
+      },
+      "answer": "c",
+      "explanation": "Zero losses and infinite permeability are standard ideal conditions[cite: 3]."
+    },
+    {
+      "q_no": 62,
+      "year": 2024,
+      "exam": "TANGEDCO AE",
+      "question": "In the equivalent circuit of a transformer, why is the magnetizing branch drawn in parallel?",
+      "options": {
+        "a": "No-load current is almost constant",
+        "b": "To reduce iron losses",
+        "c": "To ensure 100% efficiency",
+        "d": "Voltage regulation is 0%"
+      },
+      "answer": "a",
+      "explanation": "The magnetizing current creates the flux and is determined by the applied voltage, which is constant[cite: 3]."
+    }
+  ]
+}

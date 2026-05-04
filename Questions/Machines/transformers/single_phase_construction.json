@@ -1,0 +1,912 @@
+{
+  "topic_name": "Single Phase Transformer Construction - Exhaustive Exam Bank (1980-2026)",
+  "summary_points": [
+    "Core Materials: CRGO (Cold Rolled Grain Oriented) silicon steel is the standard for reducing hysteresis and increasing permeability[cite: 3].",
+    "Construction Types: Core-type features a single magnetic path; shell-type provides two parallel paths for flux[cite: 1, 3].",
+    "Moisture Protection: Breathers use cobalt-chloride impregnated silica gel; blue when dry, pink when saturated[cite: 1, 3].",
+    "Internal Protection: Buchholz relays are gas-actuated and installed only on oil-immersed transformers with conservators[cite: 1, 3].",
+    "Advanced Materials: Amorphous metal cores are increasingly used in modern distribution transformers to minimize no-load losses[cite: 1, 3]."
+  ],
+  "questions": [
+    {
+      "q_no": 1,
+      "question": "Which of the following statements regarding core-type and shell-type transformers is correct?",
+      "exam": "ESE Prelims",
+      "year": 1994,
+      "topic": "Core vs Shell",
+      "options": {
+        "a": "In a core-type transformer, the core surrounds the windings.",
+        "b": "A shell-type transformer is more suitable for high-voltage applications.",
+        "c": "In a shell-type transformer, the magnetic circuit is divided into two or more parts.",
+        "d": "Concentric windings are primarily used in shell-type transformers."
+      },
+      "answer": "c",
+      "explanation": "In a shell-type transformer, the flux from the central limb divides into two paths through the outer limbs, creating a parallel magnetic circuit[cite: 3]."
+    },
+    {
+      "q_no": 2,
+      "question": "In a single-phase transformer, laminations are provided in the core primarily to reduce:",
+      "exam": "ESE Prelims",
+      "year": 2002,
+      "topic": "Eddy Current Loss",
+      "options": {
+        "a": "Hysteresis loss",
+        "b": "Eddy current loss",
+        "c": "Magnetic permeability",
+        "d": "Mechanical vibration"
+      },
+      "answer": "b",
+      "explanation": "Eddy current loss is proportional to the square of lamination thickness ($P_e = K_e B^2 f^2 t^2$). Thinner laminations break the current path, reducing losses[cite: 3]."
+    },
+    {
+      "q_no": 3,
+      "question": "The cross-section of the core in a core-type transformer is often made 'stepped' instead of square to:",
+      "exam": "ESE Prelims",
+      "year": 2015,
+      "topic": "Core Shape",
+      "options": {
+        "a": "Reduce the mean length of the winding turn",
+        "b": "Reduce the volume of iron",
+        "c": "Increase mechanical strength",
+        "d": "Provide better cooling"
+      },
+      "answer": "a",
+      "explanation": "Stepped cores approximate a circle. This reduces the circumference of the winding, leading to less copper weight and lower $I^2R$ losses[cite: 3]."
+    },
+    {
+      "q_no": 4,
+      "question": "In order to minimize the inrush current in a single-phase transformer, the supply switch should be closed at the instant when:",
+      "exam": "ESE Prelims",
+      "year": 2018,
+      "topic": "Inrush Current",
+      "options": {
+        "a": "Supply voltage is zero",
+        "b": "Supply voltage is at its maximum",
+        "c": "Supply voltage is 70.7% of maximum",
+        "d": "Supply voltage is half of maximum"
+      },
+      "answer": "b",
+      "explanation": "Flux lags voltage by 90°. Closing at peak voltage ensures flux starts at its natural zero value, preventing core saturation and high current surges[cite: 3]."
+    },
+    {
+      "q_no": 5,
+      "question": "Which material is most commonly used for the core of a modern power transformer to ensure low hysteresis loss?",
+      "exam": "ESE Prelims",
+      "year": 2023,
+      "topic": "Core Materials",
+      "options": {
+        "a": "Cast Iron",
+        "b": "Wrought Iron",
+        "c": "Cold Rolled Grain Oriented (CRGO) Silicon Steel",
+        "d": "Hardened Steel"
+      },
+      "answer": "c",
+      "explanation": "CRGO silicon steel has high permeability and a narrow hysteresis loop, which significantly reduces the energy lost per cycle[cite: 3]."
+    },
+    {
+      "q_no": 6,
+      "question": "The Steinmetz exponent for modern transformer core material is usually taken as:",
+      "exam": "GATE EE",
+      "year": 1982,
+      "topic": "Hysteresis Loss",
+      "options": {
+        "a": "1.0",
+        "b": "1.6",
+        "c": "2.0",
+        "d": "2.5"
+      },
+      "answer": "b",
+      "explanation": "The empirical Steinmetz formula for hysteresis loss ($P_h = \\eta B^{1.6} f$) uses 1.6 for standard silicon steel[cite: 3]."
+    },
+    {
+      "q_no": 7,
+      "question": "To minimize the weight of copper in a transformer, the window height-to-width ratio should be:",
+      "exam": "ESE Prelims EE",
+      "year": 1988,
+      "topic": "Window Design",
+      "options": {
+        "a": "Between 2 and 4",
+        "b": "Between 0.5 and 1",
+        "c": "Exactly 1",
+        "d": "More than 10"
+      },
+      "answer": "a",
+      "explanation": "A taller, narrower window typically optimizes the mean length of the turn, reducing copper volume[cite: 3]."
+    },
+    {
+      "q_no": 8,
+      "question": "The laminations of a transformer are typically insulated from each other by a thin layer of:",
+      "exam": "TNPSC AE",
+      "year": 1994,
+      "topic": "Core Laminations",
+      "options": {
+        "a": "Paper",
+        "b": "Varnish or Oxide",
+        "c": "Rubber",
+        "d": "Mica"
+      },
+      "answer": "b",
+      "explanation": "Varnish or a chemical oxide coating is used to provide electrical insulation while maintaining a high stacking factor[cite: 3]."
+    },
+    {
+      "q_no": 9,
+      "question": "Which winding is most suitable for the LV side of a 25 kVA distribution transformer?",
+      "exam": "KPSC AE",
+      "year": 1999,
+      "topic": "Winding Types",
+      "options": {
+        "a": "Crossover winding",
+        "b": "Helical winding",
+        "c": "Cylindrical winding",
+        "d": "Disc winding"
+      },
+      "answer": "c",
+      "explanation": "Cylindrical windings are simple and commonly used for the low-voltage, high-current side of small transformers[cite: 3]."
+    },
+    {
+      "q_no": 10,
+      "question": "The 'Pour Point' of transformer oil refers to the temperature at which:",
+      "exam": "UPPCL AE",
+      "year": 2003,
+      "topic": "Transformer Oil",
+      "options": {
+        "a": "Oil begins to flow",
+        "b": "Oil catches fire",
+        "c": "Oil starts to evaporate",
+        "d": "Sludge forms"
+      },
+      "answer": "a",
+      "explanation": "Pour point is critical for cold-weather operation to ensure oil remains fluid enough for circulation[cite: 3]."
+    },
+    {
+      "q_no": 11,
+      "question": "In ODAF cooling, the 'D' stands for:",
+      "exam": "MPSC AE",
+      "year": 2007,
+      "topic": "Cooling Systems",
+      "options": {
+        "a": "Direct",
+        "b": "Delayed",
+        "c": "Directed",
+        "d": "Double"
+      },
+      "answer": "c",
+      "explanation": "ODAF stands for Oil Directed Air Forced, where oil is pumped specifically through the winding ducts[cite: 3]."
+    },
+    {
+      "q_no": 12,
+      "question": "A 3-step core (cruciform) is used in a transformer to:",
+      "exam": "SSC JE EE",
+      "year": 2011,
+      "topic": "Core Shape",
+      "options": {
+        "a": "Reduce iron loss",
+        "b": "Reduce copper loss",
+        "c": "Reduce air gap",
+        "d": "Increase voltage"
+      },
+      "answer": "b",
+      "explanation": "Stepped cores allow for a more circular coil, which has a smaller circumference for the same area, saving copper[cite: 3]."
+    },
+    {
+      "q_no": 13,
+      "question": "The noise produced by a transformer due to magnetic effects is called:",
+      "exam": "ESE Prelims EE",
+      "year": 2014,
+      "topic": "Magnetostriction",
+      "options": {
+        "a": "Barkhausen noise",
+        "b": "Humming",
+        "c": "Corona discharge",
+        "d": "Stray noise"
+      },
+      "answer": "b",
+      "explanation": "This is caused by magnetostriction—the physical expansion and contraction of the core in a magnetic field[cite: 3]."
+    },
+    {
+      "q_no": 14,
+      "question": "The Buchholz relay is connected in the pipe connecting:",
+      "exam": "KPTCL AE",
+      "year": 2018,
+      "topic": "Buchholz Relay Position",
+      "options": {
+        "a": "Conservator and Breather",
+        "b": "Main tank and Conservator",
+        "c": "Main tank and Radiator",
+        "d": "HV and LV bushings"
+      },
+      "answer": "b",
+      "explanation": "It must be placed here to capture gas bubbles rising from the main tank toward the conservator[cite: 3]."
+    },
+    {
+      "q_no": 15,
+      "question": "To reduce the leakage reactance of a transformer, the windings should be:",
+      "exam": "GATE EE",
+      "year": 2021,
+      "topic": "Leakage Reactance",
+      "options": {
+        "a": "Kept far apart",
+        "b": "Interleaved (Sectionalized)",
+        "c": "Placed on separate limbs",
+        "d": "Made of aluminum"
+      },
+      "answer": "b",
+      "explanation": "Interleaving the primary and secondary windings improves magnetic coupling and reduces leakage flux[cite: 3]."
+    },
+    {
+      "q_no": 16,
+      "question": "What is the color of dry silica gel?",
+      "exam": "SSC JE EE",
+      "year": 2024,
+      "topic": "Silica Gel Color",
+      "options": {
+        "a": "Pink",
+        "b": "Blue",
+        "c": "Yellow",
+        "d": "White"
+      },
+      "answer": "b",
+      "explanation": "Silica gel starts blue and turns pink as it absorbs moisture[cite: 3]."
+    },
+    {
+      "q_no": 17,
+      "question": "Amorphous metal cores are thin ribbons with a thickness of approximately:",
+      "exam": "MPSC / ESE (Anticipated)",
+      "year": 2025,
+      "topic": "Amorphous Core",
+      "options": {
+        "a": "0.5 mm",
+        "b": "0.3 mm",
+        "c": "0.025 mm",
+        "d": "1.0 mm"
+      },
+      "answer": "c",
+      "explanation": "Amorphous alloys are extremely thin (around 25-30 microns) to achieve ultra-low core losses[cite: 3]."
+    },
+    {
+      "q_no": 18,
+      "question": "Class-A insulation used in oil-filled transformers can withstand a temperature of:",
+      "exam": "ESE Prelims EE",
+      "year": 1985,
+      "topic": "Winding Insulation Class",
+      "options": {
+        "a": "90°C",
+        "b": "105°C",
+        "c": "120°C",
+        "d": "155°C"
+      },
+      "answer": "b",
+      "explanation": "Class A insulation (like paper impregnated with oil) is rated for a 105°C limit[cite: 3]."
+    },
+    {
+      "q_no": 19,
+      "question": "If the lamination thickness is doubled, the eddy current loss increases by a factor of:",
+      "exam": "GATE EE",
+      "year": 1991,
+      "topic": "Eddy Current Loss",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "8",
+        "d": "Remain same"
+      },
+      "answer": "b",
+      "explanation": "Eddy current loss is proportional to the square of the lamination thickness ($t^2$)[cite: 3]."
+    },
+    {
+      "q_no": 20,
+      "question": "On-load tap changers are typically used on:",
+      "exam": "UPPCL JE",
+      "year": 2012,
+      "topic": "Tap Changer",
+      "options": {
+        "a": "Distribution transformers",
+        "b": "Power transformers",
+        "c": "Instrument transformers",
+        "d": "Welding transformers"
+      },
+      "answer": "b",
+      "explanation": "Power transformers require voltage regulation without interrupting the load, necessitating on-load tap changers[cite: 3]."
+    },
+    {
+      "q_no": 21,
+      "question": "The primary purpose of providing fins or tubes on the tank surface is to:",
+      "exam": "KPSC AE",
+      "year": 2005,
+      "topic": "Tank Construction",
+      "options": {
+        "a": "Improve aesthetics",
+        "b": "Increase convection cooling",
+        "c": "Add mechanical strength",
+        "d": "Reduce tank weight"
+      },
+      "answer": "b",
+      "explanation": "Increasing the surface area improves the dissipation of heat from the oil to the ambient air[cite: 3]."
+    },
+    {
+      "q_no": 22,
+      "question": "High voltage bushings are usually made of:",
+      "exam": "TNPSC AE",
+      "year": 2019,
+      "topic": "Bushings Material",
+      "options": {
+        "a": "Porcelain",
+        "b": "Glass",
+        "c": "PVP",
+        "d": "Steel"
+      },
+      "answer": "a",
+      "explanation": "Porcelain provides high dielectric strength and resistance to environmental degradation[cite: 3]."
+    },
+    {
+      "q_no": 23,
+      "question": "The phase displacement between primary and secondary voltages of a 1-phase transformer is:",
+      "exam": "ESE Prelims EE",
+      "year": 1989,
+      "topic": "Phase Displacement",
+      "options": {
+        "a": "0°",
+        "b": "90°",
+        "c": "180°",
+        "d": "Either 0° or 180°"
+      },
+      "answer": "d",
+      "explanation": "Depending on the winding direction and terminal markings (polarity), the shift is either 0 or 180 degrees[cite: 3]."
+    },
+    {
+      "q_no": 24,
+      "question": "In a core-type transformer, the number of magnetic paths is:",
+      "exam": "MPSC AE",
+      "year": 2022,
+      "topic": "Magnetic Circuit",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "answer": "a",
+      "explanation": "Core-type construction consists of a single continuous magnetic circuit[cite: 3]."
+    },
+    {
+      "q_no": 25,
+      "question": "The conservator is a small tank that contains:",
+      "exam": "SSC JE EE",
+      "year": 2015,
+      "topic": "Conservator Function",
+      "options": {
+        "a": "No oil",
+        "b": "Partial oil to allow expansion",
+        "c": "Full oil at all times",
+        "d": "Only air"
+      },
+      "answer": "b",
+      "explanation": "It is kept roughly half-full to allow for the expansion and contraction of oil in the main tank due to temperature changes[cite: 3]."
+    },
+    {
+      "q_no": 26,
+      "question": "A 230/115 V, 50 Hz transformer has a high voltage winding resistance of 0.5 $\\Omega$ and a leakage reactance of 1.5 $\\Omega$. The equivalent resistance referred to the high voltage side is:",
+      "exam": "GATE EE",
+      "year": 1987,
+      "topic": "Equivalent Circuit",
+      "options": {
+        "a": "1.0 $\\Omega$",
+        "b": "0.5 $\\Omega$",
+        "c": "0.625 $\\Omega$",
+        "d": "1.5 $\\Omega$"
+      },
+      "answer": "a",
+      "explanation": "Transformation ratio $K = 115/230 = 0.5$. $R_{01} = R_1 + R_2/K^2 = 0.5 + 0.125/(0.5^2) = 1.0 \\Omega$[cite: 3]."
+    },
+    {
+      "q_no": 27,
+      "question": "Core loss of a single phase transformer is 100 W at rated voltage. If voltage is doubled and frequency is also doubled, the core loss will be:",
+      "exam": "GATE EE",
+      "year": 1996,
+      "topic": "Transformer Losses",
+      "options": {
+        "a": "100 W",
+        "b": "200 W",
+        "c": "400 W",
+        "d": "Information insufficient"
+      },
+      "answer": "b",
+      "explanation": "If $V/f$ is constant, $B_m$ is constant. Hysteresis loss $\\propto f$ and Eddy current loss $\\propto f^2$. Both increase, but specifically $P_i$ will double if only frequency and voltage are scaled linearly[cite: 3]."
+    },
+    {
+      "q_no": 28,
+      "question": "A 50 kVA transformer used as an autotransformer with a 3530/3300 ratio has a kVA rating of:",
+      "exam": "GATE EE",
+      "year": 2004,
+      "topic": "Autotransformer",
+      "options": {
+        "a": "50 kVA",
+        "b": "50.5 kVA",
+        "c": "716.3 kVA",
+        "d": "767.4 kVA"
+      },
+      "answer": "d",
+      "explanation": "Autotransformer rating = $(\\frac{a}{a-1}) \\times$ 2-winding rating. $a = 3530/3300$. Rating $\\approx 767.4$ kVA[cite: 3]."
+    },
+    {
+      "q_no": 29,
+      "question": "Interleaving the primary and secondary windings primarily reduces:",
+      "exam": "GATE EE",
+      "year": 2011,
+      "topic": "Leakage Reactance",
+      "options": {
+        "a": "Hysteresis loss",
+        "b": "Eddy current loss",
+        "c": "Copper loss",
+        "d": "Leakage reactance"
+      },
+      "answer": "d",
+      "explanation": "Interleaving reduces the leakage flux paths, directly decreasing leakage reactance[cite: 3]."
+    },
+    {
+      "q_no": 30,
+      "question": "At maximum efficiency, which of the following is true?",
+      "exam": "GATE EE",
+      "year": 2015,
+      "topic": "Efficiency",
+      "options": {
+        "a": "Iron loss = Copper loss",
+        "b": "Iron loss = 2 $\\times$ Copper loss",
+        "c": "Iron loss = 0.5 $\\times$ Copper loss",
+        "d": "All losses are zero"
+      },
+      "answer": "a",
+      "explanation": "Maximum efficiency occurs when constant (iron) losses are equal to variable (copper) losses[cite: 3]."
+    },
+    {
+      "q_no": 31,
+      "question": "If the air-gap of a transformer core increases, magnetizing reactance $X_m$ will:",
+      "exam": "GATE EE",
+      "year": 2021,
+      "topic": "Magnetic Circuit",
+      "options": {
+        "a": "Increase",
+        "b": "Decrease",
+        "c": "Remain same",
+        "d": "Be zero"
+      },
+      "answer": "b",
+      "explanation": "Increased air gap increases reluctance, reducing the inductance and thus the reactance $X_m$[cite: 3]."
+    },
+    {
+      "q_no": 32,
+      "question": "If $V$ increases by 10% and $f$ decreases by 10%, the flux density $B_{max}$:",
+      "exam": "GATE EE",
+      "year": 2024,
+      "topic": "Magnetic Circuit",
+      "options": {
+        "a": "Increases by 10%",
+        "b": "Decreases by 10%",
+        "c": "Increases by 22.2%",
+        "d": "Unchanged"
+      },
+      "answer": "c",
+      "explanation": "$B_{max} \\propto V/f = 1.1/0.9 = 1.222$. A 22.2% increase[cite: 3]."
+    },
+    {
+      "q_no": 33,
+      "question": "Parallel operation of 1-phase transformers requires:",
+      "exam": "GATE EE",
+      "year": 2026,
+      "topic": "Parallel Operation",
+      "options": {
+        "a": "Same kVA",
+        "b": "Same impedance",
+        "c": "Same voltage ratio",
+        "d": "Same size"
+      },
+      "answer": "c",
+      "explanation": "Equal voltage ratios are essential to avoid circulating currents at no-load[cite: 3]."
+    },
+    {
+      "q_no": 34,
+      "question": "The purpose of a 'Conservator' in a transformer is to:",
+      "exam": "KPTCL AE",
+      "year": 2016,
+      "topic": "Conservator Tank",
+      "options": {
+        "a": "Store extra oil",
+        "b": "Allow oil expansion and contraction",
+        "c": "Cool the oil",
+        "d": "Prevent faults"
+      },
+      "answer": "b",
+      "explanation": "It provides a buffer space for oil volume changes due to temperature[cite: 3]."
+    },
+    {
+      "q_no": 35,
+      "question": "The chemical used in a breather is:",
+      "exam": "UPPCL JE",
+      "year": 2019,
+      "topic": "Breather / Silica Gel",
+      "options": {
+        "a": "NaCl",
+        "b": "CaCl2",
+        "c": "Silica Gel",
+        "d": "KMnO4"
+      },
+      "answer": "c",
+      "explanation": "Silica gel absorbs moisture from incoming air[cite: 3]."
+    },
+    {
+      "q_no": 36,
+      "question": "HV side windings in core-type transformers are usually:",
+      "exam": "TNPSC AE",
+      "year": 2018,
+      "topic": "Winding Types",
+      "options": {
+        "a": "Helical",
+        "b": "Cylindrical",
+        "c": "Crossover",
+        "d": "Disc"
+      },
+      "answer": "c",
+      "explanation": "Crossover windings are suited for high-voltage, low-current needs[cite: 3]."
+    },
+    {
+      "q_no": 37,
+      "question": "CRGO steel in cores results in:",
+      "exam": "MPSC AE",
+      "year": 2017,
+      "topic": "Core Materials",
+      "options": {
+        "a": "High eddy loss",
+        "b": "Low hysteresis and smaller size",
+        "c": "High magnetizing current",
+        "d": "Vibration only"
+      },
+      "answer": "b",
+      "explanation": "CRGO reduces hysteresis loss and allows for higher flux densities[cite: 3]."
+    },
+    {
+      "q_no": 38,
+      "question": "Buchholz relay is only used on:",
+      "exam": "KPSC AE",
+      "year": 2020,
+      "topic": "Protection Devices",
+      "options": {
+        "a": "Air-cooled",
+        "b": "Oil-cooled with conservator",
+        "c": "Dry-type",
+        "d": "All transformers"
+      },
+      "answer": "b",
+      "explanation": "It is a gas-actuated relay for oil-immersed transformers[cite: 3]."
+    },
+    {
+      "q_no": 39,
+      "question": "The Stacking Factor is typically:",
+      "exam": "UPPCL AE",
+      "year": 2021,
+      "topic": "Core Construction",
+      "options": {
+        "a": "1.0",
+        "b": "> 1.0",
+        "c": "0.9 to 0.95",
+        "d": "0"
+      },
+      "answer": "c",
+      "explanation": "Stacking factor is less than 1 due to lamination insulation[cite: 3]."
+    },
+    {
+      "q_no": 40,
+      "question": "The central limb of a shell-type transformer carries:",
+      "exam": "TNPSC AE",
+      "year": 2022,
+      "topic": "Magnetic Circuits",
+      "options": {
+        "a": "Half flux",
+        "b": "Total flux",
+        "c": "Double flux",
+        "d": "Zero flux"
+      },
+      "answer": "b",
+      "explanation": "Total flux is in the center; it splits into the two outer limbs[cite: 3]."
+    },
+    {
+      "q_no": 41,
+      "question": "Transformer oil flash point should be at least:",
+      "exam": "KPTCL AE",
+      "year": 2026,
+      "topic": "Transformer Oil Properties",
+      "options": {
+        "a": "50°C",
+        "b": "100°C",
+        "c": "140°C",
+        "d": "250°C"
+      },
+      "answer": "c",
+      "explanation": "A high flash point prevents ignition during faults[cite: 3]."
+    },
+    {
+      "q_no": 42,
+      "question": "Cruciform cores reduce:",
+      "exam": "SSC JE EE",
+      "year": 2015,
+      "topic": "Core Design",
+      "options": {
+        "a": "Iron weight",
+        "b": "Mean length of winding turn",
+        "c": "Flux density",
+        "d": "Eddy loss"
+      },
+      "answer": "b",
+      "explanation": "Stepped cores allow circular windings, which use less copper[cite: 3]."
+    },
+    {
+      "q_no": 43,
+      "question": "The breather dries air entering the:",
+      "exam": "DRDO CEPTAM",
+      "year": 2018,
+      "topic": "Moisture Control",
+      "options": {
+        "a": "Tank",
+        "b": "Radiator",
+        "c": "Conservator",
+        "d": "Relay"
+      },
+      "answer": "c",
+      "explanation": "It removes moisture as the transformer 'breathes' during load changes[cite: 3]."
+    },
+    {
+      "q_no": 44,
+      "question": "Best core material for high-frequency instrument transformers?",
+      "exam": "ISRO Scientist/Engineer",
+      "year": 2020,
+      "topic": "Magnetic Materials",
+      "options": {
+        "a": "Cast Iron",
+        "b": "Ferrite",
+        "c": "Soft Steel",
+        "d": "Aluminum"
+      },
+      "answer": "b",
+      "explanation": "Ferrites have high resistivity and permeability, ideal for high frequencies[cite: 3]."
+    },
+    {
+      "q_no": 45,
+      "question": "Standard 50 Hz lamination thickness is:",
+      "exam": "PGCIL Diploma Trainee",
+      "year": 2021,
+      "topic": "Core Laminations",
+      "options": {
+        "a": "0.01 mm",
+        "b": "0.35 mm to 0.5 mm",
+        "c": "1 mm",
+        "d": "10 mm"
+      },
+      "answer": "b",
+      "explanation": "Thicknesses of 0.35 mm to 0.5 mm balance cost and eddy loss reduction[cite: 3]."
+    },
+    {
+      "q_no": 46,
+      "question": "In shell-type transformers, outer limbs carry:",
+      "exam": "SSC JE EE",
+      "year": 2022,
+      "topic": "Magnetic Circuits",
+      "options": {
+        "a": "Total flux",
+        "b": "Twice flux",
+        "c": "Half flux",
+        "d": "Zero flux"
+      },
+      "answer": "c",
+      "explanation": "The flux splits equally between the two side paths[cite: 3]."
+    },
+    {
+      "q_no": 47,
+      "question": "Common cooling for small distribution transformers:",
+      "exam": "DRDO CEPTAM",
+      "year": 2023,
+      "topic": "Cooling Methods",
+      "options": {
+        "a": "Air Blast",
+        "b": "AN",
+        "c": "ONAN",
+        "d": "OFWF"
+      },
+      "answer": "c",
+      "explanation": "ONAN is standard for most pole-mounted and smaller units[cite: 3]."
+    },
+    {
+      "q_no": 48,
+      "question": "Humming noise is caused by:",
+      "exam": "ISRO Technician",
+      "year": 2024,
+      "topic": "Noise and Vibration",
+      "options": {
+        "a": "Hysteresis",
+        "b": "Magnetostriction",
+        "c": "Corona",
+        "d": "Leaking oil"
+      },
+      "answer": "b",
+      "explanation": "Magnetostriction causes the core to vibrate physically at double the power frequency[cite: 3]."
+    },
+    {
+      "q_no": 49,
+      "question": "An ideal transformer features:",
+      "exam": "SSC JE EE",
+      "year": 2026,
+      "topic": "Ideal Characteristics",
+      "options": {
+        "a": "No leakage",
+        "b": "Infinite permeability",
+        "c": "Both a and b",
+        "d": "None"
+      },
+      "answer": "c",
+      "explanation": "An ideal model assumes zero losses, no leakage, and zero magnetizing current[cite: 3]."
+    },
+    {
+      "q_no": 50,
+      "question": "According to YCT analysis of UPPCL JE papers, the percentage of silicon added to transformer steel to reduce hysteresis loss is approximately:",
+      "exam": "UPPCL JE / YCT Solved",
+      "year": 2019,
+      "topic": "Material Science",
+      "options": {
+        "a": "0.5% to 1%",
+        "b": "3% to 5%",
+        "c": "10% to 15%",
+        "d": "25%"
+      },
+      "answer": "b",
+      "explanation": "Adding 3-5% silicon increases electrical resistivity, reducing eddy current loss, while also reducing the hysteresis loop area[cite: 3]."
+    },
+    {
+      "q_no": 51,
+      "question": "A transformer has a maximum efficiency of 95% at 400 kW. At what condition do the variable losses equal the constant losses?",
+      "exam": "YCT AE Planner",
+      "year": 2021,
+      "topic": "Efficiency",
+      "options": {
+        "a": "At half load",
+        "b": "At full load",
+        "c": "At the load where maximum efficiency occurs",
+        "d": "At no load"
+      },
+      "answer": "c",
+      "explanation": "This is a fundamental machine principle: maximum efficiency is reached specifically when variable (copper) losses equal constant (iron) losses[cite: 3]."
+    },
+    {
+      "q_no": 52,
+      "question": "In a 1-phase transformer, the EMF induced per turn in the primary is:",
+      "exam": "RRB JE / YCT Solved",
+      "year": 2015,
+      "topic": "EMF Equation",
+      "options": {
+        "a": "Equal to EMF per turn in secondary",
+        "b": "Greater than EMF per turn in secondary",
+        "c": "Less than EMF per turn in secondary",
+        "d": "Determined by the transformation ratio"
+      },
+      "answer": "a",
+      "explanation": "Since both windings are linked by the same mutual flux, the voltage induced per turn ($E/N$) is identical for both primary and secondary[cite: 3]."
+    },
+    {
+      "q_no": 53,
+      "question": "The primary reason for 'humming' in a transformer core, as highlighted in YCT technical series, is:",
+      "exam": "SSC JE / YCT Solved",
+      "year": 2023,
+      "topic": "Magnetostriction",
+      "options": {
+        "a": "Loose bolting of laminations",
+        "b": "Magnetostriction",
+        "c": "Oil vibration",
+        "d": "Overloading"
+      },
+      "answer": "b",
+      "explanation": "Magnetostriction causes the core material to expand and contract in the magnetic field, generating the characteristic 100 Hz hum[cite: 3]."
+    },
+    {
+      "q_no": 54,
+      "question": "What is the transformation ratio ($K$) for a step-up transformer?",
+      "exam": "YCT JE Planner",
+      "year": 2020,
+      "topic": "Transformation Ratio",
+      "options": {
+        "a": "$K > 1$",
+        "b": "$K < 1$",
+        "c": "$K = 1$",
+        "d": "$K = 0$"
+      },
+      "answer": "a",
+      "explanation": "For a step-up transformer, $N_2 > N_1$, therefore $K = N_2/N_1$ must be greater than 1[cite: 3]."
+    },
+    {
+      "q_no": 55,
+      "question": "According to YCT Chapter-wise papers, the 'No-load' current of a transformer usually represents what percentage of the full-load current?",
+      "exam": "UPPCL AE",
+      "year": 2016,
+      "topic": "No-Load Current",
+      "options": {
+        "a": "0.1% to 0.5%",
+        "b": "2% to 5%",
+        "c": "10% to 15%",
+        "d": "20% to 30%"
+      },
+      "answer": "b",
+      "explanation": "The no-load current is small because it only accounts for the magnetizing flux and core losses[cite: 3]."
+    },
+    {
+      "q_no": 56,
+      "question": "Which test is conducted to determine the magnetic leakage and equivalent impedance of a transformer?",
+      "exam": "ISRO / YCT Solved",
+      "year": 2022,
+      "topic": "Testing",
+      "options": {
+        "a": "Open circuit test",
+        "b": "Short circuit test",
+        "c": "Back-to-back test",
+        "d": "Insulation resistance test"
+      },
+      "answer": "b",
+      "explanation": "The Short Circuit (SC) test provides the equivalent impedance ($Z_{eq}$), resistance ($R_{eq}$), and leakage reactance ($X_{eq}$) referred to the side the test is performed on[cite: 3]."
+    },
+    {
+      "q_no": 57,
+      "question": "In a transformer, the dielectric strength of the oil is expected to be:",
+      "exam": "YCT Exam Planner",
+      "year": 2024,
+      "topic": "Transformer Oil",
+      "options": {
+        "a": "1 kV",
+        "b": "30 kV",
+        "c": "100 kV",
+        "d": "330 kV"
+      },
+      "answer": "b",
+      "explanation": "Standard transformer oil should have a breakdown voltage (dielectric strength) of at least 30 kV across a standard 2.5 mm gap[cite: 3]."
+    },
+    {
+      "q_no": 58,
+      "question": "A transformer core is laminated to reduce eddy current loss. If the supply frequency is doubled, the eddy current loss will:",
+      "exam": "GATE / YCT Solved",
+      "year": 2025,
+      "topic": "Losses",
+      "options": {
+        "a": "Double",
+        "b": "Become four times",
+        "c": "Remain same",
+        "d": "Become half"
+      },
+      "answer": "b",
+      "explanation": "Eddy current loss ($P_e$) is proportional to $f^2$. If frequency is doubled, $(2f)^2 = 4f^2$, so the loss increases fourfold[cite: 3]."
+    },
+    {
+      "q_no": 59,
+      "question": "Which winding has the highest number of turns in a transformer?",
+      "exam": "SSC JE / YCT Solved",
+      "year": 2018,
+      "topic": "Winding Design",
+      "options": {
+        "a": "Low Voltage (LV) winding",
+        "b": "High Voltage (HV) winding",
+        "c": "Both have equal turns",
+        "d": "Depends on the kVA rating"
+      },
+      "answer": "b",
+      "explanation": "Induced EMF is directly proportional to the number of turns ($E \\propto N$). Therefore, the high-voltage side must have more turns[cite: 3]."
+    },
+    {
+      "q_no": 60,
+      "question": "In YCT analysis, what is the 'Sandwich' winding primarily used for?",
+      "exam": "UPPCL JE",
+      "year": 2021,
+      "topic": "Winding Types",
+      "options": {
+        "a": "Core-type transformers",
+        "b": "Shell-type transformers",
+        "c": "Autotransformers",
+        "d": "Instrument transformers"
+      },
+      "answer": "b",
+      "explanation": "Sandwich or interleaved windings are characteristic of shell-type transformers to reduce leakage reactance[cite: 3]."
+    }
+  ]
+}

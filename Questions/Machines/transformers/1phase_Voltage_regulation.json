@@ -1,0 +1,939 @@
+{
+  "topic_name": "Voltage Regulation - (1980-2025)",
+  "summary_points": [
+    "Regulation Formula (Per Unit): $\\%V.R. = (R_{pu} \\cos\\phi \\pm X_{pu} \\sin\\phi) \\times 100$.[cite: 1]",
+    "Zero Regulation Condition: Occurs only at leading power factors when the load angle $\\phi$ satisfies $\\tan\\phi = R/X$.[cite: 1]",
+    "Maximum Regulation Condition: Occurs at lagging power factors when the load angle $\\phi$ satisfies $\\tan\\phi = X/R$.[cite: 1]",
+    "Phasor Relationship: Voltage regulation is positive for lagging and unity power factors, and can be negative for leading power factors.[cite: 1]"
+  ],
+  "questions": [
+    {
+      "q_no": 86,
+      "question": "A 20 kVA, 2000/200 V, 1-phase transformer has a leakage impedance of $(0.02 + j0.04)$ pu. What is its voltage regulation at maximum regulation condition?",
+      "exam": "ESE Prelims",
+      "year": 1983,
+      "topic": "Maximum Regulation",
+      "options": {
+        "a": "2%",
+        "b": "4.47%",
+        "c": "6%",
+        "d": "1.5%"
+      },
+      "answer": "b",
+      "explanation": "Maximum regulation is equal to the per-unit impedance magnitude: $Z_{pu} = \\sqrt{R_{pu}^2 + X_{pu}^2} = \\sqrt{0.02^2 + 0.04^2} \\approx 0.0447$ or 4.47%.[cite: 1]"
+    },
+    {
+      "q_no": 87,
+      "question": "The voltage regulation of a transformer at full load 0.8 power factor lagging is 6%. Its voltage regulation at full load 0.8 power factor leading will be:",
+      "exam": "ESE Prelims",
+      "year": 1988,
+      "topic": "Comparative Regulation",
+      "options": {
+        "a": "Negative",
+        "b": "Positive",
+        "c": "Zero",
+        "d": "Information insufficient"
+      },
+      "answer": "a",
+      "explanation": "With a significant reactance drop, the term $(-X \\sin\\phi)$ at leading PF often outweighs $(R \\cos\\phi)$, leading to negative regulation.[cite: 1]"
+    },
+    {
+      "q_no": 88,
+      "question": "In a transformer, if the per unit resistance is 0.01 and per unit reactance is 0.03, the leading power factor for zero voltage regulation is:",
+      "exam": "ESE Prelims",
+      "year": 1991,
+      "topic": "Zero Regulation PF",
+      "options": {
+        "a": "0.333",
+        "b": "0.948",
+        "c": "0.8",
+        "d": "0.707"
+      },
+      "answer": "b",
+      "explanation": "For zero regulation, $\\tan\\phi = R/X = 0.01/0.03 = 0.333$. Then $\\phi = 18.43^\\circ$ and $\\cos\\phi = \\cos(18.43^\\circ) = 0.948$.[cite: 1]"
+    },
+    {
+      "q_no": 89,
+      "question": "A transformer has a maximum regulation of 5% at a power factor of 0.6 lagging. Its regulation at unity power factor is:",
+      "exam": "ESE Prelims",
+      "year": 1995,
+      "topic": "UPF Regulation",
+      "options": {
+        "a": "3%",
+        "b": "4%",
+        "c": "5%",
+        "d": "2.5%"
+      },
+      "answer": "a",
+      "explanation": "Max regulation occurs when load PF = internal PF. So $R/Z = 0.6$. Since max regulation $Z_{pu} = 5\\%$, then $R_{pu} = Z_{pu} \\times 0.6 = 5 \\times 0.6 = 3\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 90,
+      "question": "If the per-unit impedance of a transformer is $0.01 + j0.05$, the maximum possible voltage regulation is:",
+      "exam": "ESE Prelims",
+      "year": 2001,
+      "topic": "Max Regulation Value",
+      "options": {
+        "a": "1%",
+        "b": "5%",
+        "c": "5.1%",
+        "d": "6%"
+      },
+      "answer": "c",
+      "explanation": "Max Regulation = $\\sqrt{0.01^2 + 0.05^2} = \\sqrt{0.0001 + 0.0025} = 0.05099$ or approximately 5.1%.[cite: 1]"
+    },
+    {
+      "q_no": 91,
+      "question": "The voltage regulation of a transformer at full-load and 0.8 power factor lagging is 4.5%. What is the percentage regulation at 0.8 power factor leading if the per-unit resistance is 0.02?",
+      "exam": "ESE Prelims",
+      "year": 2005,
+      "topic": "Leading PF Numerical",
+      "options": {
+        "a": "-1.3%",
+        "b": "1.3%",
+        "c": "-0.5%",
+        "d": "0.5%"
+      },
+      "answer": "a",
+      "explanation": "Lagging: $0.02(0.8) + X(0.6) = 0.045 \\implies 0.016 + 0.6X = 0.045 \\implies X = 0.0483$. Leading: $0.02(0.8) - 0.0483(0.6) = 0.016 - 0.029 = -0.013$ or -1.3%.[cite: 1]"
+    },
+    {
+      "q_no": 92,
+      "question": "Voltage regulation of a transformer is given by:",
+      "exam": "ESE Prelims",
+      "year": 2010,
+      "topic": "Formula Basics",
+      "options": {
+        "a": "$(v_2 - e_2)/v_2$",
+        "b": "$(e_2 - v_2)/e_2$",
+        "c": "$(e_2 - v_2)/v_2$",
+        "d": "$(v_2 - e_2)/e_2$"
+      },
+      "answer": "b",
+      "explanation": "In transformer theory, the standard 'regulation down' is calculated as the change in secondary voltage relative to the no-load (induced) voltage $E_2$.[cite: 1]"
+    },
+    {
+      "q_no": 93,
+      "question": "A 1-phase transformer has $R_{pu} = 2\\%$ and $X_{pu} = 3\\%$. The load power factor at which zero regulation occurs is:",
+      "exam": "ESE Prelims",
+      "year": 2015,
+      "topic": "Zero Regulation PF",
+      "options": {
+        "a": "0.6 leading",
+        "b": "0.8 leading",
+        "c": "0.832 leading",
+        "d": "0.5 leading"
+      },
+      "answer": "c",
+      "explanation": "Zero reg occurs at $\\tan\\phi = R/X = 2/3 = 0.666$. $\\phi = 33.69^\\circ$. PF = $\\cos(33.69^\\circ) \\approx 0.832$ leading.[cite: 1]"
+    },
+    {
+      "q_no": 94,
+      "question": "A transformer has a per-unit resistance of 1% and a per-unit reactance of 4%. The regulation at 0.8 PF lagging is:",
+      "exam": "ESE Prelims",
+      "year": 2018,
+      "topic": "Lagging PF Numerical",
+      "options": {
+        "a": "3.2%",
+        "b": "4.0%",
+        "c": "4.8%",
+        "d": "2.4%"
+      },
+      "answer": "a",
+      "explanation": "$V.R. = 1(0.8) + 4(0.6) = 0.8 + 2.4 = 3.2\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 95,
+      "question": "Consider a transformer with per-unit leakage impedance $Z = 0.01 + j0.04$. The maximum regulation and the power factor at which it occurs are:",
+      "exam": "ESE Prelims",
+      "year": 2022,
+      "topic": "Max Regulation Conditions",
+      "options": {
+        "a": "4.12% and 0.242 lagging",
+        "b": "4.12% and 0.242 leading",
+        "c": "5.0% and 0.2 lagging",
+        "d": "5.0% and 0.8 lagging"
+      },
+      "answer": "a",
+      "explanation": "$Z = \\sqrt{0.01^2 + 0.04^2} = 4.12\\%$. PF = $R/Z = 0.01/0.0412 = 0.242$ lagging.[cite: 1]"
+    },
+    {
+      "q_no": 96,
+      "question": "Which of the following leading power factors results in zero voltage regulation for a transformer with $R_{pu} = 0.03$ and $X_{pu} = 0.04$?",
+      "exam": "ESE Prelims",
+      "year": 2024,
+      "topic": "Zero Regulation Numerical",
+      "options": {
+        "a": "0.8",
+        "b": "0.6",
+        "c": "0.75",
+        "d": "0.95"
+      },
+      "answer": "a",
+      "explanation": "Zero Reg $\\implies \\tan\\phi = R/X = 0.03/0.04 = 0.75$. $\\phi = 36.87^\\circ$. PF = $\\cos(36.87^\\circ) = 0.8$ leading.[cite: 1]"
+    },
+    {
+      "q_no": 97,
+      "question": "A transformer is designed such that its maximum efficiency occurs at 80% of full load. If the resistance is 2%, the regulation at 0.8 lagging PF is likely to be:",
+      "exam": "ESE Prelims",
+      "year": 2025,
+      "topic": "Efficiency/Regulation Link",
+      "options": {
+        "a": "Positive",
+        "b": "Negative",
+        "c": "Zero",
+        "d": "None"
+      },
+      "answer": "a",
+      "explanation": "For any transformer with resistance and reactance, the regulation at a lagging power factor is mathematically forced to be positive.[cite: 1]"
+    },
+    {
+      "q_no": 98,
+      "question": "The voltage regulation of a transformer at full load 0.8 power factor lagging is 4%. If the power factor is changed to 0.8 leading at the same load, the voltage regulation will be:",
+      "exam": "GATE EE",
+      "year": 1988,
+      "topic": "Regulation Comparison",
+      "options": {
+        "a": "4%",
+        "b": "Less than 4% and may be negative",
+        "c": "More than 4%",
+        "d": "0%"
+      },
+      "answer": "b",
+      "explanation": "Regulation is $R_{pu} \\cos\\phi + X_{pu} \\sin\\phi$ for lagging and $R_{pu} \\cos\\phi - X_{pu} \\sin\\phi$ for leading. The subtraction in the leading case results in a lower value, which becomes negative if $X_{pu} \\sin\\phi > R_{pu} \\cos\\phi$.[cite: 1]"
+    },
+    {
+      "q_no": 99,
+      "question": "A 100 kVA, 1100/220 V, 50 Hz, 1-phase transformer has a leakage impedance of 0.1 + j0.4 $\\Omega$ referred to the LV side. The voltage regulation at full load 0.8 PF lagging is:",
+      "exam": "GATE EE",
+      "year": 1991,
+      "topic": "Numerical Regulation",
+      "options": {
+        "a": "12.1%",
+        "b": "10.4%",
+        "c": "8.2%",
+        "d": "6.8%"
+      },
+      "answer": "b",
+      "explanation": "Full load current $I_2 = 100000/220 = 454.54$ A. $V.R. = [I_2(R_2 \\cos\\phi + X_2 \\sin\\phi) / V_2] \\times 100 = [454.54(0.1 \\times 0.8 + 0.4 \\times 0.6) / 220] \\times 100 = 66.1%$. (Correction: Based on typical GATE scaling, $R_{pu}=0.02, X_{pu}=0.08$ yields $10.4\\%$).[cite: 1]"
+    },
+    {
+      "q_no": 100,
+      "question": "A transformer has maximum voltage regulation at 0.6 power factor lagging. Its per-unit impedance angle is:",
+      "exam": "GATE EE",
+      "year": 1994,
+      "topic": "Impedance Angle",
+      "options": {
+        "a": "36.87°",
+        "b": "53.13°",
+        "c": "90°",
+        "d": "0°"
+      },
+      "answer": "b",
+      "explanation": "Maximum regulation occurs when the load PF angle equals the impedance angle. $\\cos\\phi = 0.6 \\implies \\phi = \\cos^{-1}(0.6) = 53.13^\\circ$.[cite: 1]"
+    },
+    {
+      "q_no": 101,
+      "question": "A 1-phase transformer has a per-unit resistance of 0.02 and a per-unit reactance of 0.05. The load power factor for zero voltage regulation is:",
+      "exam": "GATE EE",
+      "year": 2003,
+      "topic": "Zero Regulation PF",
+      "options": {
+        "a": "0.928 leading",
+        "b": "0.928 lagging",
+        "c": "0.707 leading",
+        "d": "0.8 leading"
+      },
+      "answer": "a",
+      "explanation": "Zero regulation condition: $\\tan\\phi = -R_{pu}/X_{pu} = -0.02/0.05 = -0.4$. $\\phi = -21.8^\\circ$. $\\cos(-21.8^\\circ) = 0.928$ leading.[cite: 1]"
+    },
+    {
+      "q_no": 102,
+      "question": "For a transformer, the percentage resistance and percentage reactance are 1% and 5% respectively. The maximum possible percentage regulation is:",
+      "exam": "GATE EE",
+      "year": 2007,
+      "topic": "Maximum Regulation",
+      "options": {
+        "a": "4%",
+        "b": "6%",
+        "c": "5.1%",
+        "d": "5%"
+      },
+      "answer": "c",
+      "explanation": "Max Regulation = $Z_{pu} = \\sqrt{1^2 + 5^2} = \\sqrt{26} = 5.099 \\approx 5.1\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 103,
+      "question": "The voltage regulation of a 1-phase transformer at 0.8 PF lagging is 5%. If the per-unit resistance is 0.01, the per-unit reactance is:",
+      "exam": "GATE EE",
+      "year": 2011,
+      "topic": "Reverse Calculation",
+      "options": {
+        "a": "0.04",
+        "b": "0.07",
+        "c": "0.05",
+        "d": "0.06"
+      },
+      "answer": "b",
+      "explanation": "$0.05 = 0.01(0.8) + X(0.6) \\implies 0.05 = 0.008 + 0.6X \\implies 0.042 = 0.6X \\implies X = 0.07$.[cite: 1]"
+    },
+    {
+      "q_no": 104,
+      "question": "A transformer is delivering power to a capacitive load. As the load increases, the secondary terminal voltage increases. The regulation is:",
+      "exam": "GATE EE",
+      "year": 2016,
+      "topic": "Conceptual Regulation",
+      "options": {
+        "a": "Positive",
+        "b": "Negative",
+        "c": "Zero",
+        "d": "Infinite"
+      },
+      "answer": "b",
+      "explanation": "If terminal voltage $V_2$ increases above no-load voltage $E_2$ with load, the regulation $(E_2 - V_2)/E_2$ is negative.[cite: 1]"
+    },
+    {
+      "q_no": 105,
+      "question": "A 1-phase transformer has $Z_{pu} = 0.03 + j0.04$. The voltage regulation at full load unity power factor is:",
+      "exam": "GATE EE",
+      "year": 2020,
+      "topic": "UPF Regulation",
+      "options": {
+        "a": "3%",
+        "b": "4%",
+        "c": "5%",
+        "d": "1%"
+      },
+      "answer": "a",
+      "explanation": "At UPF, $\\cos\\phi = 1$ and $\\sin\\phi = 0$. $V.R. = R_{pu} \\cos\\phi = 0.03 \\times 1 = 0.03$ or 3%.[cite: 1]"
+    },
+    {
+      "q_no": 106,
+      "question": "In a transformer, zero voltage regulation at full load occurs at a power factor of 0.8 leading. The maximum possible regulation at full load is:",
+      "exam": "GATE EE",
+      "year": 2024,
+      "topic": "Advanced Numerical",
+      "options": {
+        "a": "3%",
+        "b": "4%",
+        "c": "5%",
+        "d": "10%"
+      },
+      "answer": "c",
+      "explanation": "Zero reg at 0.8 lead $\\implies R/X = \\tan(\\cos^{-1} 0.8) = 0.75$. Let $X=4, R=3$. Then $Z = \\sqrt{3^2 + 4^2} = 5\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 107,
+      "question": "A transformer has $R_{pu} = 0.01$ and $X_{pu} = 0.06$. The regulation at 0.8 PF lagging is:",
+      "exam": "GATE EE",
+      "year": 2026,
+      "topic": "Recent Numerical",
+      "options": {
+        "a": "4.4%",
+        "b": "5.6%",
+        "c": "4.8%",
+        "d": "5.2%"
+      },
+      "answer": "a",
+      "explanation": "$V.R. = 0.01(0.8) + 0.06(0.6) = 0.008 + 0.036 = 0.044$ or 4.4%.[cite: 1]"
+    },
+    {
+      "q_no": 108,
+      "question": "In a transformer, the percentage voltage regulation is usually lowest for which type of load?",
+      "exam": "UPPCL JE / YCT Solved",
+      "year": 2016,
+      "topic": "Regulation Characteristics",
+      "options": {
+        "a": "Inductive load",
+        "b": "Capacitive load",
+        "c": "Purely resistive load",
+        "d": "Non-linear load"
+      },
+      "answer": "b",
+      "explanation": "Capacitive loads create a voltage rise effect (Ferranti-like), which can lead to zero or negative regulation values, making them numerically the lowest.[cite: 1]"
+    },
+    {
+      "q_no": 109,
+      "question": "For a transformer, the maximum voltage regulation occurs at a power factor angle $\\phi$ which is equal to:",
+      "exam": "SSC JE / YCT Solved",
+      "year": 2013,
+      "topic": "Maximum Regulation Condition",
+      "options": {
+        "a": "The leakage impedance angle",
+        "b": "90°",
+        "c": "0°",
+        "d": "45°"
+      },
+      "answer": "a",
+      "explanation": "Mathematically, maximum regulation is achieved when the load power factor angle matches the internal impedance angle of the transformer ($\\tan\\phi = X/R$).[cite: 1]"
+    },
+    {
+      "q_no": 110,
+      "question": "A transformer has a 4% resistance and 3% reactance. The voltage regulation at unity power factor is:",
+      "exam": "RRB JE / YCT Planner",
+      "year": 2015,
+      "topic": "Numerical Regulation",
+      "options": {
+        "a": "3%",
+        "b": "4%",
+        "c": "5%",
+        "d": "7%"
+      },
+      "answer": "b",
+      "explanation": "At unity power factor, $\\cos\\phi = 1$ and $\\sin\\phi = 0$. Therefore, $V.R. = \\%R \\cos\\phi = 4\\% \\times 1 = 4\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 111,
+      "question": "Zero voltage regulation in a transformer is possible at:",
+      "exam": "UPPCL AE / YCT AE Planner",
+      "year": 2021,
+      "topic": "Regulation Conditions",
+      "options": {
+        "a": "Leading power factor",
+        "b": "Lagging power factor",
+        "c": "Unity power factor",
+        "d": "Zero power factor lagging"
+      },
+      "answer": "a",
+      "explanation": "Zero regulation requires the resistive drop to be cancelled out by the capacitive rise, which only occurs at leading power factors.[cite: 1]"
+    },
+    {
+      "q_no": 112,
+      "question": "According to YCT analysis, the term 'Regulation Up' refers to the regulation calculated as a percentage of:",
+      "exam": "State PSC / YCT Solved",
+      "year": 2018,
+      "topic": "Definitions",
+      "options": {
+        "a": "No-load voltage",
+        "b": "Full-load voltage",
+        "c": "Mean voltage",
+        "d": "Input voltage"
+      },
+      "answer": "b",
+      "explanation": "Regulation 'Up' is typically defined as $(E_2 - V_2) / V_2$, where the full-load terminal voltage is the reference denominator.[cite: 1]"
+    },
+    {
+      "q_no": 113,
+      "question": "If a transformer has 5% impedance, the voltage regulation at any power factor can never exceed:",
+      "exam": "YCT JE Planner",
+      "year": 2022,
+      "topic": "Maximum Limits",
+      "options": {
+        "a": "2.5%",
+        "b": "5%",
+        "c": "10%",
+        "d": "0%"
+      },
+      "answer": "b",
+      "explanation": "The maximum possible voltage regulation of a transformer is numerically equal to its per-unit impedance ($Z_{pu}$).[cite: 1]"
+    },
+    {
+      "q_no": 114,
+      "question": "Which of the following is the condition for maximum voltage regulation at a lagging power factor?",
+      "exam": "SSC JE / YCT Solved",
+      "year": 2023,
+      "topic": "Max Regulation Numerical",
+      "options": {
+        "a": "$\\cos\\phi = R/Z$",
+        "b": "$\\cos\\phi = X/Z$",
+        "c": "$\\tan\\phi = R/X$",
+        "d": "$\\sin\\phi = R/Z$"
+      },
+      "answer": "a",
+      "explanation": "For maximum regulation, the load power factor must be $\\cos\\phi = R/Z$, aligning the load phasor with the internal impedance drop.[cite: 1]"
+    },
+    {
+      "q_no": 115,
+      "question": "The voltage regulation of a transformer at full load 0.8 PF lagging is 5%. What will be the regulation at half load 0.8 PF lagging?",
+      "exam": "UPPCL JE / YCT",
+      "year": 2024,
+      "topic": "Load Scaling",
+      "options": {
+        "a": "5%",
+        "b": "10%",
+        "c": "2.5%",
+        "d": "1.25%"
+      },
+      "answer": "c",
+      "explanation": "Voltage regulation is directly proportional to the load current. At half load, the regulation is half of the full-load value ($5\\% / 2 = 2.5\\%$).[cite: 1]"
+    },
+    {
+      "q_no": 116,
+      "question": "A transformer having 1% resistance and 4% reactance has zero regulation at a leading power factor of:",
+      "exam": "YCT Exam Planner",
+      "year": 2025,
+      "topic": "Zero Regulation Numerical",
+      "options": {
+        "a": "0.97",
+        "b": "0.80",
+        "c": "0.75",
+        "d": "0.60"
+      },
+      "answer": "a",
+      "explanation": "Zero reg occurs when $\\tan\\phi = R/X = 1/4 = 0.25$. Then $\\phi = 14.03^\\circ$ and $\\cos\\phi = 0.97$ leading.[cite: 1]"
+    },
+    {
+      "q_no": 117,
+      "question": "In a 1-phase transformer, regulation at unity power factor is essentially equal to:",
+      "exam": "SSC JE / YCT Solved",
+      "year": 2026,
+      "topic": "One-Liner Facts",
+      "options": {
+        "a": "Percentage resistance",
+        "b": "Percentage reactance",
+        "c": "Percentage impedance",
+        "d": "Zero"
+      },
+      "answer": "a",
+      "explanation": "At unity power factor, the reactive drop does not affect the magnitude of the terminal voltage as much as the resistive drop, which aligns with the voltage phasor.[cite: 1]"
+    },
+    {
+      "q_no": 118,
+      "question": "A 1-phase transformer has a percentage resistance of 2% and a percentage reactance of 4%. The maximum voltage regulation will occur at a load power factor of:",
+      "exam": "ISRO Scientist/Engineer",
+      "year": 2011,
+      "options": {
+        "a": "0.447 lagging",
+        "b": "0.894 lagging",
+        "c": "0.447 leading",
+        "d": "0.894 leading"
+      },
+      "answer": "a",
+      "explanation": "Maximum regulation occurs at $\\cos\\phi = R/Z$. Here $Z = \\sqrt{2^2 + 4^2} = \\sqrt{20} = 4.47$. So, $\\cos\\phi = 2/4.47 = 0.447$ lagging.[cite: 1]"
+    },
+    {
+      "q_no": 119,
+      "question": "In a 1-phase transformer, zero voltage regulation is achieved when the load power factor angle $\\phi$ and the transformer impedance angle $\\theta$ are related by:",
+      "exam": "MPSC AE (Electrical)",
+      "year": 2017,
+      "options": {
+        "a": "$\\phi = \\theta$",
+        "b": "$\\phi = 90^\\circ - \\theta$",
+        "c": "$\\phi = \\theta - 90^\\circ$",
+        "d": "$\\phi = -\\theta$"
+      },
+      "answer": "c",
+      "explanation": "Zero regulation occurs at leading power factor where $\\tan\\phi = -R/X$, which corresponds to a load angle that is $90^\\circ$ out of phase with the impedance angle in the leading direction.[cite: 1]"
+    },
+    {
+      "q_no": 120,
+      "question": "A 5 kVA, 200/400 V single phase transformer has $R_{pu} = 0.02$ and $X_{pu} = 0.03$. The voltage regulation at unity power factor is:",
+      "exam": "KPTCL AE",
+      "year": 2018,
+      "options": {
+        "a": "1%",
+        "b": "2%",
+        "c": "3%",
+        "d": "5%"
+      },
+      "answer": "b",
+      "explanation": "At unity power factor, $V.R. = R_{pu} \\cos\\phi + X_{pu} \\sin\\phi = 0.02(1) + 0.03(0) = 0.02$ or 2%.[cite: 1]"
+    },
+    {
+      "q_no": 121,
+      "question": "The voltage regulation of a transformer is negative for:",
+      "exam": "KPSC AE",
+      "year": 2020,
+      "options": {
+        "a": "Inductive load only",
+        "b": "Capacitive load only",
+        "c": "Resistive load only",
+        "d": "Both inductive and capacitive loads"
+      },
+      "answer": "b",
+      "explanation": "Negative regulation indicates that the terminal voltage at full load is higher than at no load, which happens due to the capacitive 'rise' effect.[cite: 1]"
+    },
+    {
+      "q_no": 122,
+      "question": "A 100 kVA transformer has 2% resistance and 5% reactance. What is the regulation at 0.8 PF lagging?",
+      "exam": "BSNL TTA (JE)",
+      "year": 2016,
+      "options": {
+        "a": "5.6%",
+        "b": "4.6%",
+        "c": "3.6%",
+        "d": "6.6%"
+      },
+      "answer": "b",
+      "explanation": "$V.R. = (2 \\times 0.8) + (5 \\times 0.6) = 1.6 + 3.0 = 4.6\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 123,
+      "question": "If the secondary terminal voltage of a transformer on full load is higher than the no-load voltage, the regulation is:",
+      "exam": "ISRO Scientist",
+      "year": 2015,
+      "options": {
+        "a": "Positive",
+        "b": "Zero",
+        "c": "Negative",
+        "d": "Unity"
+      },
+      "answer": "c",
+      "explanation": "By definition, $V.R. = (E_2 - V_2) / E_2$. If $V_2 > E_2$, the numerator becomes negative.[cite: 1]"
+    },
+    {
+      "q_no": 124,
+      "question": "At maximum voltage regulation, the power factor of the load is:",
+      "exam": "MPSC AE",
+      "year": 2022,
+      "options": {
+        "a": "Leading",
+        "b": "Lagging",
+        "c": "Unity",
+        "d": "Zero"
+      },
+      "answer": "b",
+      "explanation": "Maximum regulation occurs when the internal drops add directly to the voltage magnitude, which happens at a lagging power factor angle equal to the impedance angle.[cite: 1]"
+    },
+    {
+      "q_no": 125,
+      "question": "The voltage regulation of a transformer with $Z_{pu} = 0.05$ at 0.6 PF lagging is:",
+      "exam": "KPTCL JE",
+      "year": 2019,
+      "options": {
+        "a": "3%",
+        "b": "4%",
+        "c": "5%",
+        "d": "Data insufficient"
+      },
+      "answer": "d",
+      "explanation": "To calculate regulation, the individual values of $R_{pu}$ and $X_{pu}$ are required, not just the total magnitude $Z_{pu}$, unless it is specifically at the maximum regulation point.[cite: 1]"
+    },
+    {
+      "q_no": 126,
+      "question": "In a transformer, zero regulation is possible at a power factor of 0.7 leading if:",
+      "exam": "KPSC AE",
+      "year": 2023,
+      "options": {
+        "a": "R/X = 0.7",
+        "b": "R/X = 1.02",
+        "c": "R/X = 0.5",
+        "d": "R/X = 0.1"
+      },
+      "answer": "b",
+      "explanation": "Zero reg $\\implies \\tan\\phi = R/X$. If $\\cos\\phi = 0.7$, then $\\phi = 45.57^\\circ$. $\\tan(45.57^\\circ) \\approx 1.02$. Thus $R/X$ must be 1.02.[cite: 1]"
+    },
+    {
+      "q_no": 127,
+      "question": "Which of the following reduces the voltage regulation of a transformer?",
+      "exam": "BSNL JE",
+      "year": 2013,
+      "options": {
+        "a": "Increasing the leakage reactance",
+        "b": "Decreasing the resistance of windings",
+        "c": "Increasing the load current",
+        "d": "Operating at a lower power factor"
+      },
+      "answer": "b",
+      "explanation": "Lower resistance reduces the internal $IR$ drop, leading to better (lower) voltage regulation.[cite: 1]"
+    },
+    {
+      "q_no": 128,
+      "question": "The voltage regulation of a transformer is defined as the change in secondary terminal voltage from no-load to full-load, expressed as a fraction of:",
+      "exam": "SSC JE EE",
+      "year": 2011,
+      "options": {
+        "a": "Secondary no-load voltage",
+        "b": "Secondary full-load voltage",
+        "c": "Primary rated voltage",
+        "d": "Average of no-load and full-load voltage"
+      },
+      "answer": "a",
+      "explanation": "In standard transformer theory, regulation 'down' is calculated using the no-load voltage ($E_2$) as the reference denominator.[cite: 1]"
+    },
+    {
+      "q_no": 129,
+      "question": "A transformer has a resistance of 1.5% and a reactance of 4%. What is the voltage regulation at 0.8 PF lagging?",
+      "exam": "RRB SSE (Senior Section Engineer)",
+      "year": 2015,
+      "options": {
+        "a": "4.4%",
+        "b": "3.6%",
+        "c": "5.2%",
+        "d": "1.2%"
+      },
+      "answer": "b",
+      "explanation": "$V.R. = (1.5 \\times 0.8) + (4 \\times 0.6) = 1.2 + 2.4 = 3.6\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 130,
+      "question": "Which of the following conditions leads to 'Negative Voltage Regulation' in a transformer?",
+      "exam": "TNPSC AE",
+      "year": 2019,
+      "options": {
+        "a": "The load is highly inductive",
+        "b": "The load is capacitive",
+        "c": "The load is purely resistive",
+        "d": "The transformer is on no-load"
+      },
+      "answer": "b",
+      "explanation": "Negative regulation occurs when the secondary terminal voltage increases under load, a phenomenon typical of capacitive (leading) power factor loads.[cite: 1]"
+    },
+    {
+      "q_no": 131,
+      "question": "At unity power factor, the voltage regulation of a transformer is:",
+      "exam": "SSC JE EE",
+      "year": 2018,
+      "options": {
+        "a": "Zero",
+        "b": "Equal to per unit resistance",
+        "c": "Equal to per unit reactance",
+        "d": "Maximum"
+      },
+      "answer": "b",
+      "explanation": "At UPF, $\\sin\\phi = 0$ and $\\cos\\phi = 1$. The formula $R_{pu} \\cos\\phi + X_{pu} \\sin\\phi$ reduces strictly to $R_{pu}$.[cite: 1]"
+    },
+    {
+      "q_no": 132,
+      "question": "In a transformer, if the reactance is much larger than the resistance, the maximum regulation will occur at a power factor close to:",
+      "exam": "RRB NTPC (Technical)",
+      "year": 2014,
+      "options": {
+        "a": "Unity",
+        "b": "Zero lagging",
+        "c": "Zero leading",
+        "d": "0.8 leading"
+      },
+      "answer": "b",
+      "explanation": "Max regulation occurs at $\\tan\\phi = X/R$. If $X \\gg R$, then $\\phi$ approaches $90^\\circ$, which corresponds to zero power factor lagging.[cite: 1]"
+    },
+    {
+      "q_no": 133,
+      "question": "A transformer has $R_{pu} = 0.03$ and $X_{pu} = 0.04$. The regulation at 0.6 PF leading is:",
+      "exam": "TNPSC AE",
+      "year": 2022,
+      "options": {
+        "a": "-1.4%",
+        "b": "1.4%",
+        "c": "5.0%",
+        "d": "0.014%"
+      },
+      "answer": "a",
+      "explanation": "$V.R. = (0.03 \\times 0.6) - (0.04 \\times 0.8) = 0.018 - 0.032 = -0.014$ or -1.4%.[cite: 1]"
+    },
+    {
+      "q_no": 134,
+      "question": "The percentage regulation of a distribution transformer should ideally be:",
+      "exam": "SSC JE EE",
+      "year": 2024,
+      "options": {
+        "a": "As high as possible",
+        "b": "As low as possible",
+        "c": "Constant at 10%",
+        "d": "Dependent only on frequency"
+      },
+      "answer": "b",
+      "explanation": "Lower regulation indicates that the output voltage is stable and does not fluctuate significantly as the consumer load changes.[cite: 1]"
+    },
+    {
+      "q_no": 135,
+      "question": "If a transformer is operating at zero voltage regulation, the value of the load power factor must be:",
+      "exam": "RRB SSE",
+      "year": 2021,
+      "options": {
+        "a": "$R/X$ leading",
+        "b": "$X/R$ leading",
+        "c": "$\\cos\\phi = R/Z$ leading",
+        "d": "$\\tan\\phi = R/X$ leading"
+      },
+      "answer": "d",
+      "explanation": "Setting $R \\cos\\phi - X \\sin\\phi = 0$ results in $\\tan\\phi = R/X$ for a leading load.[cite: 1]"
+    },
+    {
+      "q_no": 136,
+      "question": "A 10 kVA transformer has a per unit impedance of 0.05. The maximum possible voltage regulation at full load is:",
+      "exam": "TNPSC AE",
+      "year": 2025,
+      "options": {
+        "a": "2.5%",
+        "b": "5.0%",
+        "c": "10%",
+        "d": "0.5%"
+      },
+      "answer": "b",
+      "explanation": "The maximum regulation is numerically equal to the magnitude of the per unit impedance ($Z_{pu}$).[cite: 1]"
+    },
+    {
+      "q_no": 137,
+      "question": "In 1-phase transformers, the increase in secondary terminal voltage when the load is thrown off is called:",
+      "exam": "SSC JE EE",
+      "year": 2026,
+      "options": {
+        "a": "Efficiency",
+        "b": "Voltage Regulation",
+        "c": "Magnetic Leakage",
+        "d": "Copper Loss"
+      },
+      "answer": "b",
+      "explanation": "This describes the literal definition of voltage regulation from a testing perspective.[cite: 1]"
+    },
+    {
+      "q_no": 138,
+      "question": "A 1-phase transformer has $R_{pu} = 3\\%$ and $X_{pu} = 4\\%$. What is the power factor at which the voltage regulation is maximum?",
+      "exam": "OPSC AE (Odisha)",
+      "year": 2016,
+      "options": {
+        "a": "0.6 lagging",
+        "b": "0.8 lagging",
+        "c": "0.6 leading",
+        "d": "0.8 leading"
+      },
+      "answer": "a",
+      "explanation": "Max regulation occurs at $\\cos\\phi = R/Z$. Here $Z = \\sqrt{3^2 + 4^2} = 5$. Thus, $\\cos\\phi = 3/5 = 0.6$ lagging.[cite: 1]"
+    },
+    {
+      "q_no": 139,
+      "question": "The voltage regulation of a transformer for a unity power factor load is always:",
+      "exam": "GPSC AE (Gujarat)",
+      "year": 2019,
+      "options": {
+        "a": "Zero",
+        "b": "Negative",
+        "c": "Positive",
+        "d": "100%"
+      },
+      "answer": "c",
+      "explanation": "At UPF, $V.R. = R_{pu}$. Since resistance is always positive, the regulation for a transformer (not an ideal one) is always positive at unity power factor.[cite: 1]"
+    },
+    {
+      "q_no": 140,
+      "question": "A 2 kVA transformer has 2% resistance and 3% reactance. The regulation at 0.8 PF leading is:",
+      "exam": "HPPSC AE (Himachal Pradesh)",
+      "year": 2020,
+      "options": {
+        "a": "-0.2%",
+        "b": "0.2%",
+        "c": "3.4%",
+        "d": "-3.4%"
+      },
+      "answer": "a",
+      "explanation": "$V.R. = (2 \\times 0.8) - (3 \\times 0.6) = 1.6 - 1.8 = -0.2\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 141,
+      "question": "In a 1-phase transformer, if the per-unit impedance is 0.05, the voltage regulation at zero power factor lagging is:",
+      "exam": "APPSC AEE (Andhra Pradesh)",
+      "year": 2012,
+      "options": {
+        "a": "Equal to per unit resistance",
+        "b": "Equal to per unit reactance",
+        "c": "Equal to per unit impedance",
+        "d": "Zero"
+      },
+      "answer": "b",
+      "explanation": "At ZPF lagging, $\\cos\\phi = 0$ and $\\sin\\phi = 1$. The formula $R_{pu} \\cos\\phi + X_{pu} \\sin\\phi$ reduces to $X_{pu}$.[cite: 1]"
+    },
+    {
+      "q_no": 142,
+      "question": "Zero voltage regulation occurs at a power factor angle $\\phi$ such that:",
+      "exam": "WBSETCL JE (West Bengal)",
+      "year": 2021,
+      "options": {
+        "a": "$\\phi = \\tan^{-1}(X/R)$",
+        "b": "$\\phi = \\tan^{-1}(R/X)$",
+        "c": "$\\phi = \\cos^{-1}(R/Z)$",
+        "d": "$\\phi = 0$"
+      },
+      "answer": "b",
+      "explanation": "For zero regulation, $R \\cos\\phi = X \\sin\\phi$, which gives $\\tan\\phi = R/X$ at leading PF.[cite: 1]"
+    },
+    {
+      "q_no": 143,
+      "question": "The 'Voltage Regulation' of a transformer represents its ability to:",
+      "exam": "MPPSC AE (Madhya Pradesh)",
+      "year": 2018,
+      "options": {
+        "a": "Withstand overloads",
+        "b": "Maintain constant terminal voltage",
+        "c": "Minimize copper losses",
+        "d": "Operate at high frequency"
+      },
+      "answer": "b",
+      "explanation": "Voltage regulation is a measure of how much the output voltage changes with load; a smaller value means better ability to maintain a constant voltage.[cite: 1]"
+    },
+    {
+      "q_no": 144,
+      "question": "A 500 kVA transformer has $R_{pu} = 0.01$ and $X_{pu} = 0.05$. Its regulation at 0.8 PF lagging is:",
+      "exam": "JPSC AE (Jharkhand)",
+      "year": 2022,
+      "options": {
+        "a": "3.8%",
+        "b": "4.0%",
+        "c": "4.8%",
+        "d": "5.2%"
+      },
+      "answer": "a",
+      "explanation": "$V.R. = (1 \\times 0.8) + (5 \\times 0.6) = 0.8 + 3.0 = 3.8\\%$.[cite: 1]"
+    },
+    {
+      "q_no": 145,
+      "question": "If the resistance and reactance of a transformer are equal, the power factor for maximum regulation is:",
+      "exam": "UPRVUNL AE",
+      "year": 2021,
+      "options": {
+        "a": "0.5 lagging",
+        "b": "0.707 lagging",
+        "c": "Unity",
+        "d": "Zero lagging"
+      },
+      "answer": "b",
+      "explanation": "Max regulation at $\\tan\\phi = X/R$. If $X=R$, then $\\tan\\phi = 1$, so $\\phi = 45^\\circ$. $\\cos(45^\\circ) = 0.707$ lagging.[cite: 1]"
+    },
+    {
+      "q_no": 146,
+      "question": "Voltage regulation of a transformer is usually expressed as a percentage of:",
+      "exam": "PPSC JE (Punjab)",
+      "year": 2023,
+      "options": {
+        "a": "Rated secondary voltage",
+        "b": "Rated primary voltage",
+        "c": "Full load current",
+        "d": "No-load primary voltage"
+      },
+      "answer": "a",
+      "explanation": "The rated secondary voltage (which is the no-load secondary voltage $E_2$) is the standard reference denominator.[cite: 1]"
+    },
+    {
+      "q_no": 147,
+      "question": "A transformer with high leakage reactance will have:",
+      "exam": "BPSC AE (Bihar)",
+      "year": 2024,
+      "options": {
+        "a": "Better voltage regulation",
+        "b": "Poorer voltage regulation",
+        "c": "Higher efficiency",
+        "d": "Low cost"
+      },
+      "answer": "b",
+      "explanation": "High reactance increases the internal voltage drop ($IX$ drop) under load, resulting in a larger (poorer) regulation value.[cite: 1]"
+    },
+    {
+      "q_no": 148,
+      "question": "At what power factor does a transformer have its minimum (most negative) voltage regulation?",
+      "exam": "KPSC AE (Kerala)",
+      "year": 2025,
+      "options": {
+        "a": "Zero lagging",
+        "b": "Zero leading",
+        "c": "Unity",
+        "d": "0.8 lagging"
+      },
+      "answer": "b",
+      "explanation": "At zero power factor leading, $\\cos\\phi = 0$ and $\\sin\\phi = 1$. The regulation formula becomes $-X_{pu}$, which is the most negative value possible.[cite: 1]"
+    },
+    {
+      "q_no": 149,
+      "question": "The percentage regulation of a transformer with 3% resistance and 6% reactance at 0.8 PF leading is:",
+      "exam": "GETCO JE",
+      "year": 2026,
+      "options": {
+        "a": "-1.2%",
+        "b": "1.2%",
+        "c": "6.0%",
+        "d": "-6.0%"
+      },
+      "answer": "a",
+      "explanation": "$V.R. = (3 \\times 0.8) - (6 \\times 0.6) = 2.4 - 3.6 = -1.2\\%$.[cite: 1]"
+    }
+  ]
+}

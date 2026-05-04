@@ -1,0 +1,572 @@
+{
+  "topic_name": "Equivalent Circuit of 1-Phase Transformers - ESE Prelims (1980-2026)",
+  "questions": [
+    {
+      "q_no": 243,
+      "question": "The approximate equivalent circuit of a transformer is justified because:",
+      "exam": "ESE Prelims",
+      "year": 1985,
+      "topic": "Approximation Logic",
+      "options": {
+        "a": "The no-load current is very small compared to the rated current",
+        "b": "The leakage reactance is negligible",
+        "c": "The winding resistance is very high",
+        "d": "The core loss is constant at all loads"
+      },
+      "answer": "a",
+      "explanation": "Since the magnetizing current ($I_0$) is usually only 2-5% of the rated current, moving the shunt branch to the input terminals introduces negligible error in most power calculations."
+    },
+    {
+      "q_no": 244,
+      "question": "A transformer has a primary-to-secondary turns ratio of $K$. If the secondary resistance is $R_2$, its value when referred to the primary side is:",
+      "exam": "ESE Prelims",
+      "year": 1994,
+      "topic": "Referred Parameters",
+      "options": {
+        "a": "$R_2 / K^2$",
+        "b": "$R_2 \\times K^2$",
+        "c": "$R_2 / K$",
+        "d": "$R_2 \\times K$"
+      },
+      "answer": "b",
+      "explanation": "When referring impedance from secondary to primary, the value is multiplied by the square of the turns ratio ($a^2$ or $K^2$ depending on the definition of $K = N_1/N_2$)."
+    },
+    {
+      "q_no": 245,
+      "question": "In the equivalent circuit of a transformer, the shunt branch parameters $R_c$ and $X_m$ are determined by:",
+      "exam": "ESE Prelims",
+      "year": 2003,
+      "topic": "Parameter Determination",
+      "options": {
+        "a": "Short circuit test",
+        "b": "Open circuit test",
+        "c": "Sumpner's test",
+        "d": "DC resistance test"
+      },
+      "answer": "b",
+      "explanation": "The open circuit test is conducted at rated voltage to determine core loss ($R_c$) and magnetizing reactance ($X_m$)."
+    },
+    {
+      "q_no": 246,
+      "question": "The leakage reactance of a transformer winding is primarily due to:",
+      "exam": "ESE Prelims",
+      "year": 2012,
+      "topic": "Leakage Flux",
+      "options": {
+        "a": "The flow of mutual flux through the core",
+        "b": "Flux that links only one winding and completes its path through air",
+        "c": "The resistance of the copper windings",
+        "d": "The non-linear nature of the B-H curve"
+      },
+      "answer": "b",
+      "explanation": "Leakage flux does not contribute to the mutual induction between windings and is represented as leakage reactance in the equivalent circuit."
+    },
+    {
+      "q_no": 247,
+      "question": "What does the resistive component of the shunt branch ($R_c$) represent in the transformer equivalent circuit?",
+      "exam": "ESE Prelims",
+      "year": 2018,
+      "topic": "Core Losses",
+      "options": {
+        "a": "Winding copper loss",
+        "b": "Hysteresis and eddy current losses",
+        "c": "Dielectric loss in insulation",
+        "d": "Friction and windage loss"
+      },
+      "answer": "b",
+      "explanation": "$R_c$ accounts for the active power consumed by the core due to magnetic reversal and induced circulating currents."
+    },
+    {
+      "q_no": 248,
+      "question": "In a 1:1 transformer, the series equivalent impedance $Z_{eq}$ is $1 + j4\\ \\Omega$. If the load is connected to the secondary, the voltage drop across the transformer is primarily determined by:",
+      "exam": "ESE Prelims",
+      "year": 2026,
+      "topic": "Voltage Drop",
+      "options": {
+        "a": "Shunt magnetizing reactance",
+        "b": "Series leakage impedance",
+        "c": "Core loss resistance",
+        "d": "Primary winding resistance only"
+      },
+      "answer": "b",
+      "explanation": "The series impedance (resistance and leakage reactance) causes the voltage regulation or drop when the transformer is loaded."
+    },
+    {
+  
+      "q_no": 249,
+      "question": "In the equivalent circuit shown, what does the element $X_m$ represent?",
+      "exam": "ESE Prelims",
+      "year": 1989,
+      "topic": "Circuit Components",
+      "options": {
+        "a": "Winding leakage reactance",
+        "b": "Magnetizing reactance for mutual flux",
+        "c": "Core loss resistance",
+        "d": "Load reactance"
+      },
+      "answer": "b",
+      "explanation": "$X_m$ is the shunt reactance that accounts for the reactive power required to establish the mutual magnetic flux in the core."
+    },
+    {
+      "q_no": 250,
+      "question": "If a transformer is operated at a frequency higher than its rated frequency while keeping the voltage constant, how do the equivalent circuit parameters change?",
+      "exam": "ESE Prelims",
+      "year": 1997,
+      "topic": "Frequency Effects",
+      "options": {
+        "a": "Leakage reactance increases",
+        "b": "Magnetizing reactance decreases",
+        "c": "Core loss resistance remains constant",
+        "d": "Winding resistance increases significantly"
+      },
+      "answer": "a",
+      "explanation": "Leakage reactance $X_l = 2\\pi f L$. Therefore, as frequency $f$ increases, the reactance increases proportionally."
+    },
+    {
+      "q_no": 251,
+      "question": "A transformer has a primary-to-secondary turns ratio of 2:1. An impedance of $10 + j20\\ \\Omega$ on the secondary side, when referred to the primary side, becomes:",
+      "exam": "ESE Prelims",
+      "year": 2005,
+      "topic": "Referred Impedance",
+      "options": {
+        "a": "2.5 + j5.0 Ω",
+        "b": "40 + j80 Ω",
+        "c": "20 + j40 Ω",
+        "d": "5 + j10 Ω"
+      },
+      "answer": "b",
+      "explanation": "Using the turns ratio $a = N_1/N_2 = 2$, the referred impedance $Z' = a^2 \\times Z_2 = 2^2 \\times (10 + j20) = 40 + j80\\ \\Omega$."
+    },
+    {
+      "q_no": 252,
+      "question": "Referencing the exact equivalent circuit of a transformer, the voltage $E_1$ (induced EMF) is lower than the terminal voltage $V_1$ due to the voltage drop across:",
+      "exam": "ESE Prelims",
+      "year": 2014,
+      "topic": "Circuit Phasors",
+      "options": {
+        "a": "The shunt branch",
+        "b": "The secondary leakage impedance",
+        "c": "The primary leakage impedance",
+        "d": "The core loss resistance"
+      },
+      "answer": "c",
+      "explanation": "The primary terminal voltage $V_1 = E_1 + I_1(R_1 + jX_1)$. Thus, the primary leakage impedance causes the drop between the terminal and the core."
+    },
+    {
+      "q_no": 253,
+      "question": "In a transformer equivalent circuit, which parameter is most affected by the saturation of the magnetic core?",
+      "exam": "ESE Prelims",
+      "year": 2021,
+      "topic": "Saturation Analysis",
+      "options": {
+        "a": "$R_1$",
+        "b": "$X_{l1}$",
+        "c": "$X_m$",
+        "d": "$R_2$"
+      },
+      "answer": "c",
+      "explanation": "Magnetizing reactance $X_m$ is non-linear and decreases significantly as the core enters the saturation region of the B-H curve."
+    },
+    {
+      "q_no": 254,
+      "question": "For a transformer with a turns ratio $a = 10$, a load impedance $Z_L$ on the secondary is viewed by the source as $100\\ \\Omega$. The actual value of $Z_L$ is:",
+      "exam": "ESE Prelims",
+      "year": 2026,
+      "topic": "Impedance Transformation",
+      "options": {
+        "a": "1000 Ω",
+        "b": "10 Ω",
+        "c": "1 Ω",
+        "d": "0.1 Ω"
+      },
+      "answer": "c",
+      "explanation": "Since $Z_{primary} = a^2 \\times Z_L$, then $100 = 10^2 \\times Z_L$, which gives $Z_L = 1\\ \\Omega$."
+    },
+    {
+      "q_no": 255,
+      "question": "In the T-equivalent circuit of a single-phase transformer, the resistance $R_0$ in parallel with $X_m$ is responsible for representing:",
+      "exam": "ESE Prelims",
+      "year": 1982,
+      "topic": "Shunt Branch",
+      "options": {
+        "a": "Winding copper losses",
+        "b": "Core eddy current and hysteresis losses",
+        "c": "Stray load losses",
+        "d": "Dielectric heating of oil"
+      },
+      "answer": "b",
+      "explanation": "The shunt resistance $R_0$ (or $R_c$) models the active power consumed by the magnetic core due to hysteresis and eddy current effects."
+    },
+    {
+      "q_no": 256,
+      "question": "In a transformer, the primary leakage reactance $X_1$ and secondary leakage reactance $X_2$ are typically related to the mutual reactance $X_m$ such that:",
+      "exam": "ESE Prelims",
+      "year": 1999,
+      "topic": "Reactance Comparison",
+      "options": {
+        "a": "$X_1 \\approx X_m$",
+        "b": "$X_1, X_2 \\gg X_m$",
+        "c": "$X_1, X_2 \\ll X_m$",
+        "d": "$X_m = 0$ in an ideal transformer"
+      },
+      "answer": "c",
+      "explanation": "Leakage reactances represent a very small portion of the flux that does not link both windings. In contrast, $X_m$ represents the main mutual flux and is significantly larger."
+    },
+    {
+      "q_no": 257,
+      "question": "When referring a secondary resistance $R_2$ to the primary side in the equivalent circuit, the electrical power loss in the referred resistance must be:",
+      "exam": "ESE Prelims",
+      "year": 2008,
+      "topic": "Referencing Principle",
+      "options": {
+        "a": "Lower than the actual loss",
+        "b": "Higher than the actual loss",
+        "c": "Exactly the same as the actual loss",
+        "d": "Zero, as it is a theoretical value"
+      },
+      "answer": "c",
+      "explanation": "The fundamental rule of referring parameters is that the power loss ($I^2R$) and stored energy must remain invariant after transformation."
+    },
+    {
+      "q_no": 258,
+      "question": "A transformer equivalent circuit has $Z_{eq1} = 2 + j8\\ \\Omega$ referred to the primary. If the transformer is used as a step-up transformer with a ratio of 1:5, the equivalent impedance referred to the high-voltage side is:",
+      "exam": "ESE Prelims",
+      "year": 2017,
+      "topic": "Impedance Scaling",
+      "options": {
+        "a": "10 + j40 Ω",
+        "b": "50 + j200 Ω",
+        "c": "0.4 + j1.6 Ω",
+        "d": "0.08 + j0.32 Ω"
+      },
+      "answer": "b",
+      "explanation": "Impedance scales by the square of the turns ratio. For a 1:5 ratio, $k=5$. $Z_{eq2} = k^2 \\times Z_{eq1} = 25 \\times (2 + j8) = 50 + j200\\ \\Omega$."
+    },
+    {
+      "q_no": 259,
+      "question": "Which of the following elements in the transformer equivalent circuit is considered 'linear' for small variations in voltage?",
+      "exam": "ESE Prelims",
+      "year": 2026,
+      "topic": "Parameter Linearity",
+      "options": {
+        "a": "Magnetizing reactance $X_m$",
+        "b": "Core loss resistance $R_c$",
+        "c": "Winding resistance $R_1$",
+        "d": "All of the above"
+      },
+      "answer": "c",
+      "explanation": "Winding resistance is typically constant (linear), whereas $X_m$ and $R_c$ vary with the non-linear magnetic properties of the core (saturation)."
+    },
+    {
+      "q_no": 260,
+      "question": "A 10 kVA, 2500/250 V, single-phase transformer has the following parameters: $R_1 = 0.1\\ \\Omega, X_1 = 0.3\\ \\Omega, R_2 = 0.01\\ \\Omega, X_2 = 0.03\\ \\Omega$. The equivalent resistance referred to the primary side is:",
+      "exam": "GATE EE",
+      "year": 1990,
+      "topic": "Referred Resistance",
+      "options": {
+        "a": "0.11 Ω",
+        "b": "1.1 Ω",
+        "c": "2.0 Ω",
+        "d": "1.0 Ω"
+      },
+      "answer": "b",
+      "explanation": "Turns ratio $a = 2500/250 = 10$. $R_{eq1} = R_1 + a^2 R_2 = 0.1 + (10^2 \\times 0.01) = 0.1 + 1.0 = 1.1\\ \\Omega$."
+    },
+    {
+      "q_no": 261,
+      "question": "In the exact equivalent circuit of a transformer, the shunt branch representing the core is placed:",
+      "exam": "GATE EE",
+      "year": 1998,
+      "topic": "Circuit Topology",
+      "options": {
+        "a": "Before the primary leakage impedance",
+        "b": "Between the primary and secondary leakage impedances",
+        "c": "After the secondary leakage impedance",
+        "d": "Directly across the load"
+      },
+      "answer": "b",
+      "explanation": "In the exact T-equivalent circuit, the shunt branch is placed at the junction between the primary and secondary impedances to account for the actual induced EMF (E1)."
+    },
+    {
+      "q_no": 262,
+      "question": "The magnetizing current in a transformer is usually small because:",
+      "exam": "GATE EE",
+      "year": 2007,
+      "topic": "Magnetizing Current",
+      "options": {
+        "a": "The air gap in the core is large",
+        "b": "The core has a very high permeability",
+        "c": "The leakage reactance is high",
+        "d": "The winding resistance is low"
+      },
+      "answer": "b",
+      "explanation": "High permeability (\\mu$) means the core has low reluctance, requiring very little current to establish the necessary mutual flux."
+    },
+    {
+      "q_no": 263,
+      "question": "A transformer has a leakage reactance of 4% and resistance of 1%. Its voltage regulation at full load and unity power factor is:",
+      "exam": "GATE EE",
+      "year": 2015,
+      "topic": "Equivalent Circuit Performance",
+      "options": {
+        "a": "1%",
+        "b": "4%",
+        "c": "5%",
+        "d": "3%"
+      },
+      "answer": "a",
+      "explanation": "Regulation $\\approx (R_{pu} \\cos\\phi + X_{pu} \\sin\\phi)$. At unity pf, $\\sin\\phi = 0$, so regulation = $R_{pu} = 1\\%$."
+    },
+    {
+      "q_no": 264,
+      "question": "In a transformer equivalent circuit, if the supply frequency is doubled while the voltage is kept constant, the magnetizing reactance $X_m$ will:",
+      "exam": "GATE EE",
+      "year": 2026,
+      "topic": "Frequency Response",
+      "options": {
+        "a": "Be doubled",
+        "b": "Be halved",
+        "c": "Remain unchanged",
+        "d": "Quadruple"
+      },
+      "answer": "a",
+      "explanation": "$X_m = 2\\pi f L_m$. If $f$ is doubled, the reactance $X_m$ also doubles, assuming the inductance $L_m$ stays relatively constant (though flux density decreases)."
+    },
+{
+  
+      "q_no": 270,
+      "question": "In the standard T-equivalent circuit of a transformer, the 'Ideal Transformer' block is placed at the end of the circuit to represent:",
+      "exam": "GATE EE",
+      "year": 1996,
+      "topic": "Circuit Topology",
+      "options": {
+        "a": "The physical core losses",
+        "b": "The transformation of voltage and current levels only",
+        "c": "The leakage reactance of the secondary",
+        "d": "The primary winding resistance"
+      },
+      "answer": "b",
+      "explanation": "The circuit components (R, X) model the non-ideal properties. The ideal transformer symbol at the end is used purely to account for the N1:N2 voltage and current scaling."
+    },
+    {
+      "q_no": 271,
+      "question": "Referencing the exact equivalent circuit, if the shunt branch is moved from the 'middle' to the 'primary terminals' (Approximate Circuit), which value is overestimated?",
+      "exam": "GATE EE",
+      "year": 2004,
+      "topic": "Model Error Analysis",
+      "options": {
+        "a": "Secondary copper loss",
+        "b": "Primary voltage drop",
+        "c": "Core loss",
+        "d": "Magnetizing current"
+      },
+      "answer": "c",
+      "explanation": "In the approximate circuit, the shunt branch is subjected to the full terminal voltage V1, whereas in the exact circuit, it is subjected to E1 (V1 minus the primary drop). Thus, core loss is slightly overestimated."
+    },
+    {
+      "q_no": 272,
+      "question": "In a circuit diagram of a transformer referred to the primary, a load $Z_L$ is connected. If the turns ratio is $a = N_1/N_2$, the current flowing through the referred load $Z_L'$ is:",
+      "exam": "GATE EE",
+      "year": 2011,
+      "topic": "Circuit Currents",
+      "options": {
+        "a": "$I_2 \\times a$",
+        "b": "$I_2 / a$",
+        "c": "$I_2 / a^2$",
+        "d": "$I_2$"
+      },
+      "answer": "b",
+      "explanation": "When the entire circuit is referred to the primary side, the secondary current $I_2$ must be scaled down by the turns ratio 'a' to satisfy the MMF balance equation $N_1 I_1 = N_2 I_2$."
+    },
+    {
+      "q_no": 273,
+      "question": "In the equivalent circuit, the 'leakage' flux is represented as a series reactance because:",
+      "exam": "GATE EE",
+      "year": 1988,
+      "topic": "Reactance Modeling",
+      "options": {
+        "a": "It dissipates active power",
+        "b": "It represents a voltage drop proportional to the rate of change of current",
+        "c": "It is in parallel with the main mutual flux",
+        "d": "It accounts for the heating of the core"
+      },
+      "answer": "b",
+      "explanation": "Leakage flux induces an EMF in its own winding that opposes the current flow (L di/dt), which is mathematically equivalent to a series inductive reactance."
+    },
+    {
+      "q_no": 274,
+      "question": "For the circuit shown, if the transformer is operating at No-Load, the power input measured at the primary terminals is approximately equal to the power dissipated in:",
+      "exam": "GATE EE",
+      "year": 2026,
+      "topic": "No-Load Analysis",
+      "options": {
+        "a": "$R_1$",
+        "b": "$R_c$",
+        "c": "$R_2$",
+        "d": "$R_1 + R_2$"
+      },
+      "answer": "b",
+      "explanation": "At no-load, the secondary is open and the primary current is very small. The majority of the power input goes into the shunt resistance $R_c$ to account for core losses."
+    },
+    {
+      "q_no": 275,
+      "question": "In the following exact equivalent circuit, which node voltage represents the induced EMF $E_1$?",
+      "image_tag": "",
+      "exam": "GATE EE",
+      "year": 2002,
+      "topic": "Node Analysis",
+      "options": {
+        "a": "The voltage at the input terminals",
+        "b": "The voltage across the shunt magnetizing branch",
+        "c": "The voltage across the load",
+        "d": "The voltage drop across the primary resistance"
+      },
+      "answer": "b",
+      "explanation": "The induced EMF $E_1$ is the voltage appearing across the shunt branch ($R_c$ and $X_m$), representing the main mutual flux in the core."
+    },
+    {
+      "q_no": 276,
+      "question": "For the approximate equivalent circuit shown below, why is the shunt branch moved to the left of the primary impedance?",
+      "image_tag": "",
+      "exam": "GATE EE",
+      "year": 2011,
+      "topic": "Circuit Simplification",
+      "options": {
+        "a": "To account for secondary copper losses accurately",
+        "b": "To simplify calculations by assuming $V_1 \\approx E_1$",
+        "c": "To increase the calculated core loss",
+        "d": "To eliminate the need for a turns ratio"
+      },
+      "answer": "b",
+      "explanation": "The approximation is valid because the primary voltage drop due to the no-load current is extremely small, allowing us to subject the shunt branch to $V_1$ directly for ease of calculation."
+    },
+    {
+      "q_no": 277,
+      "question": "In this referred equivalent circuit, the secondary resistance $R_2$ is shown as $R_2'$. If $a = N_1/N_2$, then $R_2'$ is equal to:",
+      "image_tag": "",
+      "exam": "GATE EE",
+      "year": 1995,
+      "topic": "Impedance Referral",
+      "options": {
+        "a": "$R_2 / a$",
+        "b": "$R_2 \\times a$",
+        "c": "$R_2 \\times a^2$",
+        "d": "$R_2 / a^2$"
+      },
+      "answer": "c",
+      "explanation": "To maintain the same power loss ($I^2R$) when referring from the low-current side to the high-current side (or vice versa), the resistance must be scaled by the square of the turns ratio."
+    },
+    {
+      "q_no": 278,
+      "question": "Which component in the provided circuit diagram accounts for the reactive power needed to establish magnetic flux?",
+      "image_tag": "",
+      "exam": "GATE EE",
+      "year": 2019,
+      "topic": "Reactive Power Modeling",
+      "options": {
+        "a": "$R_c$",
+        "b": "$X_m$",
+        "c": "$X_{l1}$",
+        "d": "$R_1$"
+      },
+      "answer": "b",
+      "explanation": "The magnetizing reactance $X_m$ represents the path for the magnetizing current, which creates the mutual flux without consuming active power."
+    },
+    {
+      "q_no": 279,
+      "question": "Observe the phasor diagram of the equivalent circuit. The angle between $V_1$ and $E_1$ is primarily caused by:",
+      "image_tag": "",
+      "exam": "GATE EE",
+      "year": 2026,
+      "topic": "Phasor Analysis",
+      "options": {
+        "a": "Core losses",
+        "b": "Primary leakage impedance drop",
+        "c": "Secondary load current",
+        "d": "Mutual inductance"
+      },
+      "answer": "b",
+      "explanation": "The difference between the terminal voltage $V_1$ and the induced EMF $E_1$ is the phasor voltage drop across the primary resistance and leakage reactance ($I_1Z_1$)."
+    },
+    {
+      "q_no": 280,
+      "question": "In the T-equivalent circuit shown, the current flowing through the shunt magnetizing reactance $X_m$ is $I_m$. If the supply frequency is increased by 20% at constant $V_1$, the magnitude of $I_m$ will:",
+      "exam": "GATE EE",
+      "year": 2012,
+      "topic": "Shunt Branch Dynamics",
+      "options": {
+        "a": "Increase by 20%",
+        "b": "Decrease by approximately 16.7%",
+        "c": "Remain constant",
+        "d": "Decrease by 20%"
+      },
+      "answer": "b",
+      "explanation": "$I_m = V_1 / X_m$. Since $X_m = 2\\pi f L$, increasing $f$ by 20% (1.2f) increases $X_m$ by 20%. Therefore, $I_m$ becomes $1/1.2 \\approx 0.833$ of its original value, a decrease of 16.7%."
+    },
+    {
+      "q_no": 281,
+      "question": "Refer to the diagram of the 'Approximate Equivalent Circuit'. If the total equivalent resistance referred to the primary is $R_{eq1}$ and the total leakage reactance is $X_{eq1}$, the impedance angle $\\theta$ seen by the source at short-circuit is:",
+      "exam": "GATE EE",
+      "year": 1994,
+      "topic": "Phasor Geometry",
+      "options": {
+        "a": "$\\cos^{-1}(R_{eq1} / X_{eq1})$",
+        "b": "$\\tan^{-1}(X_{eq1} / R_{eq1})$",
+        "c": "$\\sin^{-1}(R_{eq1} / Z_{eq1})$",
+        "d": "$\\tan^{-1}(R_{eq1} / X_{eq1})$"
+      },
+      "answer": "b",
+      "explanation": "In a series circuit, the impedance triangle dictates that $\\tan \\theta = \\text{Reactance} / \\text{Resistance}$. Thus, $\\theta = \\tan^{-1}(X_{eq1} / R_{eq1})$."
+    },
+    {
+      "q_no": 282,
+      "question": "In a 2:1 step-down transformer circuit, a capacitor $C$ is connected across the secondary. When referred to the primary side, the equivalent capacitance $C'$ will be:",
+      "exam": "GATE EE",
+      "year": 2020,
+      "topic": "Reactive Parameter Referral",
+      "options": {
+        "a": "4C",
+        "b": "2C",
+        "c": "C/2",
+        "d": "C/4"
+      },
+      "answer": "d",
+      "explanation": "Impedance $Z_c = 1 / (j\\omega C)$. Referring to primary: $Z_c' = a^2 Z_c = (2^2) \\times (1 / j\\omega C) = 4 / j\\omega C$. To keep this in the form $1 / j\\omega C'$, then $C' = C / 4$."
+    },
+{
+        "q_no": 288,
+      "question": "For the ideal Op-Amp circuit shown below, calculate the output voltage $V_{out}$ when $V_{in} = 2V$.",
+      "image_url": "https://example.com/circuits/non_inverting_amp.png",
+      "circuit_type": "Non-Inverting Amplifier",
+      "exam": "GATE EE",
+      "year": 1998,
+      "topic": "Amplifier Configurations",
+      "options": {
+        "a": "2 V",
+        "b": "4 V",
+        "c": "6 V",
+        "d": "8 V"
+      },
+      "answer": "c",
+      "explanation": "For a non-inverting amplifier, $V_{out} = V_{in} (1 + R_f / R_1)$. Given $R_f = 20k\\Omega$ and $R_1 = 10k\\Omega$, Gain $= 1 + 2 = 3$. $V_{out} = 2V \\times 3 = 6V$."
+    },
+    {
+      "q_no": 289,
+      "question": "In the following integrator circuit, the input is a step voltage of magnitude $V$. The output voltage $v_0(t)$ is:",
+      "image_url": "https://example.com/circuits/opamp_integrator.png",
+      "circuit_type": "Op-Amp Integrator",
+      "exam": "GATE EE",
+      "year": 2005,
+      "topic": "Time-Domain Analysis",
+      "options": {
+        "a": "A constant voltage $V$",
+        "b": "A ramp voltage $- (V/RC)t$",
+        "c": "An exponential decay",
+        "d": "A sinusoidal wave"
+      },
+      "answer": "b",
+      "explanation": "The output of an ideal integrator is $v_0(t) = - (1/RC) \\int v_{in}(t) dt$. For a step input $V$, the integral is $Vt$, resulting in a negative ramp."
+    }
+
+  ]
+}

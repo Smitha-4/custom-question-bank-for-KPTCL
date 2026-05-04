@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPTCL AEE Prep Portal</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #f4f4f9;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            color: #555;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .subject-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100px;
+        }
+
+        .subject-card span {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 8px;
+            font-weight: normal;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .sticky-back-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.sticky-back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add padding to the top of your container 
+   so the button doesn't cover your title */
+body {
+    padding-top: 60px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KPTCL AEE Prep Portal</h1>
+        <p>Custom Topic-Wise Question Bank & Study Material</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">DC Machines & Transformers</h2>
+        <div class="grid" id="transformer-list">
+            <!-- Transformer topics will load here -->
+        </div>
+
+        <h2 class="section-title">Other Core Subjects</h2>
+        <div class="grid" id="other-subjects-list">
+            <!-- Remaining subjects will load here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 KPTCL AEE Study Resource</p>
+    </footer>
+
+    <script>
+        // Specific topics for Transformers[cite: 3, 4]
+        const transformerTopics = [
+            { name: "Ideal Transformers", file: "ideal_transformers.json" },
+            {name: "Equivalent circuit and referred values", file:"equivalent_circuit.json"},
+            { name: "Single Phase Transformer Construction", file: "single_phase_construction.json" },
+            { name: "Single Phase Transformer Voltage Regulation", file: "1phase_Voltage_regulation.json" },
+            { name: "Single Phase Transformer Parallel operation", file: "parallel_operation.json" },
+            { name: "Three Phase Transformer Construction", file: "3phase_transformers_construction.json" },
+            { name: "Transformer Testing (OC/SC)", file: "transformer_testing.json" },
+            { name: "Auto-Transformer Construction", file: "auto_tf_construction.json" },
+            { name: "Auto-Transformer load sharing", file: "auto_tf_load_sharing.json" },
+        ];
+
+        // General list of core subjects[cite: 5]
+        const otherSubjects = [
+            "Electric Circuits / Network Analysis",
+            "Electromagnetic Field Theory (EMFT)",
+            "Control Systems",
+            "Power Electronics",
+            "Analog Electronics",
+            "Digital Electronics"
+        ];
+
+        const transContainer = document.getElementById('transformer-list');
+        const otherContainer = document.getElementById('other-subjects-list');
+
+        // 1. Render Transformer Specific Topics
+        transformerTopics.forEach(topic => {
+            const link = document.createElement('a');
+            link.className = 'subject-card';
+            // Points to view.html and passes the specific JSON path as a query parameter[cite: 5]
+            link.href = `view.html?path=Questions/Machines/transformers/${topic.file}`;
+            link.innerHTML = `${topic.name} <span>Topic-specific Quiz</span>`;
+            transContainer.appendChild(link);
+        });
+
+        // 2. Render Other Subjects (General Path)[cite: 5]
+        otherSubjects.forEach(sub => {
+            const link = document.createElement('a');
+            link.className = 'subject-card';
+            const fileName = sub.toLowerCase().replace(/ \/ /g, "_").replace(/ /g, "_") + ".json";
+            link.href = `view.html?path=Questions/General/${fileName}`;
+            link.innerText = sub;
+            otherContainer.appendChild(link);
+        });
+    </script>
+</body>
+</html>
